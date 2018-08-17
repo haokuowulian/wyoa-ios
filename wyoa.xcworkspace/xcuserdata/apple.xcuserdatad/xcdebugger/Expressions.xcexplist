@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[DLFixedTabbarView commonInit]:DLFixedTabbarView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.bounds">
+            </PersistentString>
+            <PersistentString
+               value = "bottomView_.bounds">
+            </PersistentString>
+            <PersistentString
+               value = "trackView_ .bounds">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[ZJHKTabBarViewController viewDidLoad]:ZJHKTabBarViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.viewControllers">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[DLTabedSlideView commonInit]:DLTabedSlideView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.bounds.size.width">
+            </PersistentString>
+            <PersistentString
+               value = "self.tabbarHeight+self.tabbarBottomSpacing">
+            </PersistentString>
+            <PersistentString
+               value = "self.bounds.size.height-self.tabbarHeight-self.tabbarBottomSpacing">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[ZJHKTabBarViewController changeViewController:]:ZJHKTabBarViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self._previousBtn">
+            </PersistentString>
+            <PersistentString
+               value = "sender.tag">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[WorkViewController viewDidLoad]:WorkViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "kScreenWidth">
+            </PersistentString>
+            <PersistentString
+               value = "self.chuqinLabelMarginLeft.constant">
+            </PersistentString>
+            <PersistentString
+               value = "(kScreenWidth-46*2)/6">
+            </PersistentString>
+            <PersistentString
+               value = "kScreenWidth-46*2">
+            </PersistentString>
+            <PersistentString
+               value = " self.chuqinbuttonMarginLeft.constant">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[BasicPanViewController handlePan:]:BasicPanViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.tabBarController.tabBarItem">
+            </PersistentString>
+            <PersistentString
+               value = "self.tabBarController">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[ZJHKTabBarbutton titleRectForContentRect:]:ZJHKTabBarbutton.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "contentRect.size">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

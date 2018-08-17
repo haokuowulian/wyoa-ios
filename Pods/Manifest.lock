@@ -1,0 +1,58 @@
+PODS:
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
+  - BEMCheckBox (1.4.1)
+  - IQKeyboardManager (6.1.0)
+  - MBProgressHUD (1.1.0)
+  - MJExtension (3.0.15.1)
+  - MJRefresh (3.1.15.3)
+  - YTKNetwork (2.0.4):
+    - AFNetworking (~> 3.0)
+  - YYCache (1.0.4)
+
+DEPENDENCIES:
+  - BEMCheckBox
+  - IQKeyboardManager
+  - MBProgressHUD
+  - MJExtension
+  - MJRefresh
+  - YTKNetwork
+  - YYCache
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AFNetworking
+    - BEMCheckBox
+    - IQKeyboardManager
+    - MBProgressHUD
+    - MJExtension
+    - MJRefresh
+    - YTKNetwork
+    - YYCache
+
+SPEC CHECKSUMS:
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  BEMCheckBox: 5ba6e37ade3d3657b36caecc35c8b75c6c2b1a4e
+  IQKeyboardManager: f520b0f411eaefa08058532cb50c48bfeffa8535
+  MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
+  MJExtension: 19bc33ce2eee2d319760f5622562cf581a6ff756
+  MJRefresh: b48380ae2b927b46c4ef000de9adb8dc748e1df7
+  YTKNetwork: df8a7a5597bda1664a4efaa7ef871a818a887fe0
+  YYCache: 8105b6638f5e849296c71f331ff83891a4942952
+
+PODFILE CHECKSUM: cf1227fe8dce1daf870488562268b317a6f2e873
+
+COCOAPODS: 1.5.3
