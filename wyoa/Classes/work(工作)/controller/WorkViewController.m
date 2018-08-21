@@ -7,6 +7,9 @@
 //
 
 #import "WorkViewController.h"
+#import "OrderTabBarController.h"
+#import "ShenPiViewController.h"
+#import "QingJiaViewController.h"
 
 @interface WorkViewController ()
 
@@ -30,14 +33,30 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (IBAction)daiwoshenpiClick:(id)sender {
+    UIStoryboard *storyboard=[UIStoryboard storyboardWithName:@"ShenPi" bundle:nil];
+    ShenPiViewController *controller=[storyboard instantiateViewControllerWithIdentifier:@"shenpi"];
+    [self.navigationController pushViewController:controller animated:YES];
 }
-*/
 
+- (IBAction)shenpiClick:(id)sender {
+    UIStoryboard *storyboard=[UIStoryboard storyboardWithName:@"ShenPi" bundle:nil];
+    ShenPiViewController *controller=[storyboard instantiateViewControllerWithIdentifier:@"shenpi"];
+    [self.navigationController pushViewController:controller animated:YES];
+}
+
+- (IBAction)orderClick:(id)sender {
+      self.hidesBottomBarWhenPushed=YES;
+    OrderTabBarController *tabbarController=[[OrderTabBarController alloc]init];
+    [self.navigationController pushViewController:tabbarController animated:YES];
+         self.hidesBottomBarWhenPushed=NO;
+}
+
+- (IBAction)qingjiaClick:(id)sender {
+    UIStoryboard *storyboard=[UIStoryboard storyboardWithName:@"QingJia" bundle:nil];
+    QingJiaViewController *controller=[storyboard instantiateViewControllerWithIdentifier:@"qingjia"];
+    controller.title=@"请假";
+    [self.navigationController pushViewController:controller animated:YES];
+}
 @end

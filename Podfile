@@ -9,6 +9,9 @@ target 'wyoa' do
   pod 'BEMCheckBox'
   pod 'IQKeyboardManager'
   pod 'YYCache' 
+  pod 'MJExtension' 
+  pod 'SDWebImage'
+  pod 'JXTAlertManager'
   # Pods for weijianlianxian
 
 end

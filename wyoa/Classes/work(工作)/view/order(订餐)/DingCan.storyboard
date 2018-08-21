@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="7d0-ke-rqk">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Ding Can View Controller-->
+        <scene sceneID="EpS-0k-JSF">
+            <objects>
+                <viewController hidesBottomBarWhenPushed="YES" id="7d0-ke-rqk" customClass="DingCanViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aDz-Mx-Tnf"/>
+                        <viewControllerLayoutGuide type="bottom" id="I7R-JG-xhf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="e0l-oG-Rpg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="LYw-bR-Plr">
+                                <rect key="frame" x="26" y="33" width="323" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="c1w-ub-JeY"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="早餐"/>
+                                    <segment title="午餐"/>
+                                    <segment title="晚餐"/>
+                                </segments>
+                                <color key="tintColor" red="0.23921568630000001" green="0.51372549020000002" blue="0.91764705879999997" alpha="1" colorSpace="calibratedRGB"/>
+                            </segmentedControl>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Qb2-31-I3h">
+                                <rect key="frame" x="0.0" y="62" width="375" height="605"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Qb2-31-I3h" firstAttribute="width" secondItem="e0l-oG-Rpg" secondAttribute="width" id="41h-Yi-lD9"/>
+                            <constraint firstItem="Qb2-31-I3h" firstAttribute="top" secondItem="LYw-bR-Plr" secondAttribute="bottom" constant="1" id="Mt6-jr-kbv"/>
+                            <constraint firstItem="LYw-bR-Plr" firstAttribute="top" secondItem="aDz-Mx-Tnf" secondAttribute="bottom" constant="13" id="R0p-tg-S3G"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="LYw-bR-Plr" secondAttribute="trailing" constant="10" id="Xcy-aY-cy0"/>
+                            <constraint firstItem="I7R-JG-xhf" firstAttribute="top" secondItem="Qb2-31-I3h" secondAttribute="bottom" id="fxb-BW-Pyq"/>
+                            <constraint firstItem="LYw-bR-Plr" firstAttribute="leading" secondItem="e0l-oG-Rpg" secondAttribute="leadingMargin" constant="10" id="g3e-lV-juI"/>
+                            <constraint firstItem="Qb2-31-I3h" firstAttribute="leading" secondItem="e0l-oG-Rpg" secondAttribute="leading" id="sla-3X-p4k"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="mhu-Lu-RBo"/>
+                    <connections>
+                        <outlet property="tableView" destination="Qb2-31-I3h" id="m0f-hY-LGp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zCq-Fv-rSN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="172" y="104"/>
+        </scene>
+    </scenes>
+</document>

@@ -3,24 +3,34 @@
    version = "1.0">
    <ContextStates>
       <ContextState
-         contextName = "-[DLFixedTabbarView commonInit]:DLFixedTabbarView.m">
+         contextName = "-[ZJHKTabBarbutton titleRectForContentRect:]:ZJHKTabBarbutton.m">
          <PersistentStrings>
             <PersistentString
-               value = "self.bounds">
-            </PersistentString>
-            <PersistentString
-               value = "bottomView_.bounds">
-            </PersistentString>
-            <PersistentString
-               value = "trackView_ .bounds">
+               value = "contentRect.size">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "-[ZJHKTabBarViewController viewDidLoad]:ZJHKTabBarViewController.m">
+         contextName = "-[UpdateInfoViewController updateUserInfo]:UpdateInfoViewController.m">
          <PersistentStrings>
             <PersistentString
-               value = "self.viewControllers">
+               value = "self.userInfoBean">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[MailListViewController passConTextChange:]:MailListViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.alldata">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[MailListViewController setupInitialAllDataArrayWithContacts:]:MailListViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.sectionIndexs">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -39,13 +49,45 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "-[ZJHKTabBarViewController changeViewController:]:ZJHKTabBarViewController.m">
+         contextName = "-[BasicPanViewController handlePan:]:BasicPanViewController.m">
          <PersistentStrings>
             <PersistentString
-               value = "self._previousBtn">
+               value = "self.tabBarController.tabBarItem">
             </PersistentString>
             <PersistentString
-               value = "sender.tag">
+               value = "self.tabBarController">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[ZJHKTabBarViewController viewDidLoad]:ZJHKTabBarViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.viewControllers">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "+[ContactBean searchText:inDataArray:]:ContactBean.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "contact.name">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[MailListViewController tableView:titleForHeaderInSection:]:MailListViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "index">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[MailListViewController sectionIndexTitlesForTableView:]:MailListViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.sectionIndexs">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -70,21 +112,35 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "-[BasicPanViewController handlePan:]:BasicPanViewController.m">
+         contextName = "-[ZJHKTabBarViewController changeViewController:]:ZJHKTabBarViewController.m">
          <PersistentStrings>
             <PersistentString
-               value = "self.tabBarController.tabBarItem">
+               value = "self._previousBtn">
             </PersistentString>
             <PersistentString
-               value = "self.tabBarController">
+               value = "sender.tag">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "-[ZJHKTabBarbutton titleRectForContentRect:]:ZJHKTabBarbutton.m">
+         contextName = "-[DingCanTableViewCell showOrHide]:DingCanTableViewCell.m">
          <PersistentStrings>
             <PersistentString
-               value = "contentRect.size">
+               value = "self.num">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[DLFixedTabbarView commonInit]:DLFixedTabbarView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.bounds">
+            </PersistentString>
+            <PersistentString
+               value = "bottomView_.bounds">
+            </PersistentString>
+            <PersistentString
+               value = "trackView_ .bounds">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

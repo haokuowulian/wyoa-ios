@@ -29,6 +29,45 @@
 		1806FE9A2121AAD600F3DEFA /* MessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1806FE992121AAD600F3DEFA /* MessageViewController.m */; };
 		1806FE9D2121AB1700F3DEFA /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1806FE9C2121AB1700F3DEFA /* MineViewController.m */; };
 		1806FEA02121AB2800F3DEFA /* WorkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1806FE9F2121AB2800F3DEFA /* WorkViewController.m */; };
+		1807D6BB212916A7005BBBB3 /* OrderTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1807D6BA212916A7005BBBB3 /* OrderTabBarController.m */; };
+		1807D6BE21291725005BBBB3 /* DingCanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1807D6BD21291725005BBBB3 /* DingCanViewController.m */; };
+		1807D6C121291755005BBBB3 /* CaiLanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1807D6C021291755005BBBB3 /* CaiLanViewController.m */; };
+		1807D6C42129175E005BBBB3 /* DingDanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1807D6C32129175E005BBBB3 /* DingDanViewController.m */; };
+		1807D6C9212917EB005BBBB3 /* DingCan.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1807D6C8212917EB005BBBB3 /* DingCan.storyboard */; };
+		1807D6CB2129180A005BBBB3 /* CaiLan.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1807D6CA2129180A005BBBB3 /* CaiLan.storyboard */; };
+		1807D6CD2129182E005BBBB3 /* DingDan.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1807D6CC2129182E005BBBB3 /* DingDan.storyboard */; };
+		1807D6D221292830005BBBB3 /* DingCanTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1807D6D021292830005BBBB3 /* DingCanTableViewCell.m */; };
+		1807D6D321292830005BBBB3 /* DingCanTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1807D6D121292830005BBBB3 /* DingCanTableViewCell.xib */; };
+		1807D6E721294C22005BBBB3 /* CaiLanTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1807D6E521294C22005BBBB3 /* CaiLanTableViewCell.m */; };
+		1807D6E821294C22005BBBB3 /* CaiLanTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1807D6E621294C22005BBBB3 /* CaiLanTableViewCell.xib */; };
+		1807D6EB21299548005BBBB3 /* WYDateTimePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1807D6E921299547005BBBB3 /* WYDateTimePickerView.m */; };
+		1807D6ED212A4BCB005BBBB3 /* ShenPi.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1807D6EC212A4BCB005BBBB3 /* ShenPi.storyboard */; };
+		1807D717212A694F005BBBB3 /* ContactBean.m in Sources */ = {isa = PBXBuildFile; fileRef = 1807D716212A694F005BBBB3 /* ContactBean.m */; };
+		1807D71A212A84A5005BBBB3 /* ContractListBean.m in Sources */ = {isa = PBXBuildFile; fileRef = 1807D719212A84A5005BBBB3 /* ContractListBean.m */; };
+		1807D71E212A8F4E005BBBB3 /* ContractTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1807D71C212A8F4E005BBBB3 /* ContractTableViewCell.m */; };
+		1807D71F212A8F4E005BBBB3 /* ContractTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1807D71D212A8F4E005BBBB3 /* ContractTableViewCell.xib */; };
+		1807D72F212A9E0B005BBBB3 /* ChineseToPinyinResource.m in Sources */ = {isa = PBXBuildFile; fileRef = 1807D723212A9E0A005BBBB3 /* ChineseToPinyinResource.m */; };
+		1807D730212A9E0B005BBBB3 /* HanyuPinyinOutputFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 1807D725212A9E0A005BBBB3 /* HanyuPinyinOutputFormat.m */; };
+		1807D731212A9E0B005BBBB3 /* NSString+PinYin4Cocoa.m in Sources */ = {isa = PBXBuildFile; fileRef = 1807D727212A9E0A005BBBB3 /* NSString+PinYin4Cocoa.m */; };
+		1807D732212A9E0B005BBBB3 /* PinyinFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1807D72A212A9E0A005BBBB3 /* PinyinFormatter.m */; };
+		1807D733212A9E0B005BBBB3 /* PinyinHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1807D72C212A9E0A005BBBB3 /* PinyinHelper.m */; };
+		1807D734212A9E0B005BBBB3 /* unicode_to_hanyu_pinyin.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1807D72E212A9E0A005BBBB3 /* unicode_to_hanyu_pinyin.txt */; };
+		1807D736212AB9C9005BBBB3 /* FindPassword2View.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1807D735212AB9C9005BBBB3 /* FindPassword2View.storyboard */; };
+		1807D739212ABA04005BBBB3 /* FindPassword2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1807D738212ABA04005BBBB3 /* FindPassword2ViewController.m */; };
+		1807D73D212AF075005BBBB3 /* QingJiaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1807D73C212AF075005BBBB3 /* QingJiaViewController.m */; };
+		1807D740212AF08B005BBBB3 /* QingJia.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1807D73F212AF08B005BBBB3 /* QingJia.storyboard */; };
+		1807D743212B95B7005BBBB3 /* GongChaiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1807D742212B95B7005BBBB3 /* GongChaiViewController.m */; };
+		1807D745212B95CB005BBBB3 /* GongChai.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1807D744212B95CB005BBBB3 /* GongChai.storyboard */; };
+		1807D748212B9619005BBBB3 /* ShiXiangViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1807D747212B9619005BBBB3 /* ShiXiangViewController.m */; };
+		1807D74B212B97BA005BBBB3 /* TiaoBanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1807D74A212B97BA005BBBB3 /* TiaoBanViewController.m */; };
+		1807D74D212B97CA005BBBB3 /* TiaoBan.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1807D74C212B97CA005BBBB3 /* TiaoBan.storyboard */; };
+		1807D750212B97F3005BBBB3 /* LingYongViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1807D74F212B97F3005BBBB3 /* LingYongViewController.m */; };
+		1807D752212B97FE005BBBB3 /* LingYong.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1807D751212B97FE005BBBB3 /* LingYong.storyboard */; };
+		1807D754212B981E005BBBB3 /* BaoXiu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1807D753212B981E005BBBB3 /* BaoXiu.storyboard */; };
+		1807D757212B982E005BBBB3 /* BaoXiuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1807D756212B982E005BBBB3 /* BaoXiuViewController.m */; };
+		1807D75A212B984F005BBBB3 /* ShenGouViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1807D759212B984F005BBBB3 /* ShenGouViewController.m */; };
+		1807D75C212B985F005BBBB3 /* ShenGou.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1807D75B212B985F005BBBB3 /* ShenGou.storyboard */; };
+		1807D75F212B9998005BBBB3 /* WalletBean.m in Sources */ = {isa = PBXBuildFile; fileRef = 1807D75E212B9998005BBBB3 /* WalletBean.m */; };
 		1808CEA82122CDD300CFE98E /* DLLRUCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 1808CE992122CDD300CFE98E /* DLLRUCache.m */; };
 		1808CEA92122CDD300CFE98E /* DLCustomSlideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1808CE9B2122CDD300CFE98E /* DLCustomSlideView.m */; };
 		1808CEAA2122CDD300CFE98E /* DLSlideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1808CE9D2122CDD300CFE98E /* DLSlideView.m */; };
@@ -48,6 +87,24 @@
 		18093F3E2126603D00571700 /* BaseBean.m in Sources */ = {isa = PBXBuildFile; fileRef = 18093F3C2126603D00571700 /* BaseBean.m */; };
 		18093F442126620000571700 /* LoginResultBean.m in Sources */ = {isa = PBXBuildFile; fileRef = 18093F432126620000571700 /* LoginResultBean.m */; };
 		18093F47212666CE00571700 /* MBProgressHUD+MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 18093F46212666CE00571700 /* MBProgressHUD+MBProgressHUD.m */; };
+		18093F4A2126A67900571700 /* UserInfoResultBean.m in Sources */ = {isa = PBXBuildFile; fileRef = 18093F492126A67900571700 /* UserInfoResultBean.m */; };
+		18093F4D2126ADC600571700 /* PersonalInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18093F4C2126ADC600571700 /* PersonalInfoViewController.m */; };
+		18093F502126E84C00571700 /* UpdateInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18093F4F2126E84C00571700 /* UpdateInfoViewController.m */; };
+		18093F562127A70F00571700 /* UpdatePasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18093F552127A70F00571700 /* UpdatePasswordViewController.m */; };
+		18093F592127AF3800571700 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18093F582127AF3800571700 /* SettingViewController.m */; };
+		18093F5C2127B2E200571700 /* ValidPassword.m in Sources */ = {isa = PBXBuildFile; fileRef = 18093F5B2127B2E200571700 /* ValidPassword.m */; };
+		18093F5F2127E1EB00571700 /* JumpVCManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 18093F5D2127E1EB00571700 /* JumpVCManager.m */; };
+		18093F72212801C000571700 /* CityData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 18093F61212801C000571700 /* CityData.plist */; };
+		18093F73212801C000571700 /* NicknameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18093F63212801C000571700 /* NicknameViewController.m */; };
+		18093F74212801C000571700 /* SignatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18093F65212801C000571700 /* SignatureViewController.m */; };
+		18093F75212801C000571700 /* WYBirthdayPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18093F67212801C000571700 /* WYBirthdayPickerView.m */; };
+		18093F76212801C000571700 /* WYCityPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18093F69212801C000571700 /* WYCityPickerView.m */; };
+		18093F77212801C000571700 /* WYGenderPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18093F6B212801C000571700 /* WYGenderPickerView.m */; };
+		18093F78212801C100571700 /* WYHeightPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18093F6D212801C000571700 /* WYHeightPickerView.m */; };
+		18093F79212801C100571700 /* WYLongTextInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18093F6F212801C000571700 /* WYLongTextInputView.m */; };
+		18093F7A212801C100571700 /* 返回@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18093F70212801C000571700 /* 返回@2x.png */; };
+		18093F7B212801C100571700 /* 返回@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18093F71212801C000571700 /* 返回@3x.png */; };
+		18093F812128407200571700 /* HWOptionButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 18093F802128407200571700 /* HWOptionButton.m */; };
 		2F794B77EFB703128F329161 /* Pods_wyoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EDB6B42628C374C39BE22DE /* Pods_wyoa.framework */; };
 /* End PBXBuildFile section */
 
@@ -90,6 +147,70 @@
 		1806FE9C2121AB1700F3DEFA /* MineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
 		1806FE9E2121AB2800F3DEFA /* WorkViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WorkViewController.h; sourceTree = "<group>"; };
 		1806FE9F2121AB2800F3DEFA /* WorkViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WorkViewController.m; sourceTree = "<group>"; };
+		1807D6B9212916A7005BBBB3 /* OrderTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrderTabBarController.h; sourceTree = "<group>"; };
+		1807D6BA212916A7005BBBB3 /* OrderTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrderTabBarController.m; sourceTree = "<group>"; };
+		1807D6BC21291725005BBBB3 /* DingCanViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DingCanViewController.h; sourceTree = "<group>"; };
+		1807D6BD21291725005BBBB3 /* DingCanViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DingCanViewController.m; sourceTree = "<group>"; };
+		1807D6BF21291755005BBBB3 /* CaiLanViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CaiLanViewController.h; sourceTree = "<group>"; };
+		1807D6C021291755005BBBB3 /* CaiLanViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CaiLanViewController.m; sourceTree = "<group>"; };
+		1807D6C22129175E005BBBB3 /* DingDanViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DingDanViewController.h; sourceTree = "<group>"; };
+		1807D6C32129175E005BBBB3 /* DingDanViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DingDanViewController.m; sourceTree = "<group>"; };
+		1807D6C8212917EB005BBBB3 /* DingCan.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DingCan.storyboard; sourceTree = "<group>"; };
+		1807D6CA2129180A005BBBB3 /* CaiLan.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CaiLan.storyboard; sourceTree = "<group>"; };
+		1807D6CC2129182E005BBBB3 /* DingDan.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DingDan.storyboard; sourceTree = "<group>"; };
+		1807D6CF21292830005BBBB3 /* DingCanTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DingCanTableViewCell.h; sourceTree = "<group>"; };
+		1807D6D021292830005BBBB3 /* DingCanTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DingCanTableViewCell.m; sourceTree = "<group>"; };
+		1807D6D121292830005BBBB3 /* DingCanTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DingCanTableViewCell.xib; sourceTree = "<group>"; };
+		1807D6E421294C22005BBBB3 /* CaiLanTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CaiLanTableViewCell.h; sourceTree = "<group>"; };
+		1807D6E521294C22005BBBB3 /* CaiLanTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CaiLanTableViewCell.m; sourceTree = "<group>"; };
+		1807D6E621294C22005BBBB3 /* CaiLanTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CaiLanTableViewCell.xib; sourceTree = "<group>"; };
+		1807D6E921299547005BBBB3 /* WYDateTimePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYDateTimePickerView.m; sourceTree = "<group>"; };
+		1807D6EA21299547005BBBB3 /* WYDateTimePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYDateTimePickerView.h; sourceTree = "<group>"; };
+		1807D6EC212A4BCB005BBBB3 /* ShenPi.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ShenPi.storyboard; sourceTree = "<group>"; };
+		1807D715212A694F005BBBB3 /* ContactBean.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContactBean.h; sourceTree = "<group>"; };
+		1807D716212A694F005BBBB3 /* ContactBean.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactBean.m; sourceTree = "<group>"; };
+		1807D718212A84A5005BBBB3 /* ContractListBean.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContractListBean.h; sourceTree = "<group>"; };
+		1807D719212A84A5005BBBB3 /* ContractListBean.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContractListBean.m; sourceTree = "<group>"; };
+		1807D71B212A8F4E005BBBB3 /* ContractTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContractTableViewCell.h; sourceTree = "<group>"; };
+		1807D71C212A8F4E005BBBB3 /* ContractTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContractTableViewCell.m; sourceTree = "<group>"; };
+		1807D71D212A8F4E005BBBB3 /* ContractTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContractTableViewCell.xib; sourceTree = "<group>"; };
+		1807D722212A9E0A005BBBB3 /* ChineseToPinyinResource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChineseToPinyinResource.h; sourceTree = "<group>"; };
+		1807D723212A9E0A005BBBB3 /* ChineseToPinyinResource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChineseToPinyinResource.m; sourceTree = "<group>"; };
+		1807D724212A9E0A005BBBB3 /* HanyuPinyinOutputFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HanyuPinyinOutputFormat.h; sourceTree = "<group>"; };
+		1807D725212A9E0A005BBBB3 /* HanyuPinyinOutputFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HanyuPinyinOutputFormat.m; sourceTree = "<group>"; };
+		1807D726212A9E0A005BBBB3 /* NSString+PinYin4Cocoa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+PinYin4Cocoa.h"; sourceTree = "<group>"; };
+		1807D727212A9E0A005BBBB3 /* NSString+PinYin4Cocoa.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+PinYin4Cocoa.m"; sourceTree = "<group>"; };
+		1807D728212A9E0A005BBBB3 /* PinYin4Objc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinYin4Objc.h; sourceTree = "<group>"; };
+		1807D729212A9E0A005BBBB3 /* PinyinFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinyinFormatter.h; sourceTree = "<group>"; };
+		1807D72A212A9E0A005BBBB3 /* PinyinFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PinyinFormatter.m; sourceTree = "<group>"; };
+		1807D72B212A9E0A005BBBB3 /* PinyinHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinyinHelper.h; sourceTree = "<group>"; };
+		1807D72C212A9E0A005BBBB3 /* PinyinHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PinyinHelper.m; sourceTree = "<group>"; };
+		1807D72E212A9E0A005BBBB3 /* unicode_to_hanyu_pinyin.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = unicode_to_hanyu_pinyin.txt; sourceTree = "<group>"; };
+		1807D735212AB9C9005BBBB3 /* FindPassword2View.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FindPassword2View.storyboard; sourceTree = "<group>"; };
+		1807D737212ABA04005BBBB3 /* FindPassword2ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindPassword2ViewController.h; sourceTree = "<group>"; };
+		1807D738212ABA04005BBBB3 /* FindPassword2ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FindPassword2ViewController.m; sourceTree = "<group>"; };
+		1807D73B212AF075005BBBB3 /* QingJiaViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QingJiaViewController.h; sourceTree = "<group>"; };
+		1807D73C212AF075005BBBB3 /* QingJiaViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QingJiaViewController.m; sourceTree = "<group>"; };
+		1807D73F212AF08B005BBBB3 /* QingJia.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QingJia.storyboard; sourceTree = "<group>"; };
+		1807D741212B95B7005BBBB3 /* GongChaiViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GongChaiViewController.h; sourceTree = "<group>"; };
+		1807D742212B95B7005BBBB3 /* GongChaiViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GongChaiViewController.m; sourceTree = "<group>"; };
+		1807D744212B95CB005BBBB3 /* GongChai.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GongChai.storyboard; sourceTree = "<group>"; };
+		1807D746212B9619005BBBB3 /* ShiXiangViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShiXiangViewController.h; sourceTree = "<group>"; };
+		1807D747212B9619005BBBB3 /* ShiXiangViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShiXiangViewController.m; sourceTree = "<group>"; };
+		1807D749212B97BA005BBBB3 /* TiaoBanViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TiaoBanViewController.h; sourceTree = "<group>"; };
+		1807D74A212B97BA005BBBB3 /* TiaoBanViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TiaoBanViewController.m; sourceTree = "<group>"; };
+		1807D74C212B97CA005BBBB3 /* TiaoBan.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TiaoBan.storyboard; sourceTree = "<group>"; };
+		1807D74E212B97F3005BBBB3 /* LingYongViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LingYongViewController.h; sourceTree = "<group>"; };
+		1807D74F212B97F3005BBBB3 /* LingYongViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LingYongViewController.m; sourceTree = "<group>"; };
+		1807D751212B97FE005BBBB3 /* LingYong.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LingYong.storyboard; sourceTree = "<group>"; };
+		1807D753212B981E005BBBB3 /* BaoXiu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BaoXiu.storyboard; sourceTree = "<group>"; };
+		1807D755212B982E005BBBB3 /* BaoXiuViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaoXiuViewController.h; sourceTree = "<group>"; };
+		1807D756212B982E005BBBB3 /* BaoXiuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaoXiuViewController.m; sourceTree = "<group>"; };
+		1807D758212B984F005BBBB3 /* ShenGouViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShenGouViewController.h; sourceTree = "<group>"; };
+		1807D759212B984F005BBBB3 /* ShenGouViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShenGouViewController.m; sourceTree = "<group>"; };
+		1807D75B212B985F005BBBB3 /* ShenGou.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ShenGou.storyboard; sourceTree = "<group>"; };
+		1807D75D212B9998005BBBB3 /* WalletBean.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WalletBean.h; sourceTree = "<group>"; };
+		1807D75E212B9998005BBBB3 /* WalletBean.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WalletBean.m; sourceTree = "<group>"; };
 		1808CE972122CDD300CFE98E /* DLCacheProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLCacheProtocol.h; sourceTree = "<group>"; };
 		1808CE982122CDD300CFE98E /* DLLRUCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLLRUCache.h; sourceTree = "<group>"; };
 		1808CE992122CDD300CFE98E /* DLLRUCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLLRUCache.m; sourceTree = "<group>"; };
@@ -130,6 +251,39 @@
 		18093F432126620000571700 /* LoginResultBean.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginResultBean.m; sourceTree = "<group>"; };
 		18093F45212666CE00571700 /* MBProgressHUD+MBProgressHUD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+MBProgressHUD.h"; sourceTree = "<group>"; };
 		18093F46212666CE00571700 /* MBProgressHUD+MBProgressHUD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+MBProgressHUD.m"; sourceTree = "<group>"; };
+		18093F482126A67900571700 /* UserInfoResultBean.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserInfoResultBean.h; sourceTree = "<group>"; };
+		18093F492126A67900571700 /* UserInfoResultBean.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserInfoResultBean.m; sourceTree = "<group>"; };
+		18093F4B2126ADC600571700 /* PersonalInfoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonalInfoViewController.h; sourceTree = "<group>"; };
+		18093F4C2126ADC600571700 /* PersonalInfoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonalInfoViewController.m; sourceTree = "<group>"; };
+		18093F4E2126E84C00571700 /* UpdateInfoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UpdateInfoViewController.h; sourceTree = "<group>"; };
+		18093F4F2126E84C00571700 /* UpdateInfoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UpdateInfoViewController.m; sourceTree = "<group>"; };
+		18093F542127A70F00571700 /* UpdatePasswordViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UpdatePasswordViewController.h; sourceTree = "<group>"; };
+		18093F552127A70F00571700 /* UpdatePasswordViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UpdatePasswordViewController.m; sourceTree = "<group>"; };
+		18093F572127AF3800571700 /* SettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		18093F582127AF3800571700 /* SettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		18093F5A2127B2E200571700 /* ValidPassword.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ValidPassword.h; sourceTree = "<group>"; };
+		18093F5B2127B2E200571700 /* ValidPassword.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ValidPassword.m; sourceTree = "<group>"; };
+		18093F5D2127E1EB00571700 /* JumpVCManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JumpVCManager.m; sourceTree = "<group>"; };
+		18093F5E2127E1EB00571700 /* JumpVCManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JumpVCManager.h; sourceTree = "<group>"; };
+		18093F61212801C000571700 /* CityData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CityData.plist; sourceTree = "<group>"; };
+		18093F62212801C000571700 /* NicknameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NicknameViewController.h; sourceTree = "<group>"; };
+		18093F63212801C000571700 /* NicknameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NicknameViewController.m; sourceTree = "<group>"; };
+		18093F64212801C000571700 /* SignatureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignatureViewController.h; sourceTree = "<group>"; };
+		18093F65212801C000571700 /* SignatureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignatureViewController.m; sourceTree = "<group>"; };
+		18093F66212801C000571700 /* WYBirthdayPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYBirthdayPickerView.h; sourceTree = "<group>"; };
+		18093F67212801C000571700 /* WYBirthdayPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYBirthdayPickerView.m; sourceTree = "<group>"; };
+		18093F68212801C000571700 /* WYCityPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYCityPickerView.h; sourceTree = "<group>"; };
+		18093F69212801C000571700 /* WYCityPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYCityPickerView.m; sourceTree = "<group>"; };
+		18093F6A212801C000571700 /* WYGenderPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYGenderPickerView.h; sourceTree = "<group>"; };
+		18093F6B212801C000571700 /* WYGenderPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYGenderPickerView.m; sourceTree = "<group>"; };
+		18093F6C212801C000571700 /* WYHeightPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYHeightPickerView.h; sourceTree = "<group>"; };
+		18093F6D212801C000571700 /* WYHeightPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYHeightPickerView.m; sourceTree = "<group>"; };
+		18093F6E212801C000571700 /* WYLongTextInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYLongTextInputView.h; sourceTree = "<group>"; };
+		18093F6F212801C000571700 /* WYLongTextInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYLongTextInputView.m; sourceTree = "<group>"; };
+		18093F70212801C000571700 /* 返回@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "返回@2x.png"; sourceTree = "<group>"; };
+		18093F71212801C000571700 /* 返回@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "返回@3x.png"; sourceTree = "<group>"; };
+		18093F7F2128407200571700 /* HWOptionButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HWOptionButton.h; sourceTree = "<group>"; };
+		18093F802128407200571700 /* HWOptionButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HWOptionButton.m; sourceTree = "<group>"; };
 		3EDB6B42628C374C39BE22DE /* Pods_wyoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_wyoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6224B1D4B6C44081CE4444E8 /* Pods-wyoa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wyoa.release.xcconfig"; path = "Pods/Target Support Files/Pods-wyoa/Pods-wyoa.release.xcconfig"; sourceTree = "<group>"; };
 		97C6D19413C93921E227F2C9 /* Pods-wyoa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wyoa.debug.xcconfig"; path = "Pods/Target Support Files/Pods-wyoa/Pods-wyoa.debug.xcconfig"; sourceTree = "<group>"; };
@@ -150,6 +304,8 @@
 		1806FE312121545C00F3DEFA = {
 			isa = PBXGroup;
 			children = (
+				1807D720212A9E0A005BBBB3 /* PinYin4Objc */,
+				18093F60212801C000571700 /* WYPickerViews */,
 				1808CE952122CDD300CFE98E /* DLSlideView */,
 				1806FE3C2121545C00F3DEFA /* wyoa */,
 				1806FE3B2121545C00F3DEFA /* Products */,
@@ -195,6 +351,10 @@
 				1806FE882121710500F3DEFA /* CALayer+LayerColor.m */,
 				18093F3621265EC500571700 /* Extern.h */,
 				18093F3721265EC500571700 /* Extern.m */,
+				18093F5A2127B2E200571700 /* ValidPassword.h */,
+				18093F5B2127B2E200571700 /* ValidPassword.m */,
+				18093F7F2128407200571700 /* HWOptionButton.h */,
+				18093F802128407200571700 /* HWOptionButton.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -235,6 +395,10 @@
 		1806FE572121576D00F3DEFA /* model */ = {
 			isa = PBXGroup;
 			children = (
+				1807D715212A694F005BBBB3 /* ContactBean.h */,
+				1807D716212A694F005BBBB3 /* ContactBean.m */,
+				1807D718212A84A5005BBBB3 /* ContractListBean.h */,
+				1807D719212A84A5005BBBB3 /* ContractListBean.m */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -242,6 +406,9 @@
 		1806FE582121576D00F3DEFA /* other */ = {
 			isa = PBXGroup;
 			children = (
+				1807D71B212A8F4E005BBBB3 /* ContractTableViewCell.h */,
+				1807D71C212A8F4E005BBBB3 /* ContractTableViewCell.m */,
+				1807D71D212A8F4E005BBBB3 /* ContractTableViewCell.xib */,
 			);
 			path = other;
 			sourceTree = "<group>";
@@ -314,6 +481,14 @@
 				1806FE9C2121AB1700F3DEFA /* MineViewController.m */,
 				1808CEC1212416E300CFE98E /* MyWalletViewController.h */,
 				1808CEC2212416E300CFE98E /* MyWalletViewController.m */,
+				18093F4B2126ADC600571700 /* PersonalInfoViewController.h */,
+				18093F4C2126ADC600571700 /* PersonalInfoViewController.m */,
+				18093F4E2126E84C00571700 /* UpdateInfoViewController.h */,
+				18093F4F2126E84C00571700 /* UpdateInfoViewController.m */,
+				18093F542127A70F00571700 /* UpdatePasswordViewController.h */,
+				18093F552127A70F00571700 /* UpdatePasswordViewController.m */,
+				18093F572127AF3800571700 /* SettingViewController.h */,
+				18093F582127AF3800571700 /* SettingViewController.m */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -321,6 +496,10 @@
 		1806FE612121576D00F3DEFA /* model */ = {
 			isa = PBXGroup;
 			children = (
+				18093F482126A67900571700 /* UserInfoResultBean.h */,
+				18093F492126A67900571700 /* UserInfoResultBean.m */,
+				1807D75D212B9998005BBBB3 /* WalletBean.h */,
+				1807D75E212B9998005BBBB3 /* WalletBean.m */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -354,6 +533,8 @@
 		1806FE652121576D00F3DEFA /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				1807D73A212AF059005BBBB3 /* 事项 */,
+				1807D6C621291791005BBBB3 /* order(订餐) */,
 				1806FE9E2121AB2800F3DEFA /* WorkViewController.h */,
 				1806FE9F2121AB2800F3DEFA /* WorkViewController.m */,
 				1808CEAF2122CED300CFE98E /* TongZhiGongGaoViewController.h */,
@@ -373,6 +554,7 @@
 		1806FE662121576D00F3DEFA /* model */ = {
 			isa = PBXGroup;
 			children = (
+				1810335C212BF57F0009147E /* 事项 */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -380,6 +562,7 @@
 		1806FE672121576D00F3DEFA /* other */ = {
 			isa = PBXGroup;
 			children = (
+				1807D6CE21292807005BBBB3 /* order(订餐) */,
 			);
 			path = other;
 			sourceTree = "<group>";
@@ -387,7 +570,10 @@
 		1806FE682121576D00F3DEFA /* view */ = {
 			isa = PBXGroup;
 			children = (
+				1807D73E212AF07D005BBBB3 /* 事项 */,
+				1807D6C7212917D6005BBBB3 /* order(订餐) */,
 				1806FE9021217F5300F3DEFA /* Work.storyboard */,
+				1807D6EC212A4BCB005BBBB3 /* ShenPi.storyboard */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -409,6 +595,8 @@
 				1806FE3E2121545C00F3DEFA /* AppDelegate.m */,
 				18093F45212666CE00571700 /* MBProgressHUD+MBProgressHUD.h */,
 				18093F46212666CE00571700 /* MBProgressHUD+MBProgressHUD.m */,
+				18093F5E2127E1EB00571700 /* JumpVCManager.h */,
+				18093F5D2127E1EB00571700 /* JumpVCManager.m */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -478,6 +666,8 @@
 				1806FE832121682000F3DEFA /* LoginViewController.m */,
 				18093F33212597DE00571700 /* FindPassword1ViewController.h */,
 				18093F34212597DE00571700 /* FindPassword1ViewController.m */,
+				1807D737212ABA04005BBBB3 /* FindPassword2ViewController.h */,
+				1807D738212ABA04005BBBB3 /* FindPassword2ViewController.m */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -502,8 +692,116 @@
 			isa = PBXGroup;
 			children = (
 				1806FE852121683000F3DEFA /* login.storyboard */,
+				1807D735212AB9C9005BBBB3 /* FindPassword2View.storyboard */,
 			);
 			path = view;
+			sourceTree = "<group>";
+		};
+		1807D6C621291791005BBBB3 /* order(订餐) */ = {
+			isa = PBXGroup;
+			children = (
+				1807D6B9212916A7005BBBB3 /* OrderTabBarController.h */,
+				1807D6BA212916A7005BBBB3 /* OrderTabBarController.m */,
+				1807D6BC21291725005BBBB3 /* DingCanViewController.h */,
+				1807D6BD21291725005BBBB3 /* DingCanViewController.m */,
+				1807D6BF21291755005BBBB3 /* CaiLanViewController.h */,
+				1807D6C021291755005BBBB3 /* CaiLanViewController.m */,
+				1807D6C22129175E005BBBB3 /* DingDanViewController.h */,
+				1807D6C32129175E005BBBB3 /* DingDanViewController.m */,
+			);
+			path = "order(订餐)";
+			sourceTree = "<group>";
+		};
+		1807D6C7212917D6005BBBB3 /* order(订餐) */ = {
+			isa = PBXGroup;
+			children = (
+				1807D6C8212917EB005BBBB3 /* DingCan.storyboard */,
+				1807D6CA2129180A005BBBB3 /* CaiLan.storyboard */,
+				1807D6CC2129182E005BBBB3 /* DingDan.storyboard */,
+			);
+			path = "order(订餐)";
+			sourceTree = "<group>";
+		};
+		1807D6CE21292807005BBBB3 /* order(订餐) */ = {
+			isa = PBXGroup;
+			children = (
+				1807D6CF21292830005BBBB3 /* DingCanTableViewCell.h */,
+				1807D6D021292830005BBBB3 /* DingCanTableViewCell.m */,
+				1807D6D121292830005BBBB3 /* DingCanTableViewCell.xib */,
+				1807D6E421294C22005BBBB3 /* CaiLanTableViewCell.h */,
+				1807D6E521294C22005BBBB3 /* CaiLanTableViewCell.m */,
+				1807D6E621294C22005BBBB3 /* CaiLanTableViewCell.xib */,
+			);
+			path = "order(订餐)";
+			sourceTree = "<group>";
+		};
+		1807D720212A9E0A005BBBB3 /* PinYin4Objc */ = {
+			isa = PBXGroup;
+			children = (
+				1807D721212A9E0A005BBBB3 /* Classes */,
+				1807D72D212A9E0A005BBBB3 /* Resources */,
+			);
+			path = PinYin4Objc;
+			sourceTree = "<group>";
+		};
+		1807D721212A9E0A005BBBB3 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1807D722212A9E0A005BBBB3 /* ChineseToPinyinResource.h */,
+				1807D723212A9E0A005BBBB3 /* ChineseToPinyinResource.m */,
+				1807D724212A9E0A005BBBB3 /* HanyuPinyinOutputFormat.h */,
+				1807D725212A9E0A005BBBB3 /* HanyuPinyinOutputFormat.m */,
+				1807D726212A9E0A005BBBB3 /* NSString+PinYin4Cocoa.h */,
+				1807D727212A9E0A005BBBB3 /* NSString+PinYin4Cocoa.m */,
+				1807D728212A9E0A005BBBB3 /* PinYin4Objc.h */,
+				1807D729212A9E0A005BBBB3 /* PinyinFormatter.h */,
+				1807D72A212A9E0A005BBBB3 /* PinyinFormatter.m */,
+				1807D72B212A9E0A005BBBB3 /* PinyinHelper.h */,
+				1807D72C212A9E0A005BBBB3 /* PinyinHelper.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		1807D72D212A9E0A005BBBB3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1807D72E212A9E0A005BBBB3 /* unicode_to_hanyu_pinyin.txt */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1807D73A212AF059005BBBB3 /* 事项 */ = {
+			isa = PBXGroup;
+			children = (
+				1807D746212B9619005BBBB3 /* ShiXiangViewController.h */,
+				1807D747212B9619005BBBB3 /* ShiXiangViewController.m */,
+				1807D73B212AF075005BBBB3 /* QingJiaViewController.h */,
+				1807D73C212AF075005BBBB3 /* QingJiaViewController.m */,
+				1807D741212B95B7005BBBB3 /* GongChaiViewController.h */,
+				1807D742212B95B7005BBBB3 /* GongChaiViewController.m */,
+				1807D749212B97BA005BBBB3 /* TiaoBanViewController.h */,
+				1807D74A212B97BA005BBBB3 /* TiaoBanViewController.m */,
+				1807D74E212B97F3005BBBB3 /* LingYongViewController.h */,
+				1807D74F212B97F3005BBBB3 /* LingYongViewController.m */,
+				1807D755212B982E005BBBB3 /* BaoXiuViewController.h */,
+				1807D756212B982E005BBBB3 /* BaoXiuViewController.m */,
+				1807D758212B984F005BBBB3 /* ShenGouViewController.h */,
+				1807D759212B984F005BBBB3 /* ShenGouViewController.m */,
+			);
+			path = "事项";
+			sourceTree = "<group>";
+		};
+		1807D73E212AF07D005BBBB3 /* 事项 */ = {
+			isa = PBXGroup;
+			children = (
+				1807D73F212AF08B005BBBB3 /* QingJia.storyboard */,
+				1807D744212B95CB005BBBB3 /* GongChai.storyboard */,
+				1807D74C212B97CA005BBBB3 /* TiaoBan.storyboard */,
+				1807D751212B97FE005BBBB3 /* LingYong.storyboard */,
+				1807D753212B981E005BBBB3 /* BaoXiu.storyboard */,
+				1807D75B212B985F005BBBB3 /* ShenGou.storyboard */,
+			);
+			path = "事项";
 			sourceTree = "<group>";
 		};
 		1808CE952122CDD300CFE98E /* DLSlideView */ = {
@@ -543,6 +841,39 @@
 				1808CEA32122CDD300CFE98E /* DLSlideTabbarProtocol.h */,
 			);
 			path = DLTabbarView;
+			sourceTree = "<group>";
+		};
+		18093F60212801C000571700 /* WYPickerViews */ = {
+			isa = PBXGroup;
+			children = (
+				18093F61212801C000571700 /* CityData.plist */,
+				18093F62212801C000571700 /* NicknameViewController.h */,
+				18093F63212801C000571700 /* NicknameViewController.m */,
+				18093F64212801C000571700 /* SignatureViewController.h */,
+				18093F65212801C000571700 /* SignatureViewController.m */,
+				18093F66212801C000571700 /* WYBirthdayPickerView.h */,
+				18093F67212801C000571700 /* WYBirthdayPickerView.m */,
+				1807D6EA21299547005BBBB3 /* WYDateTimePickerView.h */,
+				1807D6E921299547005BBBB3 /* WYDateTimePickerView.m */,
+				18093F68212801C000571700 /* WYCityPickerView.h */,
+				18093F69212801C000571700 /* WYCityPickerView.m */,
+				18093F6A212801C000571700 /* WYGenderPickerView.h */,
+				18093F6B212801C000571700 /* WYGenderPickerView.m */,
+				18093F6C212801C000571700 /* WYHeightPickerView.h */,
+				18093F6D212801C000571700 /* WYHeightPickerView.m */,
+				18093F6E212801C000571700 /* WYLongTextInputView.h */,
+				18093F6F212801C000571700 /* WYLongTextInputView.m */,
+				18093F70212801C000571700 /* 返回@2x.png */,
+				18093F71212801C000571700 /* 返回@3x.png */,
+			);
+			path = WYPickerViews;
+			sourceTree = "<group>";
+		};
+		1810335C212BF57F0009147E /* 事项 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "事项";
 			sourceTree = "<group>";
 		};
 		A153654F4978E55665FCC516 /* Pods */ = {
@@ -622,13 +953,31 @@
 			buildActionMask = 2147483647;
 			files = (
 				1806FE8B21217E9300F3DEFA /* Mine.storyboard in Resources */,
+				1807D752212B97FE005BBBB3 /* LingYong.storyboard in Resources */,
+				1807D734212A9E0B005BBBB3 /* unicode_to_hanyu_pinyin.txt in Resources */,
 				1806FE9121217F5300F3DEFA /* Work.storyboard in Resources */,
+				1807D75C212B985F005BBBB3 /* ShenGou.storyboard in Resources */,
+				1807D754212B981E005BBBB3 /* BaoXiu.storyboard in Resources */,
 				1806FE862121683000F3DEFA /* login.storyboard in Resources */,
+				1807D736212AB9C9005BBBB3 /* FindPassword2View.storyboard in Resources */,
+				1807D74D212B97CA005BBBB3 /* TiaoBan.storyboard in Resources */,
+				1807D6E821294C22005BBBB3 /* CaiLanTableViewCell.xib in Resources */,
 				1806FE4A2121545E00F3DEFA /* LaunchScreen.storyboard in Resources */,
 				1806FE472121545E00F3DEFA /* Assets.xcassets in Resources */,
+				1807D6C9212917EB005BBBB3 /* DingCan.storyboard in Resources */,
+				18093F7B212801C100571700 /* 返回@3x.png in Resources */,
+				1807D740212AF08B005BBBB3 /* QingJia.storyboard in Resources */,
 				1806FE8F21217F2F00F3DEFA /* MailList.storyboard in Resources */,
+				1807D745212B95CB005BBBB3 /* GongChai.storyboard in Resources */,
+				1807D6CD2129182E005BBBB3 /* DingDan.storyboard in Resources */,
 				1806FE8D21217EC900F3DEFA /* Message.storyboard in Resources */,
 				1806FE452121545C00F3DEFA /* Main.storyboard in Resources */,
+				1807D6ED212A4BCB005BBBB3 /* ShenPi.storyboard in Resources */,
+				18093F7A212801C100571700 /* 返回@2x.png in Resources */,
+				1807D6CB2129180A005BBBB3 /* CaiLan.storyboard in Resources */,
+				1807D71F212A8F4E005BBBB3 /* ContractTableViewCell.xib in Resources */,
+				18093F72212801C000571700 /* CityData.plist in Resources */,
+				1807D6D321292830005BBBB3 /* DingCanTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -645,9 +994,11 @@
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/BEMCheckBox/BEMCheckBox.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
+				"${BUILT_PRODUCTS_DIR}/JXTAlertManager/JXTAlertManager.framework",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework",
 				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/YTKNetwork/YTKNetwork.framework",
 				"${BUILT_PRODUCTS_DIR}/YYCache/YYCache.framework",
 			);
@@ -656,9 +1007,11 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BEMCheckBox.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JXTAlertManager.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJExtension.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YTKNetwork.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYCache.framework",
 			);
@@ -692,38 +1045,77 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1807D748212B9619005BBBB3 /* ShiXiangViewController.m in Sources */,
 				18093F442126620000571700 /* LoginResultBean.m in Sources */,
+				18093F4A2126A67900571700 /* UserInfoResultBean.m in Sources */,
 				1806FE842121682000F3DEFA /* LoginViewController.m in Sources */,
 				1808CEAD2122CDD300CFE98E /* DLTabedSlideView.m in Sources */,
+				18093F73212801C000571700 /* NicknameViewController.m in Sources */,
+				1807D71E212A8F4E005BBBB3 /* ContractTableViewCell.m in Sources */,
+				1807D730212A9E0B005BBBB3 /* HanyuPinyinOutputFormat.m in Sources */,
 				1806FE422121545C00F3DEFA /* ViewController.m in Sources */,
 				1806FE9D2121AB1700F3DEFA /* MineViewController.m in Sources */,
+				18093F77212801C000571700 /* WYGenderPickerView.m in Sources */,
+				18093F76212801C000571700 /* WYCityPickerView.m in Sources */,
+				1807D75A212B984F005BBBB3 /* ShenGouViewController.m in Sources */,
+				1807D757212B982E005BBBB3 /* BaoXiuViewController.m in Sources */,
+				1807D75F212B9998005BBBB3 /* WalletBean.m in Sources */,
 				1808CEAB2122CDD300CFE98E /* DLFixedTabbarView.m in Sources */,
 				18093F3B21265FB200571700 /* AFNetWorkTool.m in Sources */,
+				1807D731212A9E0B005BBBB3 /* NSString+PinYin4Cocoa.m in Sources */,
 				1806FEA02121AB2800F3DEFA /* WorkViewController.m in Sources */,
 				1806FE4D2121545E00F3DEFA /* main.m in Sources */,
 				18093F3821265EC500571700 /* Extern.m in Sources */,
 				1808CEC02123D27C00CFE98E /* ShenPiViewController.m in Sources */,
+				18093F75212801C000571700 /* WYBirthdayPickerView.m in Sources */,
 				1808CEA92122CDD300CFE98E /* DLCustomSlideView.m in Sources */,
 				1806FE972121AA3400F3DEFA /* BasicPanViewController.m in Sources */,
+				18093F79212801C100571700 /* WYLongTextInputView.m in Sources */,
 				1806FE77212157F900F3DEFA /* ZJHKTabBarViewController.m in Sources */,
+				1807D6BB212916A7005BBBB3 /* OrderTabBarController.m in Sources */,
 				1806FE3F2121545C00F3DEFA /* AppDelegate.m in Sources */,
 				18093F35212597DE00571700 /* FindPassword1ViewController.m in Sources */,
+				18093F812128407200571700 /* HWOptionButton.m in Sources */,
 				1806FE9A2121AAD600F3DEFA /* MessageViewController.m in Sources */,
+				18093F5F2127E1EB00571700 /* JumpVCManager.m in Sources */,
+				18093F4D2126ADC600571700 /* PersonalInfoViewController.m in Sources */,
+				1807D71A212A84A5005BBBB3 /* ContractListBean.m in Sources */,
 				1806FE942121A5D000F3DEFA /* MailListViewController.m in Sources */,
 				18093F3E2126603D00571700 /* BaseBean.m in Sources */,
 				1806FE78212157F900F3DEFA /* ZJHKTabBarbutton.m in Sources */,
+				1807D717212A694F005BBBB3 /* ContactBean.m in Sources */,
 				1808CEB72122D0EA00CFE98E /* LatestGongGaoViewController.m in Sources */,
+				1807D750212B97F3005BBBB3 /* LingYongViewController.m in Sources */,
+				18093F5C2127B2E200571700 /* ValidPassword.m in Sources */,
+				1807D6EB21299548005BBBB3 /* WYDateTimePickerView.m in Sources */,
+				18093F78212801C100571700 /* WYHeightPickerView.m in Sources */,
+				18093F502126E84C00571700 /* UpdateInfoViewController.m in Sources */,
 				1808CEA82122CDD300CFE98E /* DLLRUCache.m in Sources */,
 				1808CEB42122D0D900CFE98E /* HangYeNewsViewController.m in Sources */,
+				1807D74B212B97BA005BBBB3 /* TiaoBanViewController.m in Sources */,
+				1807D6C121291755005BBBB3 /* CaiLanViewController.m in Sources */,
 				1808CEAA2122CDD300CFE98E /* DLSlideView.m in Sources */,
+				18093F592127AF3800571700 /* SettingViewController.m in Sources */,
+				1807D733212A9E0B005BBBB3 /* PinyinHelper.m in Sources */,
 				1808CEAC2122CDD300CFE98E /* DLScrollTabbarView.m in Sources */,
 				1808CEB12122CED300CFE98E /* TongZhiGongGaoViewController.m in Sources */,
 				1808CEC3212416E300CFE98E /* MyWalletViewController.m in Sources */,
 				1808CEBA2122D0F900CFE98E /* MeetingTongZhiViewController.m in Sources */,
+				1807D73D212AF075005BBBB3 /* QingJiaViewController.m in Sources */,
+				1807D6E721294C22005BBBB3 /* CaiLanTableViewCell.m in Sources */,
+				1807D6BE21291725005BBBB3 /* DingCanViewController.m in Sources */,
+				1807D732212A9E0B005BBBB3 /* PinyinFormatter.m in Sources */,
 				1806FE892121710500F3DEFA /* CALayer+LayerColor.m in Sources */,
 				18093F47212666CE00571700 /* MBProgressHUD+MBProgressHUD.m in Sources */,
+				1807D6D221292830005BBBB3 /* DingCanTableViewCell.m in Sources */,
+				1807D72F212A9E0B005BBBB3 /* ChineseToPinyinResource.m in Sources */,
+				18093F74212801C000571700 /* SignatureViewController.m in Sources */,
 				1806FE7C2121634200F3DEFA /* UIColor+ColorChange.m in Sources */,
+				1807D743212B95B7005BBBB3 /* GongChaiViewController.m in Sources */,
 				1806FE76212157F900F3DEFA /* ZJHKNavigationViewController.m in Sources */,
+				1807D6C42129175E005BBBB3 /* DingDanViewController.m in Sources */,
+				1807D739212ABA04005BBBB3 /* FindPassword2ViewController.m in Sources */,
+				18093F562127A70F00571700 /* UpdatePasswordViewController.m in Sources */,
 				1808CEAE2122CDD300CFE98E /* DLUtility.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -881,6 +1273,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = hk.wyoa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
 			};
 			name = Debug;
 		};
@@ -905,6 +1298,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = hk.wyoa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
 			};
 			name = Release;
 		};

@@ -9,5 +9,8 @@
 #import "BasicPanViewController.h"
 
 @interface MineViewController : BasicPanViewController
+@property (weak, nonatomic) IBOutlet UIImageView *headView;
+@property (weak, nonatomic) IBOutlet UILabel *realNameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *userJobLabel;
 
 @end

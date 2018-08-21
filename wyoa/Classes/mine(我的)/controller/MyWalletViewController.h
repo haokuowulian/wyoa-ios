@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface MyWalletViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UILabel *moneyLabel;
 
 @end

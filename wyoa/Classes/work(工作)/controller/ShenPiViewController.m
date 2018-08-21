@@ -19,8 +19,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     //取消返回文字
-    [[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(0, -60)
-                                                         forBarMetrics:UIBarMetricsDefault];
+//    [[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(0, -60)
+//                                                         forBarMetrics:UIBarMetricsDefault];
     [self setSegment];
     [self setTabedSlide];
     

@@ -16,9 +16,13 @@ PODS:
     - AFNetworking/NSURLSession
   - BEMCheckBox (1.4.1)
   - IQKeyboardManager (6.1.0)
+  - JXTAlertManager (1.0.2)
   - MBProgressHUD (1.1.0)
   - MJExtension (3.0.15.1)
   - MJRefresh (3.1.15.3)
+  - SDWebImage (4.4.1):
+    - SDWebImage/Core (= 4.4.1)
+  - SDWebImage/Core (4.4.1)
   - YTKNetwork (2.0.4):
     - AFNetworking (~> 3.0)
   - YYCache (1.0.4)
@@ -26,9 +30,11 @@ PODS:
 DEPENDENCIES:
   - BEMCheckBox
   - IQKeyboardManager
+  - JXTAlertManager
   - MBProgressHUD
   - MJExtension
   - MJRefresh
+  - SDWebImage
   - YTKNetwork
   - YYCache
 
@@ -37,9 +43,11 @@ SPEC REPOS:
     - AFNetworking
     - BEMCheckBox
     - IQKeyboardManager
+    - JXTAlertManager
     - MBProgressHUD
     - MJExtension
     - MJRefresh
+    - SDWebImage
     - YTKNetwork
     - YYCache
 
@@ -47,12 +55,14 @@ SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   BEMCheckBox: 5ba6e37ade3d3657b36caecc35c8b75c6c2b1a4e
   IQKeyboardManager: f520b0f411eaefa08058532cb50c48bfeffa8535
+  JXTAlertManager: 71a89e90ac1a6d72862fbe884eab513cb243a344
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
   MJExtension: 19bc33ce2eee2d319760f5622562cf581a6ff756
   MJRefresh: b48380ae2b927b46c4ef000de9adb8dc748e1df7
+  SDWebImage: 47e9b5b925cbce75946c23f0c42dd19464189af4
   YTKNetwork: df8a7a5597bda1664a4efaa7ef871a818a887fe0
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
 
-PODFILE CHECKSUM: cf1227fe8dce1daf870488562268b317a6f2e873
+PODFILE CHECKSUM: a60f98f8f54e5772b65f697d82bc687c5f3272d3
 
 COCOAPODS: 1.5.3

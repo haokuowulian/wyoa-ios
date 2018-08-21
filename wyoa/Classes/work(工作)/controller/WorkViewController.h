@@ -15,6 +15,12 @@
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *kaoqinViewMarginLeft;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *guanliViewMarginLeft;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *shenqingViewMarginLeft;
+@property (weak, nonatomic) IBOutlet UIButton *daiwoshenpiNumButton;
+- (IBAction)daiwoshenpiClick:(id)sender;
+- (IBAction)shenpiClick:(id)sender;
 
+- (IBAction)orderClick:(id)sender;
+
+- (IBAction)qingjiaClick:(id)sender;
 
 @end

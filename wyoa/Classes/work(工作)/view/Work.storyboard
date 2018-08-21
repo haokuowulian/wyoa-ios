@@ -42,7 +42,7 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OJQ-Mf-eIg">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="700"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="550"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="under" translatesAutoresizingMaskIntoConstraints="NO" id="FCs-Gm-Fdr">
                                                 <rect key="frame" x="16" y="12" width="342" height="137"/>
@@ -73,6 +73,9 @@
                                                                 <state key="normal" title="0">
                                                                     <color key="titleColor" red="0.098039215690000001" green="0.1215686275" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
                                                                 </state>
+                                                                <connections>
+                                                                    <action selector="daiwoshenpiClick:" destination="eWb-7c-uSi" eventType="touchUpInside" id="112-80-FbE"/>
+                                                                </connections>
                                                             </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="待我审批" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bqr-Ju-x0d">
                                                                 <rect key="frame" x="0.0" y="57" width="50" height="15"/>
@@ -137,6 +140,9 @@
                                                                 <state key="normal" image="qingjia">
                                                                     <color key="titleColor" red="0.098039215690000001" green="0.1215686275" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
                                                                 </state>
+                                                                <connections>
+                                                                    <action selector="qingjiaClick:" destination="eWb-7c-uSi" eventType="touchUpInside" id="M5S-aq-FQZ"/>
+                                                                </connections>
                                                             </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="　请假　" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cNq-7C-agd" userLabel="请假">
                                                                 <rect key="frame" x="0.0" y="57" width="50" height="15"/>
@@ -306,7 +312,7 @@
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hoj-8y-f4q">
                                                                 <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
                                                                 <connections>
-                                                                    <segue destination="cHk-IJ-1vI" kind="push" id="rXt-fn-5cU"/>
+                                                                    <action selector="shenpiClick:" destination="eWb-7c-uSi" eventType="touchUpInside" id="DIt-Ar-wFo"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
@@ -395,6 +401,9 @@
                                                             </label>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L6a-M2-lB1">
                                                                 <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
+                                                                <connections>
+                                                                    <action selector="orderClick:" destination="eWb-7c-uSi" eventType="touchUpInside" id="ugT-1t-P3k"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -522,7 +531,7 @@
                                             <constraint firstAttribute="trailing" secondItem="0x5-eN-Dve" secondAttribute="trailing" constant="23" id="cjc-4p-DbT"/>
                                             <constraint firstAttribute="trailing" secondItem="FCs-Gm-Fdr" secondAttribute="trailing" constant="16" id="eYg-ZY-wVn"/>
                                             <constraint firstItem="0x5-eN-Dve" firstAttribute="top" secondItem="hgZ-1y-ko5" secondAttribute="bottom" constant="30" id="fWj-iG-g8f"/>
-                                            <constraint firstAttribute="height" constant="700" id="kF9-dZ-iMY"/>
+                                            <constraint firstAttribute="height" constant="550" id="kF9-dZ-iMY"/>
                                             <constraint firstItem="FCs-Gm-Fdr" firstAttribute="leading" secondItem="OJQ-Mf-eIg" secondAttribute="leading" constant="16" id="uqU-MC-ZrB"/>
                                             <constraint firstAttribute="trailing" secondItem="747-NY-qAO" secondAttribute="trailing" constant="23" id="vip-SW-Fnx"/>
                                         </constraints>
@@ -548,6 +557,7 @@
                     <navigationItem key="navigationItem" title="闻堰OA" id="Xbz-CX-q2P"/>
                     <connections>
                         <outlet property="chuqinViewMarginLeft" destination="A1o-A4-yfl" id="mPs-xD-PLS"/>
+                        <outlet property="daiwoshenpiNumButton" destination="gHC-0l-43L" id="UK0-EG-ijc"/>
                         <outlet property="guanliViewMarginLeft" destination="Edw-JD-A4Z" id="20D-UM-w3S"/>
                         <outlet property="kaoqinViewMarginLeft" destination="qGW-48-Zwo" id="2p4-RC-aR4"/>
                         <outlet property="qingjiaViewMarginLeft" destination="3dh-z3-7ke" id="HTg-Um-J58"/>
@@ -559,44 +569,48 @@
             </objects>
             <point key="canvasLocation" x="-8.8000000000000007" y="109.29535232383809"/>
         </scene>
-        <!--Shen Pi View Controller-->
-        <scene sceneID="2et-58-Q1R">
+        <!--Order View Controller-->
+        <scene sceneID="EAl-st-GLO">
             <objects>
-                <viewController hidesBottomBarWhenPushed="YES" id="cHk-IJ-1vI" customClass="ShenPiViewController" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="wvH-HW-hDg" customClass="OrderViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="nRy-U7-MjM"/>
-                        <viewControllerLayoutGuide type="bottom" id="zye-jb-Lsi"/>
+                        <viewControllerLayoutGuide type="top" id="vFk-VU-SLR"/>
+                        <viewControllerLayoutGuide type="bottom" id="TFZ-gh-k55"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="7fI-8p-rxs">
+                    <view key="view" contentMode="scaleToFill" id="tyn-HM-Yds">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9oH-IH-Prb" customClass="DLTabedSlideView">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="JcW-BO-Vrd">
+                                <rect key="frame" x="26" y="33" width="323" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="kiL-zQ-20U"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="早餐"/>
+                                    <segment title="午餐"/>
+                                    <segment title="晚餐"/>
+                                </segments>
+                                <color key="tintColor" red="0.23921568627450979" green="0.51372549019607838" blue="0.91764705882352937" alpha="1" colorSpace="calibratedRGB"/>
+                            </segmentedControl>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="zye-jb-Lsi" firstAttribute="top" secondItem="9oH-IH-Prb" secondAttribute="bottom" id="Nah-we-lV3"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="9oH-IH-Prb" secondAttribute="trailing" constant="-16" id="Sok-ew-PSu"/>
-                            <constraint firstItem="9oH-IH-Prb" firstAttribute="leading" secondItem="7fI-8p-rxs" secondAttribute="leadingMargin" constant="-16" id="gLQ-Gd-ebq"/>
-                            <constraint firstItem="9oH-IH-Prb" firstAttribute="top" secondItem="nRy-U7-MjM" secondAttribute="bottom" id="zpD-a7-Uz7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="JcW-BO-Vrd" secondAttribute="trailing" constant="10" id="5Ov-jC-INg"/>
+                            <constraint firstItem="JcW-BO-Vrd" firstAttribute="top" secondItem="vFk-VU-SLR" secondAttribute="bottom" constant="13" id="drV-1D-HVU"/>
+                            <constraint firstItem="JcW-BO-Vrd" firstAttribute="leading" secondItem="tyn-HM-Yds" secondAttribute="leadingMargin" constant="10" id="tEg-sh-dnd"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="aQ9-4e-aH0"/>
-                    <connections>
-                        <outlet property="tabedSlideView" destination="9oH-IH-Prb" id="Ana-X5-m1c"/>
-                    </connections>
+                    <navigationItem key="navigationItem" id="tJ9-mV-TVY"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tLI-Ft-v7c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rQh-cF-C7X" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="741.60000000000002" y="25.637181409295355"/>
+            <point key="canvasLocation" x="1241" y="914"/>
         </scene>
         <!--事项申请-->
         <scene sceneID="kUj-wt-UT0">
             <objects>
-                <viewController hidesBottomBarWhenPushed="YES" id="eBM-N5-hk1" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="eBM-N5-hk1" customClass="ShiXiangViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8bx-Ui-KU6"/>
                         <viewControllerLayoutGuide type="bottom" id="yXB-bs-h2e"/>
@@ -643,12 +657,21 @@
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3gF-UF-2Rv">
                                         <rect key="frame" x="55" y="51.5" width="50" height="50"/>
+                                        <connections>
+                                            <action selector="qingjiaClick:" destination="eBM-N5-hk1" eventType="touchUpInside" id="bQ7-8e-ygG"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a9M-2I-vXe">
                                         <rect key="frame" x="162.5" y="51.5" width="50" height="50"/>
+                                        <connections>
+                                            <action selector="gongchaiClick:" destination="eBM-N5-hk1" eventType="touchUpInside" id="e86-EH-OWi"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fpx-Fe-Zpv">
                                         <rect key="frame" x="270" y="51.5" width="50" height="50"/>
+                                        <connections>
+                                            <action selector="tiaobanClick:" destination="eBM-N5-hk1" eventType="touchUpInside" id="Nzq-Or-eNQ"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -720,12 +743,21 @@
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fdr-5I-Qk1">
                                         <rect key="frame" x="55" y="51.5" width="50" height="50"/>
+                                        <connections>
+                                            <action selector="lingyongClick:" destination="eBM-N5-hk1" eventType="touchUpInside" id="J3x-Pw-B3d"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w1G-El-Ijh">
                                         <rect key="frame" x="162.5" y="51.5" width="50" height="50"/>
+                                        <connections>
+                                            <action selector="baoxiuClick:" destination="eBM-N5-hk1" eventType="touchUpInside" id="v7X-0k-7DG"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZVq-O4-8Me">
                                         <rect key="frame" x="270" y="51.5" width="50" height="50"/>
+                                        <connections>
+                                            <action selector="shengouClick:" destination="eBM-N5-hk1" eventType="touchUpInside" id="FaH-P3-Xof"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -774,7 +806,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tlz-o6-7gV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="759" y="675"/>
+            <point key="canvasLocation" x="689" y="216"/>
         </scene>
         <!--通知公告-->
         <scene sceneID="kxv-Qg-ZwL">
@@ -808,7 +840,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nt2-qJ-adf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="690" y="-747"/>
+            <point key="canvasLocation" x="689" y="-1150"/>
         </scene>
     </scenes>
     <resources>

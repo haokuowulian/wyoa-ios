@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Navigation Controller-->
+        <!--Navigation View Controller-->
         <scene sceneID="L7P-Qt-tTh">
             <objects>
-                <navigationController id="KuM-nE-JeT" sceneMemberID="viewController">
+                <navigationController id="KuM-nE-JeT" customClass="ZJHKNavigationViewController" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="rbb-dV-ehx">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -25,7 +25,7 @@
             </objects>
             <point key="canvasLocation" x="-815" y="215"/>
         </scene>
-        <!--Mail List View Controller-->
+        <!--通讯录-->
         <scene sceneID="iFu-fz-qF0">
             <objects>
                 <viewController id="nin-RQ-nRn" customClass="MailListViewController" sceneMemberID="viewController">
@@ -36,13 +36,81 @@
                     <view key="view" contentMode="scaleToFill" id="uYV-0v-zEs">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s1q-VJ-TJk">
+                                <rect key="frame" x="11" y="81" width="353" height="40"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="xiaoxi_sousuo" translatesAutoresizingMaskIntoConstraints="NO" id="q8t-o3-EF4">
+                                        <rect key="frame" x="17" y="13" width="14" height="14"/>
+                                    </imageView>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="搜索" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Z1h-C0-EAf">
+                                        <rect key="frame" x="39" y="10.5" width="314" height="19"/>
+                                        <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="q8t-o3-EF4" firstAttribute="centerY" secondItem="s1q-VJ-TJk" secondAttribute="centerY" id="KKX-me-kwK"/>
+                                    <constraint firstAttribute="trailing" secondItem="Z1h-C0-EAf" secondAttribute="trailing" id="TRo-XJ-Twx"/>
+                                    <constraint firstItem="q8t-o3-EF4" firstAttribute="leading" secondItem="s1q-VJ-TJk" secondAttribute="leading" constant="17" id="cBa-u6-Gad"/>
+                                    <constraint firstAttribute="height" constant="40" id="ct9-sj-kgY"/>
+                                    <constraint firstItem="Z1h-C0-EAf" firstAttribute="centerY" secondItem="s1q-VJ-TJk" secondAttribute="centerY" id="kdu-kt-oFC"/>
+                                    <constraint firstItem="Z1h-C0-EAf" firstAttribute="leading" secondItem="q8t-o3-EF4" secondAttribute="trailing" constant="8" id="tPf-cU-LNe"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="OjW-cX-X1b">
+                                <rect key="frame" x="0.0" y="138" width="375" height="529"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="OjW-cX-X1b" firstAttribute="top" secondItem="s1q-VJ-TJk" secondAttribute="bottom" constant="17" id="5qO-xw-fQ1"/>
+                            <constraint firstItem="OjW-cX-X1b" firstAttribute="leading" secondItem="uYV-0v-zEs" secondAttribute="leading" id="N4n-jh-FRc"/>
+                            <constraint firstAttribute="trailing" secondItem="s1q-VJ-TJk" secondAttribute="trailing" constant="11" id="SJe-8S-FOd"/>
+                            <constraint firstItem="jpP-2l-REh" firstAttribute="top" secondItem="OjW-cX-X1b" secondAttribute="bottom" id="Xbj-Vu-J1K"/>
+                            <constraint firstItem="s1q-VJ-TJk" firstAttribute="leading" secondItem="uYV-0v-zEs" secondAttribute="leading" constant="11" id="e4L-0I-YOd"/>
+                            <constraint firstItem="s1q-VJ-TJk" firstAttribute="top" secondItem="Fdq-Kx-B4o" secondAttribute="bottom" constant="17" id="fYg-5d-PrG"/>
+                            <constraint firstAttribute="trailing" secondItem="OjW-cX-X1b" secondAttribute="trailing" id="sRi-FW-FcE"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="PPW-rS-od7"/>
+                    <navigationItem key="navigationItem" title="通讯录" id="PPW-rS-od7"/>
+                    <connections>
+                        <outlet property="searchDisplayController" destination="ysY-CC-EF3" id="0V5-dy-SdK"/>
+                        <outlet property="searchText" destination="Z1h-C0-EAf" id="vLs-WI-RxJ"/>
+                        <outlet property="tableView" destination="OjW-cX-X1b" id="Ye1-Ue-fSy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eyF-vw-b0e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="71T-xF-sv6">
+                    <connections>
+                        <outlet property="delegate" destination="nin-RQ-nRn" id="vh3-fN-ttP"/>
+                        <outlet property="searchContentsController" destination="nin-RQ-nRn" id="rik-kY-Kyn"/>
+                        <outlet property="searchResultsDataSource" destination="nin-RQ-nRn" id="Rzx-on-GKi"/>
+                        <outlet property="searchResultsDelegate" destination="nin-RQ-nRn" id="Vex-pB-hgu"/>
+                    </connections>
+                </searchDisplayController>
+                <searchDisplayController id="ysY-CC-EF3">
+                    <connections>
+                        <outlet property="delegate" destination="nin-RQ-nRn" id="L8O-dp-aoF"/>
+                        <outlet property="searchContentsController" destination="nin-RQ-nRn" id="ctE-gs-Rsa"/>
+                        <outlet property="searchResultsDataSource" destination="nin-RQ-nRn" id="nUR-xm-QOj"/>
+                        <outlet property="searchResultsDelegate" destination="nin-RQ-nRn" id="g19-yg-IUo"/>
+                    </connections>
+                </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="-74" y="210"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="xiaoxi_sousuo" width="14" height="14"/>
+    </resources>
 </document>

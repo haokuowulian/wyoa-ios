@@ -97,6 +97,7 @@
  *  将模型转成字典
  *  @return 字典
  */
+- (NSMutableDictionary *)mj_keyValuesWithAll;
 - (NSMutableDictionary *)mj_keyValues;
 - (NSMutableDictionary *)mj_keyValuesWithKeys:(NSArray *)keys;
 - (NSMutableDictionary *)mj_keyValuesWithIgnoredKeys:(NSArray *)ignoredKeys;

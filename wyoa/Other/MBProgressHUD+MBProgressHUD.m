@@ -39,7 +39,7 @@
     hud.customView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:[NSString stringWithFormat:@"MBProgressHUD.bundle/%@", icon]]];
     // 再设置模式
     hud.mode = MBProgressHUDModeCustomView;
-    
+     hud.dimBackground = NO;
     // 隐藏时候从父控件中移除
     hud.removeFromSuperViewOnHide = YES;
     

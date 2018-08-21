@@ -8,7 +8,9 @@
 
 #import "MyWalletViewController.h"
 #import "MineViewController.h"
-
+#import "WalletBean.h"
+#import <MJExtension/MJExtension.h>
+#import "MBProgressHUD+MBProgressHUD.h"
 @interface MyWalletViewController ()
 
 @end
@@ -17,7 +19,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    [self getMyWallet];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -35,6 +37,24 @@
 
 }
 
+#pragma mark 获取我的钱包余额
+-(void)getMyWallet{
+    NSUserDefaults *userDefault=[NSUserDefaults standardUserDefaults];
+    NSString *userId=[userDefault objectForKey:@"userId"];
+    NSString *apikey=[userDefault objectForKey:@"apikey"];
+     NSString *url=[NSString stringWithFormat:@"%@?apikey=%@",@"oaCustom/listMywallet.do",apikey];
+    NSDictionary *params=@{@"userId":userId};
+    [WalletBean BeanByPostWithUrl:url Params:params Success:^(NSDictionary *dict) {
+         WalletBean *walletBean=[WalletBean mj_objectWithKeyValues:dict];
+        if(walletBean.success==1){
+            [self.moneyLabel setText:walletBean.balance];
+        }else{
+            [MBProgressHUD showError:walletBean.message];
+        }
+    } Error:^(NSError *err) {
+        [MBProgressHUD showError:@"网络连接失败"];
+    }];
+}
 
 
 

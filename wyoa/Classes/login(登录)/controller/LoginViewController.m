@@ -45,13 +45,17 @@
 }
 - (IBAction)loginClick:(id)sender {
     if(![self isEmpty]){
+//        ZJHKTabBarViewController *tabbarController=[[ZJHKTabBarViewController alloc]init];
+//        [self presentViewController:tabbarController animated:YES completion:^{
+//            
+//        }];
         [self login];
     }else{
          [MBProgressHUD showError:@"用户名或密码不能为空" toView:self.navigationController.view];
     }
 }
 
-#pragma 判断用户名密码是否填写完整
+#pragma mark 判断用户名密码是否填写完整
 -(Boolean)isEmpty{
     if(_userNameText.text.length>0&&_passwordText.text.length>0){
         return NO;
@@ -60,13 +64,13 @@
     }
 }
 
-#pragma 请求登录
+#pragma mark 请求登录
 -(void)login{
     [MBProgressHUD showMessage:@"正在登录中..."];
     NSDictionary *params=@{@"userName":_userNameText.text,
                            @"password":_passwordText.text
                            };
-    [LoginResultBean BeanByPostWithUrl:@"loginByPassword.do" Params:params Success:^(NSDictionary *dict) {
+    [LoginResultBean BeanByPostWithUrl:@"oaCustom/loginByPassword.do" Params:params Success:^(NSDictionary *dict) {
         [MBProgressHUD hideHUD];
         LoginResultBean *resultBean=[LoginResultBean mj_objectWithKeyValues:dict];
         if(resultBean.success==1){
@@ -74,6 +78,7 @@
             [userDefault setObject:resultBean.userId forKey:@"userId"];
             [userDefault setObject:self.userNameText.text forKey:@"loginName"];
             [userDefault setObject:self.passwordText.text forKey:@"password"];
+            [userDefault setObject:resultBean.apikey forKey:@"apikey"];
             [userDefault synchronize];
             
             ZJHKTabBarViewController *tabbarController=[[ZJHKTabBarViewController alloc]init];

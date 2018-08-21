@@ -9,7 +9,6 @@
 #import "Extern.h"
 
 @implementation Extern
-NSString * const baseUrl = @"http://192.168.1.92:9080/oai/oaCustom/";//本地
-//NSString * const imgBaseUrl = @"http://183.129.131.154:9082/oai/";//本地图片
-//NSString * const APIKEY=@"06b368781c21953fe782f2dc1c80e337";
+NSString * const baseUrl = @"http://18t69t8992.51mypc.cn:9079/oai/oaCustom/";//本地
+
 @end
