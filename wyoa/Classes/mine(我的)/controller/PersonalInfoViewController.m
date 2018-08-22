@@ -12,6 +12,8 @@
 #import  "UIImageView+WebCache.h"
 #import "MBProgressHUD+MBProgressHUD.h"
 #import "UpdateInfoViewController.h"
+#import <JXTAlertManager/JXTAlertManagerHeader.h>
+#import "Extern.h"
 @interface PersonalInfoViewController ()
 
 @end
@@ -21,7 +23,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
   
-    [self setUserInfo];
+    [self getUserInfo];
     
     //获取通知中心单例对象
     NSNotificationCenter * center = [NSNotificationCenter defaultCenter];
@@ -63,7 +65,7 @@
     NSString *userId=[userDefault objectForKey:@"userId"];
     NSString *apikey=[userDefault objectForKey:@"apikey"];
     NSDictionary *params=@{@"userId":userId};
-    NSString *url=[NSString stringWithFormat:@"%@?apikey=%@",@"oaCustom/getUserInfo.do",apikey];
+    NSString *url=[NSString stringWithFormat:@"%@%@?apikey=%@",baseUrl,@"oaCustom/getUserInfo.do",apikey];
     [UserInfoResultBean BeanByPostWithUrl:url Params:params Success:^(NSDictionary *dict) {
         [MBProgressHUD hideHUDForView:self.navigationController.view];
         UserInfoResultBean *resultBean=[UserInfoResultBean mj_objectWithKeyValues:dict];
@@ -108,35 +110,21 @@
 }
 #pragma mark 更换头像
 - (IBAction)headViewClick:(id)sender {
-    UIButton *button; // the button you want to show the popup sheet from
-    
-    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:nil message:nil preferredStyle:UIAlertControllerStyleActionSheet];
-    
-    UIAlertAction *otherAction = [UIAlertAction actionWithTitle:@"选择本地图片"
-                                                          style:UIAlertActionStyleDefault
-                                                        handler:^(UIAlertAction *action) {
-                                                            [self readImageFromAlbum];
-                                                        }];
-    UIAlertAction *otherAction2 = [UIAlertAction actionWithTitle:@"拍照"
-                                                           style:UIAlertActionStyleDefault
-                                                         handler:^(UIAlertAction *action) {
-                                                             [self readImageFromCamera];
-                                                         }];
-    UIAlertAction *destroyAction = [UIAlertAction actionWithTitle:@"取消"
-                                                            style:UIAlertActionStyleDestructive
-                                                          handler:^(UIAlertAction *action) {
-                                                              // do destructive stuff here
-                                                          }];
-    [alertController addAction:otherAction];
-    [alertController addAction:otherAction2];
-    [alertController addAction:destroyAction];
-    [alertController setModalPresentationStyle:UIModalPresentationPopover];
-    
-    UIPopoverPresentationController *popPresenter = [alertController
-                                                     popoverPresentationController];
-    popPresenter.sourceView = button;
-    popPresenter.sourceRect = button.bounds;
-    [self presentViewController:alertController animated:YES completion:nil];
+    [self jxt_showActionSheetWithTitle:@"更换头像" message:nil appearanceProcess:^(JXTAlertController * _Nonnull alertMaker) {
+        alertMaker.
+        addActionCancelTitle(@"取消").
+        addActionDestructiveTitle(@"选择本地图片").
+        addActionDestructiveTitle(@"拍照");
+    } actionsBlock:^(NSInteger buttonIndex, UIAlertAction * _Nonnull action, JXTAlertController * _Nonnull alertSelf) {
+        if ([action.title isEqualToString:@"选择本地图片"]) {
+            [self readImageFromAlbum];
+        }
+        else if ([action.title isEqualToString:@"拍照"]) {
+           [self readImageFromCamera];
+        }
+        
+    }];
+   
 }
 
 
@@ -217,7 +205,7 @@
     NSData *data = UIImageJPEGRepresentation(imageHead, 1.0f);
     NSString *userId=[userDefault objectForKey:@"userId"];
     NSString *apikey=[userDefault objectForKey:@"apikey"];
-    NSString *url=[NSString stringWithFormat:@"%@?apikey=%@",@"oaCustom/updateUserHeadPhoto.do",apikey];
+    NSString *url=[NSString stringWithFormat:@"%@%@?apikey=%@",baseUrl,@"oaCustom/updateUserHeadPhoto.do",apikey];
     NSString *picBody = [data base64EncodedStringWithOptions:NSDataBase64Encoding64CharacterLineLength];
     NSString *picName=[NSString stringWithFormat:@"%@-%@2.png",[self getNowTimeTimestamp],userId];
     NSDictionary *params=@{@"userId":userId,

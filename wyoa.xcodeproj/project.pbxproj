@@ -105,6 +105,11 @@
 		18093F7A212801C100571700 /* 返回@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18093F70212801C000571700 /* 返回@2x.png */; };
 		18093F7B212801C100571700 /* 返回@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18093F71212801C000571700 /* 返回@3x.png */; };
 		18093F812128407200571700 /* HWOptionButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 18093F802128407200571700 /* HWOptionButton.m */; };
+		1810335F212C2CAA0009147E /* ContactDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1810335E212C2CAA0009147E /* ContactDetailViewController.m */; };
+		18103361212C2CBB0009147E /* ContactDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18103360212C2CBB0009147E /* ContactDetail.storyboard */; };
+		18103364212CEC840009147E /* QIngJiaShenPiRenBean.m in Sources */ = {isa = PBXBuildFile; fileRef = 18103363212CEC840009147E /* QIngJiaShenPiRenBean.m */; };
+		18103366212D09380009147E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18103365212D09380009147E /* UIKit.framework */; };
+		18103369212D2DC10009147E /* TimeUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 18103368212D2DC10009147E /* TimeUtil.m */; };
 		2F794B77EFB703128F329161 /* Pods_wyoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EDB6B42628C374C39BE22DE /* Pods_wyoa.framework */; };
 /* End PBXBuildFile section */
 
@@ -284,6 +289,14 @@
 		18093F71212801C000571700 /* 返回@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "返回@3x.png"; sourceTree = "<group>"; };
 		18093F7F2128407200571700 /* HWOptionButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HWOptionButton.h; sourceTree = "<group>"; };
 		18093F802128407200571700 /* HWOptionButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HWOptionButton.m; sourceTree = "<group>"; };
+		1810335D212C2CAA0009147E /* ContactDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContactDetailViewController.h; sourceTree = "<group>"; };
+		1810335E212C2CAA0009147E /* ContactDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactDetailViewController.m; sourceTree = "<group>"; };
+		18103360212C2CBB0009147E /* ContactDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ContactDetail.storyboard; sourceTree = "<group>"; };
+		18103362212CEC840009147E /* QIngJiaShenPiRenBean.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QIngJiaShenPiRenBean.h; sourceTree = "<group>"; };
+		18103363212CEC840009147E /* QIngJiaShenPiRenBean.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QIngJiaShenPiRenBean.m; sourceTree = "<group>"; };
+		18103365212D09380009147E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		18103367212D2DC10009147E /* TimeUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimeUtil.h; sourceTree = "<group>"; };
+		18103368212D2DC10009147E /* TimeUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimeUtil.m; sourceTree = "<group>"; };
 		3EDB6B42628C374C39BE22DE /* Pods_wyoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_wyoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6224B1D4B6C44081CE4444E8 /* Pods-wyoa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wyoa.release.xcconfig"; path = "Pods/Target Support Files/Pods-wyoa/Pods-wyoa.release.xcconfig"; sourceTree = "<group>"; };
 		97C6D19413C93921E227F2C9 /* Pods-wyoa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wyoa.debug.xcconfig"; path = "Pods/Target Support Files/Pods-wyoa/Pods-wyoa.debug.xcconfig"; sourceTree = "<group>"; };
@@ -294,6 +307,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18103366212D09380009147E /* UIKit.framework in Frameworks */,
 				2F794B77EFB703128F329161 /* Pods_wyoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -355,6 +369,8 @@
 				18093F5B2127B2E200571700 /* ValidPassword.m */,
 				18093F7F2128407200571700 /* HWOptionButton.h */,
 				18093F802128407200571700 /* HWOptionButton.m */,
+				18103367212D2DC10009147E /* TimeUtil.h */,
+				18103368212D2DC10009147E /* TimeUtil.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -388,6 +404,8 @@
 			children = (
 				1806FE922121A5D000F3DEFA /* MailListViewController.h */,
 				1806FE932121A5D000F3DEFA /* MailListViewController.m */,
+				1810335D212C2CAA0009147E /* ContactDetailViewController.h */,
+				1810335E212C2CAA0009147E /* ContactDetailViewController.m */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -417,6 +435,7 @@
 			isa = PBXGroup;
 			children = (
 				1806FE8E21217F2F00F3DEFA /* MailList.storyboard */,
+				18103360212C2CBB0009147E /* ContactDetail.storyboard */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -872,6 +891,8 @@
 		1810335C212BF57F0009147E /* 事项 */ = {
 			isa = PBXGroup;
 			children = (
+				18103362212CEC840009147E /* QIngJiaShenPiRenBean.h */,
+				18103363212CEC840009147E /* QIngJiaShenPiRenBean.m */,
 			);
 			path = "事项";
 			sourceTree = "<group>";
@@ -888,6 +909,7 @@
 		F8C7DED3F42AAA0FC489D4F2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				18103365212D09380009147E /* UIKit.framework */,
 				3EDB6B42628C374C39BE22DE /* Pods_wyoa.framework */,
 			);
 			name = Frameworks;
@@ -954,6 +976,7 @@
 			files = (
 				1806FE8B21217E9300F3DEFA /* Mine.storyboard in Resources */,
 				1807D752212B97FE005BBBB3 /* LingYong.storyboard in Resources */,
+				18103361212C2CBB0009147E /* ContactDetail.storyboard in Resources */,
 				1807D734212A9E0B005BBBB3 /* unicode_to_hanyu_pinyin.txt in Resources */,
 				1806FE9121217F5300F3DEFA /* Work.storyboard in Resources */,
 				1807D75C212B985F005BBBB3 /* ShenGou.storyboard in Resources */,
@@ -1065,6 +1088,7 @@
 				1807D731212A9E0B005BBBB3 /* NSString+PinYin4Cocoa.m in Sources */,
 				1806FEA02121AB2800F3DEFA /* WorkViewController.m in Sources */,
 				1806FE4D2121545E00F3DEFA /* main.m in Sources */,
+				18103364212CEC840009147E /* QIngJiaShenPiRenBean.m in Sources */,
 				18093F3821265EC500571700 /* Extern.m in Sources */,
 				1808CEC02123D27C00CFE98E /* ShenPiViewController.m in Sources */,
 				18093F75212801C000571700 /* WYBirthdayPickerView.m in Sources */,
@@ -1076,6 +1100,7 @@
 				1806FE3F2121545C00F3DEFA /* AppDelegate.m in Sources */,
 				18093F35212597DE00571700 /* FindPassword1ViewController.m in Sources */,
 				18093F812128407200571700 /* HWOptionButton.m in Sources */,
+				18103369212D2DC10009147E /* TimeUtil.m in Sources */,
 				1806FE9A2121AAD600F3DEFA /* MessageViewController.m in Sources */,
 				18093F5F2127E1EB00571700 /* JumpVCManager.m in Sources */,
 				18093F4D2126ADC600571700 /* PersonalInfoViewController.m in Sources */,
@@ -1092,6 +1117,7 @@
 				18093F502126E84C00571700 /* UpdateInfoViewController.m in Sources */,
 				1808CEA82122CDD300CFE98E /* DLLRUCache.m in Sources */,
 				1808CEB42122D0D900CFE98E /* HangYeNewsViewController.m in Sources */,
+				1810335F212C2CAA0009147E /* ContactDetailViewController.m in Sources */,
 				1807D74B212B97BA005BBBB3 /* TiaoBanViewController.m in Sources */,
 				1807D6C121291755005BBBB3 /* CaiLanViewController.m in Sources */,
 				1808CEAA2122CDD300CFE98E /* DLSlideView.m in Sources */,

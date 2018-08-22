@@ -13,6 +13,7 @@
 #import <MJExtension/MJExtension.h>
 #import "LoginViewController.h"
 #import "JumpVCManager.h"
+#import "Extern.h"
 @interface UpdatePasswordViewController ()
 
 @end
@@ -77,7 +78,7 @@
                            @"oldPass":self.oldPasswordText.text,
                            @"newPass":self.nowPasswordText.text
                            };
-    NSString *url=[NSString stringWithFormat:@"%@?apikey=%@",@"oaCustom/updatePassword.do",apikey];
+    NSString *url=[NSString stringWithFormat:@"%@%@?apikey=%@",@"oaCustom/updatePassword.do",baseUrl,apikey];
     [BaseBean BeanByPostWithUrl:url Params:params Success:^(NSDictionary *dict) {
         [MBProgressHUD hideHUD];
         BaseBean *resultBean=[BaseBean mj_objectWithKeyValues:dict];

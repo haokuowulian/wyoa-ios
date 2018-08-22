@@ -16,6 +16,8 @@
 @property(nonatomic,copy)NSString *telphone;
 @property(nonatomic,copy)NSString *sex;
 @property(nonatomic,copy)NSString *headPhoto;
+@property(nonatomic,copy)NSString *mobilePhone;
+@property(nonatomic,copy)NSString *sectionPhone;
 
 
 // 搜索联系人的方法 (拼音/拼音首字母缩写/汉字)

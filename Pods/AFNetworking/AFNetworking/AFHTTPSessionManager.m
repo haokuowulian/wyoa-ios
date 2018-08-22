@@ -90,11 +90,11 @@
     //    [self.requestSerializer setValue:@"text/html" forHTTPHeaderField:@"Content-Type"];
     //    [self.requestSerializer setValue:@"application/x-www-form-urlencoded; charset=utf-8" forHTTPHeaderField:@"Content-Type"];
     
-        self.responseSerializer.acceptableContentTypes = [NSSet
-    
-                                                             setWithObjects:@"application/json", @"text/json", @"text/javascript",
-    
-                                                             @"text/html", nil];
+//        self.responseSerializer.acceptableContentTypes = [NSSet
+//    
+//                                                             setWithObjects:@"application/json", @"text/json", @"text/javascript",
+//    
+//                                                             @"text/html", nil];
     return self;
 }
 

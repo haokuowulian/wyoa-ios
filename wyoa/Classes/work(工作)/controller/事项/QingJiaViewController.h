@@ -22,7 +22,20 @@
 
 @property (weak, nonatomic) IBOutlet IQTextView *reasonText;
 
-@property (weak, nonatomic) IBOutlet UIView *shenpiView;
+@property (weak, nonatomic) IBOutlet UIView *shenpiView1;
+@property (weak, nonatomic) IBOutlet UIImageView *shenpiImageView1;
+@property (weak, nonatomic) IBOutlet UILabel *shenpiNameLabel1;
+@property (weak, nonatomic) IBOutlet UIImageView *nextImageView1;
+
+@property (weak, nonatomic) IBOutlet UIView *shenpiView2;
+@property (weak, nonatomic) IBOutlet UIImageView *shenpiImageView2;
+@property (weak, nonatomic) IBOutlet UILabel *shenpiNamelabel2;
+@property (weak, nonatomic) IBOutlet UIImageView *nextImageView2;
+
+@property (weak, nonatomic) IBOutlet UIView *shenpiView3;
+@property (weak, nonatomic) IBOutlet UIImageView *shenpiImageView3;
+@property (weak, nonatomic) IBOutlet UILabel *shenpiNamelabel3;
+
 
 @property (weak, nonatomic) IBOutlet UIImageView *chaoSongImageView;
 @property (weak, nonatomic) IBOutlet UILabel *chaoSongLabel;

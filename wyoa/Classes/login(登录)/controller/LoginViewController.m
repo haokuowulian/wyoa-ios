@@ -11,6 +11,7 @@
 #import "LoginResultBean.h"
 #import <MJExtension/MJExtension.h>
 #import "MBProgressHUD+MBProgressHUD.h"
+#import "Extern.h"
 @interface LoginViewController ()
 
 @end
@@ -70,7 +71,8 @@
     NSDictionary *params=@{@"userName":_userNameText.text,
                            @"password":_passwordText.text
                            };
-    [LoginResultBean BeanByPostWithUrl:@"oaCustom/loginByPassword.do" Params:params Success:^(NSDictionary *dict) {
+    NSString *url=[NSString stringWithFormat:@"%@%@",baseUrl,@"oaCustom/loginByPassword.do"];
+    [LoginResultBean BeanByPostWithUrl:url Params:params Success:^(NSDictionary *dict) {
         [MBProgressHUD hideHUD];
         LoginResultBean *resultBean=[LoginResultBean mj_objectWithKeyValues:dict];
         if(resultBean.success==1){

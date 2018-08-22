@@ -12,6 +12,7 @@
 #import <MJExtension/MJExtension.h>
 #import  "UIImageView+WebCache.h"
 #import "PersonalInfoViewController.h"
+#import "Extern.h"
 @interface MineViewController ()
 @property(nonatomic,strong) UserInfoResultBean *userInfoResultBean;
 @end
@@ -20,7 +21,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self getUserInfo];
+    NSUserDefaults *userDefault=[NSUserDefaults standardUserDefaults];
+    NSString *realName=[userDefault objectForKey:@"realName"];
+    if(realName&&realName.length>0){
+        [self.headView   sd_setImageWithURL:[userDefault objectForKey:@"headUrl"] placeholderImage:[UIImage   imageNamed:@"man"]];
+        [self.realNameLabel setText:realName];
+        [self.userJobLabel setText:[userDefault objectForKey:@"userJob"] ];
+    }else{
+        [self getUserInfo];
+    }
     
     //获取通知中心单例对象
     NSNotificationCenter * center = [NSNotificationCenter defaultCenter];
@@ -58,10 +67,15 @@
     NSString *apikey=[userDefault objectForKey:@"apikey"];
     NSDictionary *params=@{@"userId":userId
                            };
-    NSString *url=[NSString stringWithFormat:@"%@?apikey=%@",@"oaCustom/getUserInfo.do",apikey];
+    NSString *url=[NSString stringWithFormat:@"%@%@?apikey=%@",baseUrl,@"oaCustom/getUserInfo.do",apikey];
     [UserInfoResultBean BeanByPostWithUrl:url Params:params Success:^(NSDictionary *dict) {
       self.userInfoResultBean=[UserInfoResultBean mj_objectWithKeyValues:dict];
         if(self.userInfoResultBean.success==1){
+            NSUserDefaults *userDefault=[NSUserDefaults standardUserDefaults];
+             [userDefault setObject:self.userInfoResultBean.headPhoto forKey:@"headUrl"];
+             [userDefault setObject:self.userInfoResultBean.realname forKey:@"realName"];
+            [userDefault setObject:[NSString stringWithFormat:@"职务：%@",self.userInfoResultBean.userJob] forKey:@"userJob"];
+            
               [self.headView   sd_setImageWithURL:self.userInfoResultBean.headPhoto placeholderImage:[UIImage   imageNamed:@"defaulthead"]];
             [self.realNameLabel setText:self.userInfoResultBean.realname];
             [self.userJobLabel setText:[NSString stringWithFormat:@"职务：%@",self.userInfoResultBean.userJob] ];
@@ -78,7 +92,7 @@
     if([segue.identifier isEqualToString:@"personalInfo"])
     {
        PersonalInfoViewController *controller= segue.destinationViewController;
-       controller.userInfoBean=self.userInfoResultBean;
+//       controller.userInfoBean=self.userInfoResultBean;
         
     }
 }

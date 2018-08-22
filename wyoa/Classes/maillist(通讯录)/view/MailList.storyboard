@@ -28,7 +28,7 @@
         <!--通讯录-->
         <scene sceneID="iFu-fz-qF0">
             <objects>
-                <viewController id="nin-RQ-nRn" customClass="MailListViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="mailList" id="nin-RQ-nRn" customClass="MailListViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Fdq-Kx-B4o"/>
                         <viewControllerLayoutGuide type="bottom" id="jpP-2l-REh"/>
@@ -60,11 +60,6 @@
                                     <constraint firstItem="Z1h-C0-EAf" firstAttribute="centerY" secondItem="s1q-VJ-TJk" secondAttribute="centerY" id="kdu-kt-oFC"/>
                                     <constraint firstItem="Z1h-C0-EAf" firstAttribute="leading" secondItem="q8t-o3-EF4" secondAttribute="trailing" constant="8" id="tPf-cU-LNe"/>
                                 </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="6"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="OjW-cX-X1b">
                                 <rect key="frame" x="0.0" y="138" width="375" height="529"/>

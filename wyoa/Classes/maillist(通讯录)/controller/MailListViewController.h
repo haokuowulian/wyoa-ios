@@ -14,4 +14,7 @@
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
+
+@property(nonatomic,assign)BOOL isFromSelect;
+@property(nonatomic,assign)BOOL isFromTiaoBan;
 @end

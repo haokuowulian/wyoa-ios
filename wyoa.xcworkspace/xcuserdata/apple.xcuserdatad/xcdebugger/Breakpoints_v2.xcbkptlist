@@ -665,11 +665,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "wyoa/Classes/login(&#x767b;&#x5f55;)/controller/LoginViewController.m"
-            timestampString = "556527937.66175"
+            timestampString = "556630423.588088"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "47"
-            endingLineNumber = "47"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
             landmarkName = "-loginClick:"
             landmarkType = "7">
          </BreakpointContent>
@@ -681,11 +681,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "wyoa/Classes/login(&#x767b;&#x5f55;)/controller/LoginViewController.m"
-            timestampString = "556527937.661938"
+            timestampString = "556630423.588172"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "73"
-            endingLineNumber = "73"
+            startingLineNumber = "75"
+            endingLineNumber = "75"
             landmarkName = "-login"
             landmarkType = "7">
             <Locations>
@@ -744,11 +744,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "wyoa/Classes/login(&#x767b;&#x5f55;)/controller/LoginViewController.m"
-            timestampString = "556527937.662028"
+            timestampString = "556630423.588237"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "93"
-            endingLineNumber = "93"
+            startingLineNumber = "95"
+            endingLineNumber = "95"
             landmarkName = "-login"
             landmarkType = "7">
          </BreakpointContent>
@@ -760,11 +760,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "wyoa/Classes/login(&#x767b;&#x5f55;)/controller/LoginViewController.m"
-            timestampString = "556527937.662106"
+            timestampString = "556630423.5882879"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "76"
-            endingLineNumber = "76"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
             landmarkName = "-login"
             landmarkType = "7">
          </BreakpointContent>
@@ -776,7 +776,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "wyoa/Common/BaseBean.m"
-            timestampString = "556168897.418226"
+            timestampString = "556603918.066653"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "28"
@@ -838,24 +838,8 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "wyoa/Other/AFNetWorkTool.m"
-            timestampString = "556513696.136238"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "25"
-            endingLineNumber = "25"
-            landmarkName = "+shareInstance"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "wyoa/Common/BaseBean.m"
-            timestampString = "556168897.418412"
+            timestampString = "556603918.066972"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "34"
@@ -871,7 +855,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "wyoa/Common/BaseBean.m"
-            timestampString = "556168897.418488"
+            timestampString = "556603918.067168"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "29"
@@ -887,11 +871,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "wyoa/Classes/mine(&#x6211;&#x7684;)/controller/PersonalInfoViewController.m"
-            timestampString = "556527937.662431"
+            timestampString = "556630423.588426"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "280"
-            endingLineNumber = "280"
+            startingLineNumber = "268"
+            endingLineNumber = "268"
             landmarkName = "-prepareForSegue:sender:"
             landmarkType = "7">
          </BreakpointContent>
@@ -903,11 +887,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "wyoa/Classes/mine(&#x6211;&#x7684;)/controller/PersonalInfoViewController.m"
-            timestampString = "556527937.662539"
+            timestampString = "556630423.588475"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "242"
-            endingLineNumber = "242"
+            startingLineNumber = "230"
+            endingLineNumber = "230"
             landmarkName = "-uploadImageHeadWithImag:"
             landmarkType = "7">
          </BreakpointContent>
@@ -919,11 +903,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "wyoa/Classes/mine(&#x6211;&#x7684;)/controller/UpdatePasswordViewController.m"
-            timestampString = "556527937.66263"
+            timestampString = "556630423.588521"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "92"
-            endingLineNumber = "92"
+            startingLineNumber = "93"
+            endingLineNumber = "93"
             landmarkName = "-updatePassword"
             landmarkType = "7">
          </BreakpointContent>
@@ -935,11 +919,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "wyoa/Classes/mine(&#x6211;&#x7684;)/controller/UpdateInfoViewController.m"
-            timestampString = "556527937.6627181"
+            timestampString = "556630423.588567"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "115"
-            endingLineNumber = "115"
+            startingLineNumber = "116"
+            endingLineNumber = "116"
             landmarkName = "-updateUserInfo"
             landmarkType = "7">
             <Locations>
@@ -998,11 +982,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "wyoa/Classes/mine(&#x6211;&#x7684;)/controller/UpdateInfoViewController.m"
-            timestampString = "556527937.6628031"
+            timestampString = "556630423.588611"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "131"
-            endingLineNumber = "131"
+            startingLineNumber = "132"
+            endingLineNumber = "132"
             landmarkName = "-updateUserInfo"
             landmarkType = "7">
          </BreakpointContent>
@@ -1014,11 +998,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "wyoa/Classes/login(&#x767b;&#x5f55;)/controller/FindPassword1ViewController.m"
-            timestampString = "556527937.662891"
+            timestampString = "556630423.588665"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "53"
-            endingLineNumber = "53"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
             landmarkName = "-textFieldDidChange"
             landmarkType = "7">
          </BreakpointContent>
@@ -1078,7 +1062,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "wyoa/Classes/work(&#x5de5;&#x4f5c;)/controller/order(&#x8ba2;&#x9910;)/DingCanViewController.m"
-            timestampString = "556527204.932372"
+            timestampString = "556549387.151989"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "26"
@@ -1190,11 +1174,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "wyoa/Classes/maillist(&#x901a;&#x8baf;&#x5f55;)/controller/MailListViewController.m"
-            timestampString = "556527937.6635669"
+            timestampString = "556630423.589003"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
             landmarkName = "-getContacts"
             landmarkType = "7">
          </BreakpointContent>
@@ -1206,11 +1190,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "wyoa/Classes/maillist(&#x901a;&#x8baf;&#x5f55;)/controller/MailListViewController.m"
-            timestampString = "556527937.664272"
+            timestampString = "556630423.589469"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "59"
-            endingLineNumber = "59"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
             landmarkName = "-getContacts"
             landmarkType = "7">
          </BreakpointContent>
@@ -1222,11 +1206,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "wyoa/Classes/maillist(&#x901a;&#x8baf;&#x5f55;)/controller/MailListViewController.m"
-            timestampString = "556527937.664876"
+            timestampString = "556630423.58981"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "103"
-            endingLineNumber = "103"
+            startingLineNumber = "106"
+            endingLineNumber = "106"
             landmarkName = "-setupInitialAllDataArrayWithContacts:"
             landmarkType = "7">
          </BreakpointContent>
@@ -1238,11 +1222,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "wyoa/Classes/maillist(&#x901a;&#x8baf;&#x5f55;)/controller/MailListViewController.m"
-            timestampString = "556527937.665513"
+            timestampString = "556630423.590125"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "129"
-            endingLineNumber = "129"
+            startingLineNumber = "132"
+            endingLineNumber = "132"
             landmarkName = "-setupInitialAllDataArrayWithContacts:"
             landmarkType = "7">
          </BreakpointContent>
@@ -1254,11 +1238,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "wyoa/Classes/maillist(&#x901a;&#x8baf;&#x5f55;)/controller/MailListViewController.m"
-            timestampString = "556527937.6662869"
+            timestampString = "556630423.590454"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "158"
-            endingLineNumber = "158"
+            startingLineNumber = "161"
+            endingLineNumber = "161"
             landmarkName = "-tableView:titleForHeaderInSection:"
             landmarkType = "7">
          </BreakpointContent>
@@ -1270,11 +1254,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "wyoa/Classes/maillist(&#x901a;&#x8baf;&#x5f55;)/controller/MailListViewController.m"
-            timestampString = "556527937.667588"
+            timestampString = "556630423.5908"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "165"
-            endingLineNumber = "165"
+            startingLineNumber = "168"
+            endingLineNumber = "168"
             landmarkName = "-sectionIndexTitlesForTableView:"
             landmarkType = "7">
             <Locations>
@@ -1318,11 +1302,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "wyoa/Classes/maillist(&#x901a;&#x8baf;&#x5f55;)/controller/MailListViewController.m"
-            timestampString = "556527937.668768"
+            timestampString = "556630423.59112"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "177"
-            endingLineNumber = "177"
+            startingLineNumber = "180"
+            endingLineNumber = "180"
             landmarkName = "-tableView:sectionForSectionIndexTitle:atIndex:"
             landmarkType = "7">
          </BreakpointContent>
@@ -1334,11 +1318,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "wyoa/Classes/maillist(&#x901a;&#x8baf;&#x5f55;)/controller/MailListViewController.m"
-            timestampString = "556527937.6695271"
+            timestampString = "556630423.591462"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "169"
-            endingLineNumber = "169"
+            startingLineNumber = "172"
+            endingLineNumber = "172"
             landmarkName = "-sectionIndexTitlesForTableView:"
             landmarkType = "7">
          </BreakpointContent>
@@ -1350,11 +1334,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "wyoa/Classes/maillist(&#x901a;&#x8baf;&#x5f55;)/controller/MailListViewController.m"
-            timestampString = "556527937.670161"
+            timestampString = "556630423.591776"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "163"
-            endingLineNumber = "163"
+            startingLineNumber = "166"
+            endingLineNumber = "166"
             landmarkName = "-sectionIndexTitlesForTableView:"
             landmarkType = "7">
          </BreakpointContent>
@@ -1366,11 +1350,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "wyoa/Classes/maillist(&#x901a;&#x8baf;&#x5f55;)/controller/MailListViewController.m"
-            timestampString = "556527937.6708111"
+            timestampString = "556630423.592099"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "157"
-            endingLineNumber = "157"
+            startingLineNumber = "160"
+            endingLineNumber = "160"
             landmarkName = "-tableView:titleForHeaderInSection:"
             landmarkType = "7">
          </BreakpointContent>
@@ -1382,11 +1366,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "wyoa/Classes/maillist(&#x901a;&#x8baf;&#x5f55;)/controller/MailListViewController.m"
-            timestampString = "556527937.671688"
+            timestampString = "556630423.592407"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "102"
-            endingLineNumber = "102"
+            startingLineNumber = "105"
+            endingLineNumber = "105"
             landmarkName = "-setupInitialAllDataArrayWithContacts:"
             landmarkType = "7">
          </BreakpointContent>
@@ -1398,11 +1382,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "wyoa/Classes/maillist(&#x901a;&#x8baf;&#x5f55;)/controller/MailListViewController.m"
-            timestampString = "556527937.672801"
+            timestampString = "556630423.5927171"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "123"
-            endingLineNumber = "123"
+            startingLineNumber = "126"
+            endingLineNumber = "126"
             landmarkName = "-setupInitialAllDataArrayWithContacts:"
             landmarkType = "7">
          </BreakpointContent>
@@ -1414,11 +1398,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "wyoa/Classes/maillist(&#x901a;&#x8baf;&#x5f55;)/controller/MailListViewController.m"
-            timestampString = "556527937.673473"
+            timestampString = "556630423.593013"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "131"
-            endingLineNumber = "131"
+            startingLineNumber = "134"
+            endingLineNumber = "134"
             landmarkName = "-setupInitialAllDataArrayWithContacts:"
             landmarkType = "7">
          </BreakpointContent>
@@ -1430,11 +1414,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "wyoa/Classes/maillist(&#x901a;&#x8baf;&#x5f55;)/controller/MailListViewController.m"
-            timestampString = "556527937.674049"
+            timestampString = "556630423.593329"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "133"
-            endingLineNumber = "133"
+            startingLineNumber = "136"
+            endingLineNumber = "136"
             landmarkName = "-numberOfSectionsInTableView:"
             landmarkType = "7">
          </BreakpointContent>
@@ -1446,11 +1430,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "wyoa/Classes/maillist(&#x901a;&#x8baf;&#x5f55;)/controller/MailListViewController.m"
-            timestampString = "556527937.674572"
+            timestampString = "556630423.593798"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "139"
-            endingLineNumber = "139"
+            startingLineNumber = "142"
+            endingLineNumber = "142"
             landmarkName = "-tableView:numberOfRowsInSection:"
             landmarkType = "7">
          </BreakpointContent>
@@ -1462,11 +1446,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "wyoa/Classes/maillist(&#x901a;&#x8baf;&#x5f55;)/controller/MailListViewController.m"
-            timestampString = "556527937.675081"
+            timestampString = "556630423.5941499"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "57"
-            endingLineNumber = "57"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
             landmarkName = "-getContacts"
             landmarkType = "7">
          </BreakpointContent>
@@ -1478,11 +1462,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "wyoa/Classes/maillist(&#x901a;&#x8baf;&#x5f55;)/controller/MailListViewController.m"
-            timestampString = "556527937.6756409"
+            timestampString = "556630423.594467"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "76"
-            endingLineNumber = "76"
+            startingLineNumber = "79"
+            endingLineNumber = "79"
             landmarkName = "-getContacts"
             landmarkType = "7">
          </BreakpointContent>
@@ -1494,11 +1478,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "wyoa/Classes/maillist(&#x901a;&#x8baf;&#x5f55;)/controller/MailListViewController.m"
-            timestampString = "556527937.676163"
+            timestampString = "556630423.594767"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "203"
-            endingLineNumber = "203"
+            startingLineNumber = "229"
+            endingLineNumber = "229"
             landmarkName = "-passConTextChange:"
             landmarkType = "7">
          </BreakpointContent>
@@ -1510,7 +1494,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "wyoa/Classes/maillist(&#x901a;&#x8baf;&#x5f55;)/model/ContactBean.m"
-            timestampString = "556513696.150702"
+            timestampString = "556592104.3555191"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "32"
@@ -1526,7 +1510,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "wyoa/Classes/maillist(&#x901a;&#x8baf;&#x5f55;)/model/ContactBean.m"
-            timestampString = "556513696.1508991"
+            timestampString = "556592104.3555681"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "33"
@@ -1542,7 +1526,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "wyoa/Classes/maillist(&#x901a;&#x8baf;&#x5f55;)/model/ContactBean.m"
-            timestampString = "556513696.151021"
+            timestampString = "556592104.35561"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "21"
@@ -1558,7 +1542,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "wyoa/Classes/maillist(&#x901a;&#x8baf;&#x5f55;)/model/ContactBean.m"
-            timestampString = "556513696.151127"
+            timestampString = "556592104.355651"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "35"
@@ -1574,7 +1558,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "wyoa/Classes/maillist(&#x901a;&#x8baf;&#x5f55;)/model/ContactBean.m"
-            timestampString = "556513696.151229"
+            timestampString = "556592104.355692"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "36"
@@ -1590,7 +1574,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "wyoa/Classes/maillist(&#x901a;&#x8baf;&#x5f55;)/model/ContactBean.m"
-            timestampString = "556513696.1513259"
+            timestampString = "556592104.355732"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "45"
@@ -1606,7 +1590,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "wyoa/Classes/maillist(&#x901a;&#x8baf;&#x5f55;)/model/ContactBean.m"
-            timestampString = "556513696.151413"
+            timestampString = "556592104.355772"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "49"
@@ -1622,7 +1606,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "wyoa/Classes/maillist(&#x901a;&#x8baf;&#x5f55;)/model/ContactBean.m"
-            timestampString = "556513696.151493"
+            timestampString = "556592104.355812"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "47"
@@ -1638,11 +1622,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "wyoa/Classes/maillist(&#x901a;&#x8baf;&#x5f55;)/controller/MailListViewController.m"
-            timestampString = "556527937.677292"
+            timestampString = "556630423.595328"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "137"
-            endingLineNumber = "137"
+            startingLineNumber = "140"
+            endingLineNumber = "140"
             landmarkName = "-tableView:numberOfRowsInSection:"
             landmarkType = "7">
          </BreakpointContent>
@@ -1654,11 +1638,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "wyoa/Classes/maillist(&#x901a;&#x8baf;&#x5f55;)/controller/MailListViewController.m"
-            timestampString = "556527937.678177"
+            timestampString = "556630423.5956351"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "205"
-            endingLineNumber = "205"
+            startingLineNumber = "231"
+            endingLineNumber = "231"
             landmarkName = "-passConTextChange:"
             landmarkType = "7">
          </BreakpointContent>
@@ -1670,11 +1654,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "wyoa/Classes/login(&#x767b;&#x5f55;)/controller/FindPassword1ViewController.m"
-            timestampString = "556527937.679431"
+            timestampString = "556630423.595935"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "83"
-            endingLineNumber = "83"
+            startingLineNumber = "84"
+            endingLineNumber = "84"
             landmarkName = "-getCode"
             landmarkType = "7">
          </BreakpointContent>
@@ -1686,11 +1670,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "wyoa/Classes/mine(&#x6211;&#x7684;)/controller/MineViewController.m"
-            timestampString = "556527937.679832"
+            timestampString = "556630423.595989"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "62"
-            endingLineNumber = "62"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
             landmarkName = "-getUserInfo"
             landmarkType = "7">
             <Locations>
@@ -1749,11 +1733,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "wyoa/Classes/login(&#x767b;&#x5f55;)/controller/FindPassword1ViewController.m"
-            timestampString = "556527937.680002"
+            timestampString = "556630423.596036"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "80"
-            endingLineNumber = "80"
+            startingLineNumber = "81"
+            endingLineNumber = "81"
             landmarkName = "-getCode"
             landmarkType = "7">
             <Locations>
@@ -1797,11 +1781,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "wyoa/Classes/login(&#x767b;&#x5f55;)/controller/FindPassword1ViewController.m"
-            timestampString = "556527937.680099"
+            timestampString = "556630423.596079"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "131"
-            endingLineNumber = "131"
+            startingLineNumber = "132"
+            endingLineNumber = "132"
             landmarkName = "-checkCodeIsCorrect"
             landmarkType = "7">
             <Locations>
@@ -1860,11 +1844,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "wyoa/Classes/login(&#x767b;&#x5f55;)/controller/FindPassword1ViewController.m"
-            timestampString = "556527937.680189"
+            timestampString = "556630423.59612"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "133"
-            endingLineNumber = "133"
+            startingLineNumber = "134"
+            endingLineNumber = "134"
             landmarkName = "-checkCodeIsCorrect"
             landmarkType = "7">
          </BreakpointContent>
@@ -1876,11 +1860,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "wyoa/Classes/login(&#x767b;&#x5f55;)/controller/FindPassword1ViewController.m"
-            timestampString = "556527937.6802731"
+            timestampString = "556630423.596162"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "130"
-            endingLineNumber = "130"
+            startingLineNumber = "131"
+            endingLineNumber = "131"
             landmarkName = "-checkCodeIsCorrect"
             landmarkType = "7">
          </BreakpointContent>
@@ -1892,11 +1876,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "wyoa/Classes/login(&#x767b;&#x5f55;)/controller/FindPassword2ViewController.m"
-            timestampString = "556527937.680362"
+            timestampString = "556630423.5962059"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
             landmarkName = "-completeClick:"
             landmarkType = "7">
          </BreakpointContent>
@@ -1908,11 +1892,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "wyoa/Classes/login(&#x767b;&#x5f55;)/controller/FindPassword2ViewController.m"
-            timestampString = "556527937.680446"
+            timestampString = "556630423.596248"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "80"
-            endingLineNumber = "80"
+            startingLineNumber = "81"
+            endingLineNumber = "81"
             landmarkName = "-updatePassword"
             landmarkType = "7">
          </BreakpointContent>
@@ -1924,11 +1908,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "wyoa/Classes/mine(&#x6211;&#x7684;)/controller/MyWalletViewController.m"
-            timestampString = "556527937.680536"
+            timestampString = "556630423.596302"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "47"
-            endingLineNumber = "47"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
             landmarkName = "-getMyWallet"
             landmarkType = "7">
             <Locations>
@@ -1987,11 +1971,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "wyoa/Classes/mine(&#x6211;&#x7684;)/controller/MyWalletViewController.m"
-            timestampString = "556527937.680629"
+            timestampString = "556630423.596344"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "49"
-            endingLineNumber = "49"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
             landmarkName = "-getMyWallet"
             landmarkType = "7">
          </BreakpointContent>
@@ -2003,11 +1987,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "wyoa/Classes/mine(&#x6211;&#x7684;)/controller/MyWalletViewController.m"
-            timestampString = "556527937.6807179"
+            timestampString = "556630423.596385"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
             landmarkName = "-getMyWallet"
             landmarkType = "7">
          </BreakpointContent>
@@ -2082,12 +2066,678 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "wyoa/Classes/mine(&#x6211;&#x7684;)/controller/MyWalletViewController.m"
-            timestampString = "556527937.680902"
+            timestampString = "556630423.596462"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
             landmarkName = "-getMyWallet"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "wyoa/Classes/mine(&#x6211;&#x7684;)/controller/MineViewController.m"
+            timestampString = "556630423.596505"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "-viewDidLoad"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "wyoa/Classes/mine(&#x6211;&#x7684;)/controller/MineViewController.m"
+            timestampString = "556630423.59655"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "-getUserInfo"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "wyoa/Classes/mine(&#x6211;&#x7684;)/controller/MineViewController.m"
+            timestampString = "556630423.596595"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
+            landmarkName = "-getUserInfo"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "wyoa/Classes/login(&#x767b;&#x5f55;)/controller/LoginViewController.m"
+            timestampString = "556630423.596639"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "84"
+            endingLineNumber = "84"
+            landmarkName = "-login"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "wyoa/Classes/maillist(&#x901a;&#x8baf;&#x5f55;)/controller/MailListViewController.m"
+            timestampString = "556630423.596686"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "182"
+            endingLineNumber = "182"
+            landmarkName = "-tableView:sectionForSectionIndexTitle:atIndex:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/JXTAlertManager/JXTAlertManager/AlertController/JXTAlertController.m"
+            timestampString = "556598115.172906"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "88"
+            endingLineNumber = "88"
+            landmarkName = "-alertActionsConfig"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__40-[JXTAlertController alertActionsConfig]_block_invoke"
+                  moduleName = "JXTAlertManager"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apple/wyoa-ios/Pods/JXTAlertManager/JXTAlertManager/AlertController/JXTAlertController.m"
+                  timestampString = "556591138.6299829"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "88"
+                  endingLineNumber = "88"
+                  offsetFromSymbolStart = "176">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__40-[JXTAlertController alertActionsConfig]_block_invoke_2"
+                  moduleName = "JXTAlertManager"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apple/wyoa-ios/Pods/JXTAlertManager/JXTAlertManager/AlertController/JXTAlertController.m"
+                  timestampString = "556591138.633455"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "88"
+                  endingLineNumber = "88"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__destroy_helper_block_.53"
+                  moduleName = "JXTAlertManager"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apple/wyoa-ios/Pods/JXTAlertManager/JXTAlertManager/AlertController/JXTAlertController.m"
+                  timestampString = "556591138.6354899"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "88"
+                  endingLineNumber = "88"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/JXTAlertManager/JXTAlertManager/AlertController/JXTAlertController.m"
+            timestampString = "556598115.172956"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "97"
+            endingLineNumber = "97"
+            landmarkName = "-alertActionsConfig"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "wyoa/Classes/work(&#x5de5;&#x4f5c;)/controller/&#x4e8b;&#x9879;/QingJiaViewController.m"
+            timestampString = "556630423.5970581"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "138"
+            endingLineNumber = "138"
+            landmarkName = "-getShenPiRen"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "wyoa/Classes/work(&#x5de5;&#x4f5c;)/controller/&#x4e8b;&#x9879;/QingJiaViewController.m"
+            timestampString = "556630423.597134"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "131"
+            endingLineNumber = "131"
+            landmarkName = "-getShenPiRen"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[QingJiaViewController getShenPiRen]"
+                  moduleName = "wyoa"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apple/wyoa-ios/wyoa/Classes/work(%E5%B7%A5%E4%BD%9C)/controller/%E4%BA%8B%E9%A1%B9/QingJiaViewController.m"
+                  timestampString = "556599339.9345649"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "97"
+                  endingLineNumber = "97"
+                  offsetFromSymbolStart = "392">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__37-[QingJiaViewController getShenPiRen]_block_invoke"
+                  moduleName = "wyoa"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apple/wyoa-ios/wyoa/Classes/work(%E5%B7%A5%E4%BD%9C)/controller/%E4%BA%8B%E9%A1%B9/QingJiaViewController.m"
+                  timestampString = "556599339.939261"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "98"
+                  endingLineNumber = "98"
+                  offsetFromSymbolStart = "64">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__destroy_helper_block_.116"
+                  moduleName = "wyoa"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apple/wyoa-ios/wyoa/Classes/work(%E5%B7%A5%E4%BD%9C)/controller/%E4%BA%8B%E9%A1%B9/QingJiaViewController.m"
+                  timestampString = "556599339.941612"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "97"
+                  endingLineNumber = "97"
+                  offsetFromSymbolStart = "20">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "wyoa/Classes/work(&#x5de5;&#x4f5c;)/controller/&#x4e8b;&#x9879;/QingJiaViewController.m"
+            timestampString = "556630423.5972019"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "132"
+            endingLineNumber = "132"
+            landmarkName = "-getShenPiRen"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "wyoa/Classes/work(&#x5de5;&#x4f5c;)/controller/&#x4e8b;&#x9879;/QingJiaViewController.m"
+            timestampString = "556630423.59727"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "167"
+            endingLineNumber = "167"
+            landmarkName = "-getShenPiRen"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "wyoa/Classes/mine(&#x6211;&#x7684;)/controller/MineViewController.m"
+            timestampString = "556630423.597337"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "79"
+            endingLineNumber = "79"
+            landmarkName = "-getUserInfo"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "wyoa/Classes/work(&#x5de5;&#x4f5c;)/controller/&#x4e8b;&#x9879;/QingJiaViewController.m"
+            timestampString = "556630423.597383"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "221"
+            endingLineNumber = "221"
+            landmarkName = "-submit"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "wyoa/Classes/work(&#x5de5;&#x4f5c;)/controller/&#x4e8b;&#x9879;/QingJiaViewController.m"
+            timestampString = "556630423.597437"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "228"
+            endingLineNumber = "228"
+            landmarkName = "-submit"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "wyoa/Classes/work(&#x5de5;&#x4f5c;)/controller/&#x4e8b;&#x9879;/QingJiaViewController.m"
+            timestampString = "556630423.597491"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "218"
+            endingLineNumber = "218"
+            landmarkName = "-submit"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[QingJiaViewController submit]"
+                  moduleName = "wyoa"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apple/wyoa-ios/wyoa/Classes/work(%E5%B7%A5%E4%BD%9C)/controller/%E4%BA%8B%E9%A1%B9/QingJiaViewController.m"
+                  timestampString = "556614381.596342"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "218"
+                  endingLineNumber = "218"
+                  offsetFromSymbolStart = "1608">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__31-[QingJiaViewController submit]_block_invoke"
+                  moduleName = "wyoa"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apple/wyoa-ios/wyoa/Classes/work(%E5%B7%A5%E4%BD%9C)/controller/%E4%BA%8B%E9%A1%B9/QingJiaViewController.m"
+                  timestampString = "556614381.599992"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "219"
+                  endingLineNumber = "219"
+                  offsetFromSymbolStart = "64">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__destroy_helper_block_.283"
+                  moduleName = "wyoa"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apple/wyoa-ios/wyoa/Classes/work(%E5%B7%A5%E4%BD%9C)/controller/%E4%BA%8B%E9%A1%B9/QingJiaViewController.m"
+                  timestampString = "556614381.602854"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "218"
+                  endingLineNumber = "218"
+                  offsetFromSymbolStart = "20">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "wyoa/Classes/work(&#x5de5;&#x4f5c;)/controller/&#x4e8b;&#x9879;/GongChaiViewController.m"
+            timestampString = "556630423.597549"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "168"
+            endingLineNumber = "168"
+            landmarkName = "-submit"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "wyoa/Classes/work(&#x5de5;&#x4f5c;)/controller/&#x4e8b;&#x9879;/GongChaiViewController.m"
+            timestampString = "556630423.597604"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "187"
+            endingLineNumber = "187"
+            landmarkName = "-submit"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[GongChaiViewController submit]"
+                  moduleName = "wyoa"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apple/wyoa-ios/wyoa/Classes/work(%E5%B7%A5%E4%BD%9C)/controller/%E4%BA%8B%E9%A1%B9/GongChaiViewController.m"
+                  timestampString = "556614266.5913301"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "202"
+                  endingLineNumber = "202"
+                  offsetFromSymbolStart = "1544">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__32-[GongChaiViewController submit]_block_invoke"
+                  moduleName = "wyoa"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apple/wyoa-ios/wyoa/Classes/work(%E5%B7%A5%E4%BD%9C)/controller/%E4%BA%8B%E9%A1%B9/GongChaiViewController.m"
+                  timestampString = "556614266.593119"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "203"
+                  endingLineNumber = "203"
+                  offsetFromSymbolStart = "64">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__destroy_helper_block_.240"
+                  moduleName = "wyoa"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apple/wyoa-ios/wyoa/Classes/work(%E5%B7%A5%E4%BD%9C)/controller/%E4%BA%8B%E9%A1%B9/GongChaiViewController.m"
+                  timestampString = "556614266.594909"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "202"
+                  endingLineNumber = "202"
+                  offsetFromSymbolStart = "20">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "wyoa/Classes/work(&#x5de5;&#x4f5c;)/controller/&#x4e8b;&#x9879;/GongChaiViewController.m"
+            timestampString = "556630423.5976551"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "197"
+            endingLineNumber = "197"
+            landmarkName = "-submit"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "wyoa/Classes/work(&#x5de5;&#x4f5c;)/controller/&#x4e8b;&#x9879;/GongChaiViewController.m"
+            timestampString = "556630423.597703"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "190"
+            endingLineNumber = "190"
+            landmarkName = "-submit"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "wyoa/Classes/work(&#x5de5;&#x4f5c;)/controller/&#x4e8b;&#x9879;/GongChaiViewController.m"
+            timestampString = "556630423.5977499"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "176"
+            endingLineNumber = "176"
+            landmarkName = "-submit"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "wyoa/Classes/work(&#x5de5;&#x4f5c;)/controller/&#x4e8b;&#x9879;/TiaoBanViewController.m"
+            timestampString = "556630423.5978"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "202"
+            endingLineNumber = "202"
+            landmarkName = "-submit"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[TiaoBanViewController submit]"
+                  moduleName = "wyoa"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apple/wyoa-ios/wyoa/Classes/work(%E5%B7%A5%E4%BD%9C)/controller/%E4%BA%8B%E9%A1%B9/TiaoBanViewController.m"
+                  timestampString = "556620941.302778"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "202"
+                  endingLineNumber = "202"
+                  offsetFromSymbolStart = "1492">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__31-[TiaoBanViewController submit]_block_invoke"
+                  moduleName = "wyoa"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apple/wyoa-ios/wyoa/Classes/work(%E5%B7%A5%E4%BD%9C)/controller/%E4%BA%8B%E9%A1%B9/TiaoBanViewController.m"
+                  timestampString = "556620941.3063329"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "203"
+                  endingLineNumber = "203"
+                  offsetFromSymbolStart = "64">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__destroy_helper_block_.247"
+                  moduleName = "wyoa"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apple/wyoa-ios/wyoa/Classes/work(%E5%B7%A5%E4%BD%9C)/controller/%E4%BA%8B%E9%A1%B9/TiaoBanViewController.m"
+                  timestampString = "556620941.308923"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "202"
+                  endingLineNumber = "202"
+                  offsetFromSymbolStart = "20">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "wyoa/Classes/work(&#x5de5;&#x4f5c;)/controller/&#x4e8b;&#x9879;/TiaoBanViewController.m"
+            timestampString = "556630423.5978481"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "154"
+            endingLineNumber = "154"
+            landmarkName = "-getShenPiRen"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "wyoa/Classes/work(&#x5de5;&#x4f5c;)/controller/&#x4e8b;&#x9879;/TiaoBanViewController.m"
+            timestampString = "556630423.597893"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "119"
+            endingLineNumber = "119"
+            landmarkName = "-getShenPiRen"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[TiaoBanViewController getShenPiRen]"
+                  moduleName = "wyoa"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apple/wyoa-ios/wyoa/Classes/work(%E5%B7%A5%E4%BD%9C)/controller/%E4%BA%8B%E9%A1%B9/TiaoBanViewController.m"
+                  timestampString = "556619528.254184"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "119"
+                  endingLineNumber = "119"
+                  offsetFromSymbolStart = "408">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__37-[TiaoBanViewController getShenPiRen]_block_invoke"
+                  moduleName = "wyoa"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apple/wyoa-ios/wyoa/Classes/work(%E5%B7%A5%E4%BD%9C)/controller/%E4%BA%8B%E9%A1%B9/TiaoBanViewController.m"
+                  timestampString = "556619528.256591"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "119"
+                  endingLineNumber = "119"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__destroy_helper_block_.185"
+                  moduleName = "wyoa"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apple/wyoa-ios/wyoa/Classes/work(%E5%B7%A5%E4%BD%9C)/controller/%E4%BA%8B%E9%A1%B9/TiaoBanViewController.m"
+                  timestampString = "556619528.25863"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "119"
+                  endingLineNumber = "119"
+                  offsetFromSymbolStart = "20">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "wyoa/Classes/work(&#x5de5;&#x4f5c;)/controller/&#x4e8b;&#x9879;/TiaoBanViewController.m"
+            timestampString = "556630423.597941"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "124"
+            endingLineNumber = "124"
+            landmarkName = "-getShenPiRen"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

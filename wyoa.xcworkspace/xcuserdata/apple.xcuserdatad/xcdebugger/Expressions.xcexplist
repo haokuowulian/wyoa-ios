@@ -3,6 +3,14 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "__33-[MineViewController getUserInfo]_block_invoke:MineViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.userInfoResultBean.headPhoto">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "-[ZJHKTabBarbutton titleRectForContentRect:]:ZJHKTabBarbutton.m">
          <PersistentStrings>
             <PersistentString
@@ -33,6 +41,9 @@
                value = "self.sectionIndexs">
             </PersistentString>
          </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__28-[LoginViewController login]_block_invoke:LoginViewController.m">
       </ContextState>
       <ContextState
          contextName = "-[DLTabedSlideView commonInit]:DLTabedSlideView.m">
@@ -129,6 +140,9 @@
                value = "self.num">
             </PersistentString>
          </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[MailListViewController tableView:didSelectRowAtIndexPath:]:MailListViewController.m">
       </ContextState>
       <ContextState
          contextName = "-[DLFixedTabbarView commonInit]:DLFixedTabbarView.m">

@@ -9,6 +9,6 @@
 #import "Extern.h"
 
 @implementation Extern
-NSString * const baseUrl = @"http://18t69t8992.51mypc.cn:9079/oai/oaCustom/";//本地
+NSString * const baseUrl = @"http://18t69t8992.51mypc.cn:9079/oai/";//本地
 
 @end

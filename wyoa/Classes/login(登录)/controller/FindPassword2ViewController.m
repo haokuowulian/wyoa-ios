@@ -12,6 +12,7 @@
 #import <MJExtension/MJExtension.h>
 #import "JumpVCManager.h"
 #import "ValidPassword.h"
+#import "Extern.h"
 
 @interface FindPassword2ViewController ()
 
@@ -73,7 +74,7 @@
     [MBProgressHUD showMessage:@"正在重置密码..."];
     NSUserDefaults *userDefault=[NSUserDefaults standardUserDefaults];
     NSString *apikey=[userDefault objectForKey:@"apikey"];
-     NSString *url=[NSString stringWithFormat:@"%@?apikey=%@&telphone=%@&authCode=%@&password=%@",@"oamessage/forgetPassword.do",apikey,_telphone,_authCode,self.nowPasswordText.text];
+     NSString *url=[NSString stringWithFormat:@"%@%@?apikey=%@&telphone=%@&authCode=%@&password=%@",baseUrl,@"oamessage/forgetPassword.do",apikey,_telphone,_authCode,self.nowPasswordText.text];
     [BaseBean BeanByPostWithUrl:url Params:nil Success:^(NSDictionary *dict) {
         [MBProgressHUD hideHUD];
         BaseBean *resultBean=[BaseBean mj_objectWithKeyValues:dict];

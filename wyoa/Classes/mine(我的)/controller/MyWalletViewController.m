@@ -11,6 +11,7 @@
 #import "WalletBean.h"
 #import <MJExtension/MJExtension.h>
 #import "MBProgressHUD+MBProgressHUD.h"
+#import "Extern.h"
 @interface MyWalletViewController ()
 
 @end
@@ -42,7 +43,7 @@
     NSUserDefaults *userDefault=[NSUserDefaults standardUserDefaults];
     NSString *userId=[userDefault objectForKey:@"userId"];
     NSString *apikey=[userDefault objectForKey:@"apikey"];
-     NSString *url=[NSString stringWithFormat:@"%@?apikey=%@",@"oaCustom/listMywallet.do",apikey];
+     NSString *url=[NSString stringWithFormat:@"%@%@?apikey=%@",baseUrl,@"oaCustom/listMywallet.do",apikey];
     NSDictionary *params=@{@"userId":userId};
     [WalletBean BeanByPostWithUrl:url Params:params Success:^(NSDictionary *dict) {
          WalletBean *walletBean=[WalletBean mj_objectWithKeyValues:dict];

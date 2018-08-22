@@ -45,14 +45,7 @@
                                         <rect key="frame" x="12" y="19" width="42" height="42"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="42" id="M2h-8R-Vzg"/>
-                                            <constraint firstAttribute="width" constant="42" id="MGK-wc-drH">
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                        <integer key="value" value="21"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
-                                                </userDefinedRuntimeAttributes>
-                                            </constraint>
+                                            <constraint firstAttribute="width" constant="42" id="MGK-wc-drH"/>
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">

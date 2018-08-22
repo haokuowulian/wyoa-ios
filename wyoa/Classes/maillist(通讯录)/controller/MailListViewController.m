@@ -13,6 +13,9 @@
 #import <MJExtension/MJExtension.h>
 #import "ContractTableViewCell.h"
 #import <MJRefresh/MJRefresh.h>
+#import "UserInfoResultBean.h"
+#import "ContactDetailViewController.h"
+#import "Extern.h"
 
 @interface MailListViewController ()<UITableViewDataSource,UITableViewDelegate>
 // 所有的indexsTitles
@@ -51,7 +54,7 @@
 //     [MBProgressHUD showMessage:@"正在获取通讯录..."];
     NSUserDefaults *userDefault=[NSUserDefaults standardUserDefaults];
     NSString *apikey=[userDefault objectForKey:@"apikey"];
-  NSString *url=[NSString stringWithFormat:@"%@?apikey=%@",@"oaCustom/getLoginUserContact.do",apikey];
+  NSString *url=[NSString stringWithFormat:@"%@%@?apikey=%@",baseUrl,@"oaCustom/getLoginUserContact.do",apikey];
     [ContractListBean BeanByPostWithUrl:url Params:nil Success:^(NSDictionary *dict) {
          [MBProgressHUD hideHUD];
          [self.tableView.mj_header endRefreshing];
@@ -175,8 +178,7 @@
 // 如果不相同, 则需要自己相应的返回自己需要的section
 - (NSInteger)tableView:(UITableView *)tableView sectionForSectionIndexTitle:(NSString *)title atIndex:(NSInteger)index {
     NSLog(@"%@---%ld", title, index);
-    // 显示正在点击的indexTitle ZJProgressHUD这个小框架是我们已经实现的
-//    [ZJProgressHUD showStatus:title andAutoHideAfterTime:0.5];
+   
     return index;
 }
 
@@ -192,7 +194,31 @@
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return 75.0f;
 }
-
+#pragma mark 跳转到联系人详情或选择联系人
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    ContactBean *bean=_data[[_sectionIndexs[indexPath.section] integerValue]][indexPath.row];
+    if(_isFromSelect){
+        if(_isFromTiaoBan){
+            NSNotification * notice = [NSNotification notificationWithName:@"selectUserHuanBan" object:bean];
+            //发送消息
+            [[NSNotificationCenter defaultCenter]postNotification:notice];
+        }else{
+            //创建一个消息对象
+            NSNotification * notice = [NSNotification notificationWithName:@"selectUser" object:bean];
+            //发送消息
+            [[NSNotificationCenter defaultCenter]postNotification:notice];
+        }
+      
+       
+        [self.navigationController popViewControllerAnimated:YES];
+    }else{
+        UIStoryboard *storyboard=[UIStoryboard storyboardWithName:@"ContactDetail" bundle:nil];
+        ContactDetailViewController *controll=[storyboard instantiateViewControllerWithIdentifier:@"contactDetail"];
+        controll.userInfoBean=bean;
+        [self.navigationController pushViewController:controll animated:YES];
+    }
+     [tableView deselectRowAtIndexPath:indexPath animated:NO];
+}
 //注意：事件类型是：`UIControlEventEditingChanged`
 -(void)passConTextChange:(id)sender{
     UITextField* target=(UITextField*)sender;

@@ -12,6 +12,7 @@
 #import <MJExtension/MJExtension.h>
 #import "WYGenderPickerView.h"
 #import "WYBirthdayPickerView.h"
+#import "Extern.h"
 
 @interface UpdateInfoViewController ()
 
@@ -111,7 +112,7 @@
 
     NSDictionary *params = self.userInfoBean.mj_keyValuesWithAll;
   
-    NSString *url=[NSString stringWithFormat:@"%@?apikey=%@",@"oaCustom/updateUserInfo.do",apikey];
+    NSString *url=[NSString stringWithFormat:@"%@%@?apikey=%@",baseUrl,@"oaCustom/updateUserInfo.do",apikey];
     [BaseBean BeanByPostWithUrl:url Params:params Success:^(NSDictionary *dict) {
         [MBProgressHUD hideHUD];
         BaseBean *resultBean=[BaseBean mj_objectWithKeyValues:dict];

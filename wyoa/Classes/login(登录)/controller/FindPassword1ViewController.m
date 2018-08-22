@@ -11,6 +11,7 @@
 #import "BaseBean.h"
 #import <MJExtension/MJExtension.h>
 #import "FindPassword2ViewController.h"
+#import "Extern.h"
 @interface FindPassword1ViewController ()
 
 @end
@@ -76,7 +77,7 @@
     NSUserDefaults *userDefault=[NSUserDefaults standardUserDefaults];
     NSString *apikey=[userDefault objectForKey:@"apikey"];
  
-    NSString *url=[NSString stringWithFormat:@"%@?apikey=%@&telphone=%@",@"oamessage/getResetVerfiyCode.do",apikey,self.telPhoneText.text];
+    NSString *url=[NSString stringWithFormat:@"%@%@?apikey=%@&telphone=%@",baseUrl,@"oamessage/getResetVerfiyCode.do",apikey,self.telPhoneText.text];
         [BaseBean BeanByPostWithUrl:url Params:nil Success:^(NSDictionary *dict) {
          [MBProgressHUD hideHUD];
         BaseBean *resultBean=[BaseBean mj_objectWithKeyValues:dict];
@@ -127,7 +128,7 @@
     NSUserDefaults *userDefault=[NSUserDefaults standardUserDefaults];
     NSString *apikey=[userDefault objectForKey:@"apikey"];
     
-    NSString *url=[NSString stringWithFormat:@"%@?apikey=%@&telphone=%@&authCode=%@",@"oamessage/codeCheck.do",apikey,self.telPhoneText.text,self.codeText.text];
+    NSString *url=[NSString stringWithFormat:@"%@%@?apikey=%@&telphone=%@&authCode=%@",baseUrl,@"oamessage/codeCheck.do",apikey,self.telPhoneText.text,self.codeText.text];
     [BaseBean BeanByPostWithUrl:url Params:nil Success:^(NSDictionary *dict) {
         BaseBean *resultBean=[BaseBean mj_objectWithKeyValues:dict];
         if(resultBean.success==1){
