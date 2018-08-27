@@ -23,6 +23,7 @@
     self.tableView.dataSource=self;
     self.tableView.delegate=self;
     [self.tableView registerNib:[UINib nibWithNibName:@"DingCanTableViewCell" bundle:nil] forCellReuseIdentifier:@"dingcan"];
+ 
 }
 
 - (void)didReceiveMemoryWarning {
@@ -51,12 +52,16 @@
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     static NSString *identifier = @"dingcan";
+
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier forIndexPath:indexPath];
     // 1.缓存中取
-    DingCanTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+
     // 2.创建
     if (cell == nil) {
-        cell = [[DingCanTableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:identifier];
+       
+       cell = [[DingCanTableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
     }
+   
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return  cell;
 }

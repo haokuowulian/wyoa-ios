@@ -9,7 +9,7 @@
 #import "UpdateInfoViewController.h"
 #import "MBProgressHUD+MBProgressHUD.h"
 #import "UserInfoResultBean.h"
-#import <MJExtension/MJExtension.h>
+#import "MJExtension.h"
 #import "WYGenderPickerView.h"
 #import "WYBirthdayPickerView.h"
 #import "Extern.h"

@@ -9,7 +9,7 @@
 #import "MyWalletViewController.h"
 #import "MineViewController.h"
 #import "WalletBean.h"
-#import <MJExtension/MJExtension.h>
+#import "MJExtension.h"
 #import "MBProgressHUD+MBProgressHUD.h"
 #import "Extern.h"
 @interface MyWalletViewController ()

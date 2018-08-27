@@ -8,11 +8,11 @@
 
 #import "PersonalInfoViewController.h"
 #import "UserInfoResultBean.h"
-#import <MJExtension/MJExtension.h>
+#import "MJExtension.h"
 #import  "UIImageView+WebCache.h"
 #import "MBProgressHUD+MBProgressHUD.h"
 #import "UpdateInfoViewController.h"
-#import <JXTAlertManager/JXTAlertManagerHeader.h>
+#import "JXTAlertManagerHeader.h"
 #import "Extern.h"
 @interface PersonalInfoViewController ()
 

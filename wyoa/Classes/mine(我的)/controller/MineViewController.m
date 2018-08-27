@@ -9,10 +9,11 @@
 #import "MineViewController.h"
 #import "MyWalletViewController.h"
 #import "UserInfoResultBean.h"
-#import <MJExtension/MJExtension.h>
+#import "MJExtension.h"
 #import  "UIImageView+WebCache.h"
 #import "PersonalInfoViewController.h"
 #import "Extern.h"
+#import "UIImage+HK.h"
 @interface MineViewController ()
 @property(nonatomic,strong) UserInfoResultBean *userInfoResultBean;
 @end
@@ -45,7 +46,7 @@
 }
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
-   
+    [self.navigationController.navigationBar setShadowImage:[UIImage createImageWithColor:[UIColor colorWithHexString:@"f0f0f0"]]];
 }
 
 -(void)viewDidAppear:(BOOL)animated{

@@ -9,7 +9,7 @@
 #import "LoginViewController.h"
 #import "ZJHKTabBarViewController.h"
 #import "LoginResultBean.h"
-#import <MJExtension/MJExtension.h>
+#import "MJExtension.h"
 #import "MBProgressHUD+MBProgressHUD.h"
 #import "Extern.h"
 @interface LoginViewController ()
@@ -48,7 +48,7 @@
     if(![self isEmpty]){
 //        ZJHKTabBarViewController *tabbarController=[[ZJHKTabBarViewController alloc]init];
 //        [self presentViewController:tabbarController animated:YES completion:^{
-//            
+//
 //        }];
         [self login];
     }else{

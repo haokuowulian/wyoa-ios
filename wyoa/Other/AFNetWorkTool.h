@@ -6,7 +6,7 @@
 //  Copyright © 2018年 zjf. All rights reserved.
 //
 
-#import <AFNetworking/AFNetworking.h>
+#import "AFNetworking.h"
 
 @interface AFNetWorkTool : AFHTTPSessionManager
 +(instancetype)shareInstance;

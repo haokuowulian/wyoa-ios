@@ -6,7 +6,7 @@
 //  Copyright © 2018年 zjf. All rights reserved.
 //
 
-#import <MBProgressHUD/MBProgressHUD.h>
+#import "MBProgressHUD.h"
 
 @interface MBProgressHUD (MBProgressHUD)
 + (void)showSuccess:(NSString *)success;

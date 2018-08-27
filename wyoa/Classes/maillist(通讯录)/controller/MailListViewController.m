@@ -10,12 +10,13 @@
 #import "ContactBean.h"
 #import "ContractListBean.h"
 #import "MBProgressHUD+MBProgressHUD.h"
-#import <MJExtension/MJExtension.h>
+#import "MJExtension.h"
 #import "ContractTableViewCell.h"
-#import <MJRefresh/MJRefresh.h>
+#import "MJRefresh.h"
 #import "UserInfoResultBean.h"
 #import "ContactDetailViewController.h"
 #import "Extern.h"
+#import "UIImage+HK.h"
 
 @interface MailListViewController ()<UITableViewDataSource,UITableViewDelegate>
 // 所有的indexsTitles
@@ -49,6 +50,16 @@
     
     
 }
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    [self.navigationController.navigationBar setShadowImage:[UIImage createImageWithColor:[UIColor colorWithHexString:@"f0f0f0"]]];
+}
 #pragma mark 获取通讯录
 -(void)getContacts{
 //     [MBProgressHUD showMessage:@"正在获取通讯录..."];
@@ -80,10 +91,6 @@
         [MBProgressHUD hideHUD];
 
     }];
-}
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 // 设置初始的所有数据

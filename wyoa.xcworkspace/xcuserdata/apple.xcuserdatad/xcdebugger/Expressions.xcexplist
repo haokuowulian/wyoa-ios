@@ -3,47 +3,23 @@
    version = "1.0">
    <ContextStates>
       <ContextState
-         contextName = "__33-[MineViewController getUserInfo]_block_invoke:MineViewController.m">
+         contextName = "+[ContactBean searchText:inDataArray:]:ContactBean.m">
          <PersistentStrings>
             <PersistentString
-               value = "self.userInfoResultBean.headPhoto">
+               value = "contact.name">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "-[ZJHKTabBarbutton titleRectForContentRect:]:ZJHKTabBarbutton.m">
+         contextName = "-[ZJHKTabBarViewController changeViewController:]:ZJHKTabBarViewController.m">
          <PersistentStrings>
             <PersistentString
-               value = "contentRect.size">
+               value = "self._previousBtn">
             </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "-[UpdateInfoViewController updateUserInfo]:UpdateInfoViewController.m">
-         <PersistentStrings>
             <PersistentString
-               value = "self.userInfoBean">
+               value = "sender.tag">
             </PersistentString>
          </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "-[MailListViewController passConTextChange:]:MailListViewController.m">
-         <PersistentStrings>
-            <PersistentString
-               value = "self.alldata">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "-[MailListViewController setupInitialAllDataArrayWithContacts:]:MailListViewController.m">
-         <PersistentStrings>
-            <PersistentString
-               value = "self.sectionIndexs">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "__28-[LoginViewController login]_block_invoke:LoginViewController.m">
       </ContextState>
       <ContextState
          contextName = "-[DLTabedSlideView commonInit]:DLTabedSlideView.m">
@@ -79,26 +55,21 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "+[ContactBean searchText:inDataArray:]:ContactBean.m">
-         <PersistentStrings>
-            <PersistentString
-               value = "contact.name">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "-[MailListViewController tableView:titleForHeaderInSection:]:MailListViewController.m">
-         <PersistentStrings>
-            <PersistentString
-               value = "index">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "-[MailListViewController sectionIndexTitlesForTableView:]:MailListViewController.m">
+         contextName = "-[MailListViewController setupInitialAllDataArrayWithContacts:]:MailListViewController.m">
          <PersistentStrings>
             <PersistentString
                value = "self.sectionIndexs">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__31-[QingJiaViewController submit]_block_invoke:QingJiaViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "__62-[StaffViewController tableView:editActionsForRowAtIndexPath:]_block_invoke:StaffViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "@[indexPath]">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -123,13 +94,51 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "-[ZJHKTabBarViewController changeViewController:]:ZJHKTabBarViewController.m">
+         contextName = "-[MailListViewController sectionIndexTitlesForTableView:]:MailListViewController.m">
          <PersistentStrings>
             <PersistentString
-               value = "self._previousBtn">
+               value = "self.sectionIndexs">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__28-[LoginViewController login]_block_invoke:LoginViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[MailListViewController tableView:didSelectRowAtIndexPath:]:MailListViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[UpdateInfoViewController updateUserInfo]:UpdateInfoViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.userInfoBean">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__31-[StaffViewController getStaff]_block_invoke:StaffViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.pageIndex">
             </PersistentString>
             <PersistentString
-               value = "sender.tag">
+               value = "staffResultBean.count-1">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[MailListViewController tableView:titleForHeaderInSection:]:MailListViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "index">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[MailListViewController passConTextChange:]:MailListViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.alldata">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -142,7 +151,12 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "-[MailListViewController tableView:didSelectRowAtIndexPath:]:MailListViewController.m">
+         contextName = "-[ZJHKTabBarbutton titleRectForContentRect:]:ZJHKTabBarbutton.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "contentRect.size">
+            </PersistentString>
+         </PersistentStrings>
       </ContextState>
       <ContextState
          contextName = "-[DLFixedTabbarView commonInit]:DLFixedTabbarView.m">
@@ -155,6 +169,39 @@
             </PersistentString>
             <PersistentString
                value = "trackView_ .bounds">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__35-[MyKaoQinViewController getKaoQin]_block_invoke:MyKaoQinViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "__72-[KaoQinViewController amapLocationManager:didUpdateLocation:reGeocode:]_block_invoke:KaoQinViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "placemark">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[MyKaoQinViewController tableView:numberOfRowsInSection:]:MyKaoQinViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.kaoqinArray.count">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[QingJiaViewController submit]:QingJiaViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "__28-[LoginViewController login]_block_invoke.86:LoginViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "__33-[MineViewController getUserInfo]_block_invoke:MineViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.userInfoResultBean.headPhoto">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

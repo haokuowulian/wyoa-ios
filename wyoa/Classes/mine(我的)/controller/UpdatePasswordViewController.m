@@ -10,7 +10,7 @@
 #import "MBProgressHUD+MBProgressHUD.h"
 #import "ValidPassword.h"
 #import "BaseBean.h"
-#import <MJExtension/MJExtension.h>
+#import "MJExtension.h"
 #import "LoginViewController.h"
 #import "JumpVCManager.h"
 #import "Extern.h"

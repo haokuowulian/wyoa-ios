@@ -9,7 +9,7 @@
 #import "FindPassword1ViewController.h"
 #import "MBProgressHUD+MBProgressHUD.h"
 #import "BaseBean.h"
-#import <MJExtension/MJExtension.h>
+#import "MJExtension.h"
 #import "FindPassword2ViewController.h"
 #import "Extern.h"
 @interface FindPassword1ViewController ()

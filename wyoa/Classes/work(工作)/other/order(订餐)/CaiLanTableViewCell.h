@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <BEMCheckBox/BEMCheckBox.h>
+#import "BEMCheckBox.h"
 @interface CaiLanTableViewCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet BEMCheckBox *checkBox;
 

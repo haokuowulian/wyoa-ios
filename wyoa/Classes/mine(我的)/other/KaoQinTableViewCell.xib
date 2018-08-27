@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="kaoqin" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="KaoQinTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="191.5"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="191"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2018-08-06的考勤" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qdy-7F-dgc">
+                        <rect key="frame" x="15" y="12.5" width="131" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="上班时间：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OaP-ct-ZeO">
+                        <rect key="frame" x="15" y="43" width="71.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="08：00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Yh-IK-soc">
+                        <rect key="frame" x="154.5" y="43" width="50" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="下班时间：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j5x-fo-93o">
+                        <rect key="frame" x="15" y="72.5" width="71.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="16：00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7my-Ng-Re0">
+                        <rect key="frame" x="154.5" y="72.5" width="47" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="上班打卡时间：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nTr-lK-Xrm">
+                        <rect key="frame" x="15" y="102" width="100" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="08：30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6GT-6Q-K79">
+                        <rect key="frame" x="156" y="102" width="50" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="下班打卡时间：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wt0-VT-nRK">
+                        <rect key="frame" x="15" y="131.5" width="100" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="17：00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jvg-0B-tVw">
+                        <rect key="frame" x="156" y="131" width="46" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="出勤时长：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wLX-pO-aT6">
+                        <rect key="frame" x="15" y="161" width="71.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9小时" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YTT-xO-Wxx">
+                        <rect key="frame" x="154.5" y="160.5" width="37.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="迟到30分钟" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PtN-uj-Qr2">
+                        <rect key="frame" x="285.5" y="92.5" width="74.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.85490196078431369" green="0.086274509803921567" blue="0.11764705882352941" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="正常打卡" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w0y-rr-CGG">
+                        <rect key="frame" x="302" y="122" width="58" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.20392156862745098" green="0.73725490196078436" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="wLX-pO-aT6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="2KM-UE-M1P"/>
+                    <constraint firstItem="OaP-ct-ZeO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="2fo-dc-JhG"/>
+                    <constraint firstItem="6GT-6Q-K79" firstAttribute="leading" secondItem="nTr-lK-Xrm" secondAttribute="trailing" constant="41" id="41X-gO-qCh"/>
+                    <constraint firstItem="7my-Ng-Re0" firstAttribute="top" secondItem="0Yh-IK-soc" secondAttribute="bottom" constant="12.5" id="55A-yA-NuP"/>
+                    <constraint firstItem="jvg-0B-tVw" firstAttribute="top" secondItem="6GT-6Q-K79" secondAttribute="bottom" constant="12.5" id="6X2-BY-siv"/>
+                    <constraint firstAttribute="trailing" secondItem="PtN-uj-Qr2" secondAttribute="trailing" constant="15" id="7Bs-Q2-mLR"/>
+                    <constraint firstAttribute="trailing" secondItem="w0y-rr-CGG" secondAttribute="trailing" constant="15" id="7FV-HS-qaL"/>
+                    <constraint firstItem="jvg-0B-tVw" firstAttribute="leading" secondItem="wt0-VT-nRK" secondAttribute="trailing" constant="41" id="9Cx-O8-XRd"/>
+                    <constraint firstItem="w0y-rr-CGG" firstAttribute="top" secondItem="PtN-uj-Qr2" secondAttribute="bottom" constant="12.5" id="9L6-GL-TbG"/>
+                    <constraint firstItem="PtN-uj-Qr2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="92.5" id="Id0-Xi-MRd"/>
+                    <constraint firstItem="6GT-6Q-K79" firstAttribute="top" secondItem="7my-Ng-Re0" secondAttribute="bottom" constant="12.5" id="Kt2-yQ-tiY"/>
+                    <constraint firstItem="Qdy-7F-dgc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="PtY-bT-vf0"/>
+                    <constraint firstItem="wLX-pO-aT6" firstAttribute="top" secondItem="wt0-VT-nRK" secondAttribute="bottom" constant="12.5" id="TyE-lM-4Lb"/>
+                    <constraint firstItem="YTT-xO-Wxx" firstAttribute="top" secondItem="jvg-0B-tVw" secondAttribute="bottom" constant="12.5" id="UZg-aC-ZDq"/>
+                    <constraint firstItem="7my-Ng-Re0" firstAttribute="leading" secondItem="j5x-fo-93o" secondAttribute="trailing" constant="68" id="X7H-XM-J6Z"/>
+                    <constraint firstItem="nTr-lK-Xrm" firstAttribute="top" secondItem="j5x-fo-93o" secondAttribute="bottom" constant="12.5" id="YFH-5D-Eym"/>
+                    <constraint firstItem="wt0-VT-nRK" firstAttribute="top" secondItem="nTr-lK-Xrm" secondAttribute="bottom" constant="12.5" id="bAu-mp-XFK"/>
+                    <constraint firstItem="j5x-fo-93o" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="gVs-0v-nK9"/>
+                    <constraint firstItem="OaP-ct-ZeO" firstAttribute="top" secondItem="Qdy-7F-dgc" secondAttribute="bottom" constant="12.5" id="gZT-ZI-JS5"/>
+                    <constraint firstItem="nTr-lK-Xrm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="gp6-ae-ekg"/>
+                    <constraint firstItem="wt0-VT-nRK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="i3z-rp-0NJ"/>
+                    <constraint firstItem="j5x-fo-93o" firstAttribute="top" secondItem="OaP-ct-ZeO" secondAttribute="bottom" constant="12.5" id="jJo-Sv-BXG"/>
+                    <constraint firstItem="Qdy-7F-dgc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12.5" id="r13-OY-ZuD"/>
+                    <constraint firstItem="0Yh-IK-soc" firstAttribute="leading" secondItem="OaP-ct-ZeO" secondAttribute="trailing" constant="68" id="szl-lK-o6b"/>
+                    <constraint firstItem="YTT-xO-Wxx" firstAttribute="leading" secondItem="wLX-pO-aT6" secondAttribute="trailing" constant="68" id="wB7-Um-sZP"/>
+                    <constraint firstItem="0Yh-IK-soc" firstAttribute="top" secondItem="Qdy-7F-dgc" secondAttribute="bottom" constant="12.5" id="xiP-rb-cZy"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="DuteDateLabel" destination="Qdy-7F-dgc" id="Nmw-mi-nvg"/>
+                <outlet property="clockOffTimeLabel" destination="jvg-0B-tVw" id="KYe-R8-KDL"/>
+                <outlet property="clockOnTimeLabel" destination="6GT-6Q-K79" id="KBu-ca-OfQ"/>
+                <outlet property="minAttendLabel" destination="YTT-xO-Wxx" id="CxR-ib-ed6"/>
+                <outlet property="offStateLabel" destination="w0y-rr-CGG" id="nwo-cB-SrT"/>
+                <outlet property="offTimeLabel" destination="7my-Ng-Re0" id="PTf-I7-6yi"/>
+                <outlet property="onStateLabel" destination="PtN-uj-Qr2" id="bt4-dY-cEw"/>
+                <outlet property="onTimeLabel" destination="0Yh-IK-soc" id="HlO-mA-At0"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

@@ -14,6 +14,11 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
+  - AMap2DMap (5.6.0):
+    - AMapFoundation (~> 1.4)
+  - AMapFoundation (1.5.3)
+  - AMapLocation (2.6.0):
+    - AMapFoundation (~> 1.4)
   - BEMCheckBox (1.4.1)
   - IQKeyboardManager (6.1.0)
   - JXTAlertManager (1.0.2)
@@ -28,6 +33,8 @@ PODS:
   - YYCache (1.0.4)
 
 DEPENDENCIES:
+  - AMap2DMap
+  - AMapLocation
   - BEMCheckBox
   - IQKeyboardManager
   - JXTAlertManager
@@ -41,6 +48,9 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - AFNetworking
+    - AMap2DMap
+    - AMapFoundation
+    - AMapLocation
     - BEMCheckBox
     - IQKeyboardManager
     - JXTAlertManager
@@ -53,6 +63,9 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  AMap2DMap: cf0bfd6ae97951b55cc061903b814f924ba6c221
+  AMapFoundation: 58f883c80754c659cf626deb3150936bfe8f1772
+  AMapLocation: 55116a2c8956eab7550cbb56e989aa5cdcc424e3
   BEMCheckBox: 5ba6e37ade3d3657b36caecc35c8b75c6c2b1a4e
   IQKeyboardManager: f520b0f411eaefa08058532cb50c48bfeffa8535
   JXTAlertManager: 71a89e90ac1a6d72862fbe884eab513cb243a344
@@ -63,6 +76,6 @@ SPEC CHECKSUMS:
   YTKNetwork: df8a7a5597bda1664a4efaa7ef871a818a887fe0
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
 
-PODFILE CHECKSUM: a60f98f8f54e5772b65f697d82bc687c5f3272d3
+PODFILE CHECKSUM: aabd8a9bf2b532eeeb4e1b0e0bf4f416332ca613
 
 COCOAPODS: 1.5.3

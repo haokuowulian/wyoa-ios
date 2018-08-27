@@ -10,4 +10,5 @@
 
 @interface TimeUtil : NSObject
 +(NSString*)getCurrentTimesNOHour;
++(NSString *)getNDay:(NSInteger)n;
 @end

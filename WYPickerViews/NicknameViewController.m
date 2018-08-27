@@ -43,7 +43,7 @@
     // 编辑完成之后的回调
     longTextInputView.block = ^(NSString *longText) {
         
-#warning - 可以在这里把新数据提交服务器
+
         
         // 在提交成功的回调里, 按自己的要求做相应的处理就可以了
         self.block(longText);

@@ -154,7 +154,7 @@
                 [self.delegate DLSlideView:self didSwitchTo:index];
             }
             
-            isSwitching_ = NO;
+            self->isSwitching_ = NO;
         }];
         oldIndex_ = index;
         oldCtrl_ = newvc;
@@ -209,14 +209,14 @@
     [UIView animateWithDuration:animatedTime animations:^{
         [self repositionForOffsetX:0];
     } completion:^(BOOL finished) {
-        if (panToIndex_ >= 0 && panToIndex_ < [self.dataSource numberOfControllersInDLSlideView:self] && panToIndex_ != oldIndex_) {
+        if (self->panToIndex_ >= 0 && self->panToIndex_ < [self.dataSource numberOfControllersInDLSlideView:self] && self->panToIndex_ != self->oldIndex_) {
             //[self removeAt:panToIndex_];
-            [oldCtrl_ beginAppearanceTransition:YES animated:NO];
+            [self->oldCtrl_ beginAppearanceTransition:YES animated:NO];
             [self removeWill];
-            [oldCtrl_ endAppearanceTransition];
+            [self->oldCtrl_ endAppearanceTransition];
         }
         if (self.delegate && [self.delegate respondsToSelector:@selector(DLSlideView:switchCanceled:)]) {
-            [self.delegate DLSlideView:self switchCanceled:oldIndex_];
+            [self.delegate DLSlideView:self switchCanceled:self->oldIndex_];
         }
     }];
     
@@ -310,16 +310,16 @@
                     //[self removeAt:oldIndex_];
                     [self removeOld];
                     
-                    if (panToIndex_ >= 0 && panToIndex_ < [self.dataSource numberOfControllersInDLSlideView:self]) {
-                        [willCtrl_ endAppearanceTransition];
-                        [willCtrl_ didMoveToParentViewController:self.baseViewController];
-                        oldIndex_ = panToIndex_;
-                        oldCtrl_ = willCtrl_;
-                        willCtrl_ = nil;
-                        panToIndex_ = -1;
+                    if (self->panToIndex_ >= 0 && self->panToIndex_ < [self.dataSource numberOfControllersInDLSlideView:self]) {
+                        [self->willCtrl_ endAppearanceTransition];
+                        [self->willCtrl_ didMoveToParentViewController:self.baseViewController];
+                        self->oldIndex_ = self->panToIndex_;
+                        self->oldCtrl_ = self->willCtrl_;
+                        self->willCtrl_ = nil;
+                        self->panToIndex_ = -1;
                     }
                     if (self.delegate && [self.delegate respondsToSelector:@selector(DLSlideView:didSwitchTo:)]) {
-                        [self.delegate DLSlideView:self didSwitchTo:oldIndex_];
+                        [self.delegate DLSlideView:self didSwitchTo:self->oldIndex_];
                     }
                 }];
             }

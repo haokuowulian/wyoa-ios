@@ -7,9 +7,11 @@
 //
 
 #import "AppDelegate.h"
-#import <IQKeyboardManager/IQKeyboardManager.h>
-#import <AFNetworking/AFNetworkActivityIndicatorManager.h>
+#import "IQKeyboardManager.h"
+#import "AFNetworkActivityIndicatorManager.h"
 #import "LoginViewController.h"
+#import <AMapFoundationKit/AMapFoundationKit.h>
+#import "UIImage+HK.h"
 @interface AppDelegate ()
 
 @end
@@ -18,8 +20,10 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [[IQKeyboardManager sharedManager] setEnable:YES];
+    //配置高德地图
+    [AMapServices sharedServices].apiKey = @"97164bbad7361280362da513869e066e";
     
+    [[IQKeyboardManager sharedManager] setEnable:YES];
     [[IQKeyboardManager sharedManager] setEnableAutoToolbar:YES];
     //显示加载网络的指示符
     [[AFNetworkActivityIndicatorManager sharedManager]setEnabled:YES];
@@ -34,6 +38,7 @@
     self.window.rootViewController=loginViewController;
     //window显示
     [self.window makeKeyAndVisible];
+    [[UINavigationBar appearance] setShadowImage:[UIImage createImageWithColor:[UIColor colorWithHexString:@"f0f0f0"]]];
     return YES;
 }
 

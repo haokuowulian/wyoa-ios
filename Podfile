@@ -12,6 +12,8 @@ target 'wyoa' do
   pod 'MJExtension' 
   pod 'SDWebImage'
   pod 'JXTAlertManager'
+  pod 'AMap2DMap'
+  pod 'AMapLocation'
   # Pods for weijianlianxian
 
 end

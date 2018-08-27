@@ -9,7 +9,7 @@
 #import "FindPassword2ViewController.h"
 #import "MBProgressHUD+MBProgressHUD.h"
 #import "BaseBean.h"
-#import <MJExtension/MJExtension.h>
+#import "MJExtension.h"
 #import "JumpVCManager.h"
 #import "ValidPassword.h"
 #import "Extern.h"
