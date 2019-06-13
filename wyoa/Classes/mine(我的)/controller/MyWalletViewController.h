@@ -10,5 +10,6 @@
 
 @interface MyWalletViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UILabel *moneyLabel;
+- (IBAction)diancanClick:(id)sender;
 
 @end

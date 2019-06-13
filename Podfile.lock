@@ -21,10 +21,14 @@ PODS:
     - AMapFoundation (~> 1.4)
   - BEMCheckBox (1.4.1)
   - IQKeyboardManager (6.1.0)
+  - JCore (1.2.0)
+  - JPush (3.0.9):
+    - JCore (~> 1.2.0)
   - JXTAlertManager (1.0.2)
   - MBProgressHUD (1.1.0)
   - MJExtension (3.0.15.1)
   - MJRefresh (3.1.15.3)
+  - SDAutoLayout (2.2.1)
   - SDWebImage (4.4.1):
     - SDWebImage/Core (= 4.4.1)
   - SDWebImage/Core (4.4.1)
@@ -37,10 +41,12 @@ DEPENDENCIES:
   - AMapLocation
   - BEMCheckBox
   - IQKeyboardManager
+  - JPush
   - JXTAlertManager
   - MBProgressHUD
   - MJExtension
   - MJRefresh
+  - SDAutoLayout
   - SDWebImage
   - YTKNetwork
   - YYCache
@@ -53,10 +59,13 @@ SPEC REPOS:
     - AMapLocation
     - BEMCheckBox
     - IQKeyboardManager
+    - JCore
+    - JPush
     - JXTAlertManager
     - MBProgressHUD
     - MJExtension
     - MJRefresh
+    - SDAutoLayout
     - SDWebImage
     - YTKNetwork
     - YYCache
@@ -68,14 +77,17 @@ SPEC CHECKSUMS:
   AMapLocation: 55116a2c8956eab7550cbb56e989aa5cdcc424e3
   BEMCheckBox: 5ba6e37ade3d3657b36caecc35c8b75c6c2b1a4e
   IQKeyboardManager: f520b0f411eaefa08058532cb50c48bfeffa8535
+  JCore: b52e3dd73625eec70afd1244bb9c41038aa06087
+  JPush: 48041e8c5ad2ef9b48709eb0888af9640b36e9b0
   JXTAlertManager: 71a89e90ac1a6d72862fbe884eab513cb243a344
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
   MJExtension: 19bc33ce2eee2d319760f5622562cf581a6ff756
   MJRefresh: b48380ae2b927b46c4ef000de9adb8dc748e1df7
+  SDAutoLayout: 8bf6b3bbc8b01f775d4defbb4fda2ace805461be
   SDWebImage: 47e9b5b925cbce75946c23f0c42dd19464189af4
   YTKNetwork: df8a7a5597bda1664a4efaa7ef871a818a887fe0
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
 
-PODFILE CHECKSUM: aabd8a9bf2b532eeeb4e1b0e0bf4f416332ca613
+PODFILE CHECKSUM: 076419a714f206ac8d232c99e03bcbbf4d2caeae
 
 COCOAPODS: 1.5.3

@@ -140,10 +140,11 @@
             [self.navigationController pushViewController:controller animated:YES];
             
         }else{
-           self.errorCodeLabel.hidden=NO;
+            [MBProgressHUD showError:resultBean.message];
+           self.errorCodeLabel.hidden=YES;
         }
     } Error:^(NSError *err) {
-       
+        [MBProgressHUD showError:@"网络连接失败"];
     }];
 }
 @end

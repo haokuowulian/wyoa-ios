@@ -19,19 +19,22 @@
 #import "BaseBean.h"
 #import "TimeUtil.h"
 #import "MBProgressHUD+MBProgressHUD.h"
+#import "MNDatePickerView.h"
 
 @interface GongChaiViewController ()
 @property(nonatomic,copy)NSString *courtesyCopyId;//抄送人ID
 @property(nonatomic,copy)NSString *onelevelId;//1级审批人ID;
 @property(nonatomic,copy)NSString *twolevelId;//2级审批人ID;
 @property(nonatomic,copy)NSString *threelevelId;//3级审批人ID;
+
+@property(nonatomic,strong)MNDatePickerView *picker;
 @end
 
 @implementation GongChaiViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-  
+  self.courtesyCopyId=@"0";
     //获取通知中心单例对象
     NSNotificationCenter * center = [NSNotificationCenter defaultCenter];
     //添加当前类对象为一个观察者，name和object设置为nil，表示接收一切通知
@@ -60,17 +63,21 @@
 }
 
 - (IBAction)startTimeClick:(id)sender {
-     [self selectDateTime:self.startTimeText];
+//     [self selectDateTime:self.startTimeText];
+    [self initPickerView:self.startTimeText];
+    [self.picker showPickerView];
 }
 - (IBAction)endTimeClick:(id)sender {
-     [self selectDateTime:self.endTimeText];
+//     [self selectDateTime:self.endTimeText];
+    [self initPickerView:self.endTimeText];
+    [self.picker showPickerView];
 }
 
 - (IBAction)addChaoSongRen:(id)sender {
-    UIStoryboard *storyboard=[UIStoryboard storyboardWithName:@"MailList" bundle:nil];
-    MailListViewController *controller=[storyboard instantiateViewControllerWithIdentifier:@"mailList"];
-    controller.isFromSelect=YES;
-    [self.navigationController pushViewController:controller animated:YES];
+//    UIStoryboard *storyboard=[UIStoryboard storyboardWithName:@"MailList" bundle:nil];
+//    MailListViewController *controller=[storyboard instantiateViewControllerWithIdentifier:@"mailList"];
+//    controller.isFromSelect=YES;
+//    [self.navigationController pushViewController:controller animated:YES];
 }
 
 - (IBAction)submitClick:(id)sender {
@@ -84,7 +91,7 @@
 -(void)selectDateTime:(UITextField *)textField{
     NSDateFormatter *dateFormatter=[[NSDateFormatter alloc]init];//创建一个日期格式化器
     dateFormatter.dateFormat=@"yyyy-MM-dd";
-    WYBirthdayPickerView *datePickerView = [[WYBirthdayPickerView alloc] initWithInitialDate:[dateFormatter stringFromDate:[NSDate date]]];
+    WYBirthdayPickerView *datePickerView = [[WYBirthdayPickerView alloc] initWithInitialDate:[dateFormatter stringFromDate:[NSDate date]]andDateFormatter:@"yyyy-MM-dd"];
     // 选择日期完成之后的回调 : 按自己的要求做相应的处理就可以了
     datePickerView.confirmBlock = ^(NSString *selectedDate) {
         textField.text=selectedDate;
@@ -106,9 +113,23 @@
          self.twolevelId=qingjiaShenPiBean.twoLevelId;
          self.threelevelId=qingjiaShenPiBean.threeLevelId;
         if(qingjiaShenPiBean.success==1){
+            if(qingjiaShenPiBean.CourtesyCopyId&&qingjiaShenPiBean.CourtesyCopyId.length>0){
+                self.courtesyCopyId=qingjiaShenPiBean.CourtesyCopyId;
+                if([qingjiaShenPiBean.CourtesyCopySex isEqualToString:@"女"]){
+                    [self.chaoSongImageView   sd_setImageWithURL:qingjiaShenPiBean.CourtesyCopylP placeholderImage:[UIImage   imageNamed:@"woman"]];
+                }else{
+                    [self.chaoSongImageView   sd_setImageWithURL:qingjiaShenPiBean.CourtesyCopylP placeholderImage:[UIImage   imageNamed:@"man"]];
+                }
+                [self.chaoSongLabel setText:qingjiaShenPiBean.CourtesyCopylN];
+            }
             if(qingjiaShenPiBean.oneLevelId&&qingjiaShenPiBean.oneLevelId.length>0){
                 self.shenpiView1.hidden=NO;
-                [self.shenpiImageView1   sd_setImageWithURL:qingjiaShenPiBean.oneLevelP placeholderImage:[UIImage   imageNamed:@"man"]];
+                if([qingjiaShenPiBean.oneLeveSex isEqualToString:@"女"]){
+                    [self.shenpiImageView1   sd_setImageWithURL:qingjiaShenPiBean.oneLevelP placeholderImage:[UIImage   imageNamed:@"woman"]];
+                }else{
+                    [self.shenpiImageView1   sd_setImageWithURL:qingjiaShenPiBean.oneLevelP placeholderImage:[UIImage   imageNamed:@"man"]];
+                }
+                
                 [self.shenpiNameLabel1 setText:qingjiaShenPiBean.oneLevelN];
             }else{
                 self.shenpiView1.hidden=YES;
@@ -116,7 +137,12 @@
             if(qingjiaShenPiBean.twoLevelId&&qingjiaShenPiBean.twoLevelId.length>0){
                 self.shenpiView2.hidden=NO;
                 self.nextImageView1.hidden=NO;
-                [self.shenpiImageView2   sd_setImageWithURL:qingjiaShenPiBean.twoLevelP placeholderImage:[UIImage   imageNamed:@"man"]];
+                if([qingjiaShenPiBean.twoLeveSex isEqualToString:@"女"]){
+                    [self.shenpiImageView2   sd_setImageWithURL:qingjiaShenPiBean.twoLevelP placeholderImage:[UIImage   imageNamed:@"woman"]];
+                }else{
+                    [self.shenpiImageView2   sd_setImageWithURL:qingjiaShenPiBean.twoLevelP placeholderImage:[UIImage   imageNamed:@"man"]];
+                }
+                
                 [self.shenpiNamelabel2 setText:qingjiaShenPiBean.twoLevelN];
             }else{
                 self.shenpiView2.hidden=YES;
@@ -125,7 +151,12 @@
             if(qingjiaShenPiBean.threeLevelId&&qingjiaShenPiBean.threeLevelId.length>0){
                 self.shenpiView3.hidden=NO;
                 self.nextImageView2.hidden=NO;
-                [self.shenpiImageView3   sd_setImageWithURL:qingjiaShenPiBean.threeLevelP placeholderImage:[UIImage   imageNamed:@"man"]];
+                if([qingjiaShenPiBean.threeLeveSex isEqualToString:@"女"]){
+                    [self.shenpiImageView3   sd_setImageWithURL:qingjiaShenPiBean.threeLevelP placeholderImage:[UIImage   imageNamed:@"woman"]];
+                }else{
+                    [self.shenpiImageView3   sd_setImageWithURL:qingjiaShenPiBean.threeLevelP placeholderImage:[UIImage   imageNamed:@"man"]];
+                }
+                
                 [self.shenpiNamelabel3 setText:qingjiaShenPiBean.threeLevelN];
             }else{
                 self.shenpiView3.hidden=YES;
@@ -150,8 +181,7 @@
     if(self.startTimeText.text.length>0&&
        self.endTimeText.text.length>0&&
        self.howLongText.text.length>0&&
-       self.reasonText.text.length>0&&
-       self.courtesyCopyId.length>0){
+       self.reasonText.text.length>0){
         return YES;
     }else{
         return NO;
@@ -198,5 +228,31 @@
         [MBProgressHUD showError:@"网络连接失败"];
     }];
     
+}
+
+#pragma mark 选择时间
+-(void)initPickerView:(UITextField *)textField{
+    NSDate *nowDate = [NSDate new];
+    _picker = [[MNDatePickerView alloc] initWithDate:nowDate withDatePickerMode:UIDatePickerModeDateAndTime];
+    _picker.delegate = self;
+    if(textField==self.startTimeText){
+        _picker.pickerTag = 1;
+    }else if(textField==self.endTimeText){
+        _picker.pickerTag = 2;
+    }
+    
+}
+
+-(void)MNDatePickerViewSelectedDate:(NSDate *)date tag:(NSInteger)tag
+{
+    
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    dateFormatter.dateFormat = @"yyyy-MM-dd hh:mm";
+    NSString *dateStr01 = [dateFormatter stringFromDate:date];
+    if(tag == 1){
+        self.startTimeText.text = dateStr01;
+    }else if(tag==2){
+        self.endTimeText.text = dateStr01;
+    }
 }
 @end

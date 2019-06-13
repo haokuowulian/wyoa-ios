@@ -10,5 +10,13 @@
 
 @interface TimeUtil : NSObject
 +(NSString*)getCurrentTimesNOHour;
++(NSString*)getCurrentMonth;
++(NSString*)getNextMonth;
++(NSString *)getNMinute:(NSInteger)n;
 +(NSString *)getNDay:(NSInteger)n;
++ (NSString *)MinutetransferToHourMin:(NSString *)minute;
++(NSString *)detailDayToSimpleTime:(NSString *)dayTime;
++(NSString *)detailDayToSimpleTime2:(NSString *)dayTime;
++(NSDate*)stringToDate:(NSString *)str;
++(NSDate *)getPriousorLaterDateFromDate:(NSDate *)date withMonth:(NSInteger)month;
 @end

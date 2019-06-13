@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "LingYongDetailBean.h"
 @interface LingYongTableViewCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UIImageView *headImageView;
+@property (weak, nonatomic) IBOutlet UILabel *nameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *createDateLabel;
+@property (weak, nonatomic) IBOutlet UILabel *wupinLabel;
+@property (weak, nonatomic) IBOutlet UILabel *useLabel;
+@property (weak, nonatomic) IBOutlet UILabel *stateLabel;
 
+@property(nonatomic,strong)LingYongDetailBean *lingyongDetailBean;
 @end

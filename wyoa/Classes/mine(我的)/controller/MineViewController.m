@@ -22,15 +22,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSUserDefaults *userDefault=[NSUserDefaults standardUserDefaults];
-    NSString *realName=[userDefault objectForKey:@"realName"];
-    if(realName&&realName.length>0){
-        [self.headView   sd_setImageWithURL:[userDefault objectForKey:@"headUrl"] placeholderImage:[UIImage   imageNamed:@"man"]];
-        [self.realNameLabel setText:realName];
-        [self.userJobLabel setText:[userDefault objectForKey:@"userJob"] ];
-    }else{
-        [self getUserInfo];
-    }
+    [self getUserInfo];
     
     //获取通知中心单例对象
     NSNotificationCenter * center = [NSNotificationCenter defaultCenter];
@@ -46,6 +38,9 @@
 }
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
+    [self.navigationController.navigationBar setBarTintColor:[UIColor whiteColor]];
+    [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor colorWithHexString:@"333333"],NSFontAttributeName : [UIFont boldSystemFontOfSize:20]}];
+    [self.navigationController.navigationBar setTintColor:[UIColor colorWithHexString:@"333333"]];
     [self.navigationController.navigationBar setShadowImage:[UIImage createImageWithColor:[UIColor colorWithHexString:@"f0f0f0"]]];
 }
 
@@ -54,6 +49,7 @@
     [self.navigationController.navigationBar setBarTintColor:[UIColor whiteColor]];
     [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor colorWithHexString:@"333333"],NSFontAttributeName : [UIFont boldSystemFontOfSize:20]}];
     [self.navigationController.navigationBar setTintColor:[UIColor colorWithHexString:@"333333"]];
+     [self.navigationController.navigationBar setShadowImage:[UIImage createImageWithColor:[UIColor colorWithHexString:@"f0f0f0"]]];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -76,8 +72,12 @@
              [userDefault setObject:self.userInfoResultBean.headPhoto forKey:@"headUrl"];
              [userDefault setObject:self.userInfoResultBean.realname forKey:@"realName"];
             [userDefault setObject:[NSString stringWithFormat:@"职务：%@",self.userInfoResultBean.userJob] forKey:@"userJob"];
+            if([self.userInfoResultBean.sex isEqualToString:@"女"]){
+                 [self.headView   sd_setImageWithURL:self.userInfoResultBean.headPhoto placeholderImage:[UIImage   imageNamed:@"woman"]];
+            }else{
+                 [self.headView   sd_setImageWithURL:self.userInfoResultBean.headPhoto placeholderImage:[UIImage   imageNamed:@"man"]];
+            }
             
-              [self.headView   sd_setImageWithURL:self.userInfoResultBean.headPhoto placeholderImage:[UIImage   imageNamed:@"defaulthead"]];
             [self.realNameLabel setText:self.userInfoResultBean.realname];
             [self.userJobLabel setText:[NSString stringWithFormat:@"职务：%@",self.userInfoResultBean.userJob] ];
             
@@ -93,7 +93,7 @@
     if([segue.identifier isEqualToString:@"personalInfo"])
     {
        PersonalInfoViewController *controller= segue.destinationViewController;
-//       controller.userInfoBean=self.userInfoResultBean;
+       controller.userInfoBean=self.userInfoResultBean;
         
     }
 }

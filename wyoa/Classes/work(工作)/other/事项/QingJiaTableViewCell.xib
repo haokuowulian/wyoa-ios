@@ -31,32 +31,32 @@
                             <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                         </userDefinedRuntimeAttributes>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xfl-Pb-pDm" userLabel="name请假Label">
-                        <rect key="frame" x="59.5" y="18" width="39.5" height="19.5"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xfl-Pb-pDm" userLabel="name请假Label">
+                        <rect key="frame" x="59.5" y="18" width="0.0" height="0.0"/>
                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                         <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QrS-NW-fmp" userLabel="时间Label">
-                        <rect key="frame" x="276" y="15.5" width="31" height="14.5"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QrS-NW-fmp" userLabel="时间Label">
+                        <rect key="frame" x="307" y="15.5" width="0.0" height="0.0"/>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GYp-q5-GAR" userLabel="开始时间Label">
-                        <rect key="frame" x="59" y="50.5" width="39.5" height="19.5"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GYp-q5-GAR" userLabel="开始时间Label">
+                        <rect key="frame" x="59" y="31" width="246" height="0.0"/>
                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                         <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C0g-Nz-eSq" userLabel="结束时间Label">
-                        <rect key="frame" x="59.5" y="78" width="39.5" height="19.5"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C0g-Nz-eSq" userLabel="结束时间Label">
+                        <rect key="frame" x="59.5" y="39" width="245.5" height="0.0"/>
                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0RN-a3-IDD" userLabel="状态Label">
-                        <rect key="frame" x="59.5" y="105.5" width="33" height="16"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0RN-a3-IDD" userLabel="状态Label">
+                        <rect key="frame" x="59.5" y="47" width="0.0" height="0.0"/>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <color key="textColor" red="0.90980392156862744" green="0.6470588235294118" blue="0.2627450980392157" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
@@ -67,16 +67,26 @@
                     <constraint firstItem="Xfl-Pb-pDm" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="18" id="6u2-UQ-Aed"/>
                     <constraint firstItem="Xfl-Pb-pDm" firstAttribute="leading" secondItem="bLK-ID-g01" secondAttribute="trailing" constant="12.5" id="Ein-OY-UeF"/>
                     <constraint firstItem="GYp-q5-GAR" firstAttribute="top" secondItem="Xfl-Pb-pDm" secondAttribute="bottom" constant="13" id="FDs-7n-iB1"/>
+                    <constraint firstAttribute="trailing" secondItem="GYp-q5-GAR" secondAttribute="trailing" constant="15" id="LMR-KZ-rq5"/>
                     <constraint firstItem="GYp-q5-GAR" firstAttribute="leading" secondItem="bLK-ID-g01" secondAttribute="trailing" constant="12.5" id="P8u-YO-hJn"/>
                     <constraint firstAttribute="trailing" secondItem="QrS-NW-fmp" secondAttribute="trailing" constant="13" id="Wzn-ry-qvD"/>
                     <constraint firstItem="bLK-ID-g01" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="cIz-Tu-Vsh"/>
                     <constraint firstItem="0RN-a3-IDD" firstAttribute="leading" secondItem="bLK-ID-g01" secondAttribute="trailing" constant="12.5" id="e2p-Sf-acL"/>
+                    <constraint firstAttribute="trailing" secondItem="C0g-Nz-eSq" secondAttribute="trailing" constant="15" id="fqE-Jj-NT5"/>
                     <constraint firstItem="C0g-Nz-eSq" firstAttribute="top" secondItem="GYp-q5-GAR" secondAttribute="bottom" constant="8" id="mrN-gC-9n4"/>
                     <constraint firstItem="C0g-Nz-eSq" firstAttribute="leading" secondItem="bLK-ID-g01" secondAttribute="trailing" constant="12.5" id="n29-il-u7X"/>
                     <constraint firstItem="0RN-a3-IDD" firstAttribute="top" secondItem="C0g-Nz-eSq" secondAttribute="bottom" constant="8" id="tNK-9o-Nv9"/>
                     <constraint firstItem="QrS-NW-fmp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15.5" id="tgA-PX-uob"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="createDateLabel" destination="QrS-NW-fmp" id="Qci-6j-EgD"/>
+                <outlet property="endDateLabel" destination="C0g-Nz-eSq" id="UHB-xt-UF4"/>
+                <outlet property="headImageView" destination="bLK-ID-g01" id="6TR-BG-GgY"/>
+                <outlet property="nameLabel" destination="Xfl-Pb-pDm" id="GoD-Tp-XUg"/>
+                <outlet property="startDateLabel" destination="GYp-q5-GAR" id="eqq-9p-rOd"/>
+                <outlet property="stateLabel" destination="0RN-a3-IDD" id="gFI-TH-59X"/>
+            </connections>
         </tableViewCell>
     </objects>
     <resources>

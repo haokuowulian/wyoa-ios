@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -44,19 +44,19 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DkP-jf-veQ" userLabel="物品名称Label">
-                        <rect key="frame" x="59" y="50.5" width="39.5" height="19.5"/>
+                        <rect key="frame" x="59.5" y="50.5" width="229.5" height="19.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                         <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bwf-lH-6QR" userLabel="物品用途Label">
-                        <rect key="frame" x="59.5" y="78" width="39.5" height="19.5"/>
+                        <rect key="frame" x="59.5" y="78" width="229.5" height="19.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rs5-Y5-3Jz" userLabel="状态Label">
-                        <rect key="frame" x="59.5" y="105.5" width="33" height="16"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rs5-Y5-3Jz" userLabel="状态Label">
+                        <rect key="frame" x="59.5" y="105.5" width="0.0" height="0.0"/>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <color key="textColor" red="0.90980392160000001" green="0.64705882349999999" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
@@ -64,7 +64,9 @@
                 </subviews>
                 <constraints>
                     <constraint firstItem="Bwf-lH-6QR" firstAttribute="leading" secondItem="pRf-PA-6Do" secondAttribute="trailing" constant="12.5" id="07J-xh-rIF"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="DkP-jf-veQ" secondAttribute="trailing" constant="15" id="0od-pL-A5D"/>
                     <constraint firstItem="fi3-su-Wft" firstAttribute="top" secondItem="gr8-Zt-FQa" secondAttribute="top" constant="18" id="1A1-2k-JQd"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Bwf-lH-6QR" secondAttribute="trailing" constant="15" id="3Vt-OI-TcU"/>
                     <constraint firstItem="Rs5-Y5-3Jz" firstAttribute="leading" secondItem="pRf-PA-6Do" secondAttribute="trailing" constant="12.5" id="4Sl-YN-VCz"/>
                     <constraint firstItem="pRf-PA-6Do" firstAttribute="top" secondItem="gr8-Zt-FQa" secondAttribute="top" constant="14" id="I6V-4C-jfK"/>
                     <constraint firstAttribute="trailing" secondItem="EVx-2j-plM" secondAttribute="trailing" constant="13" id="LII-HS-HDf"/>
@@ -77,9 +79,17 @@
                     <constraint firstItem="DkP-jf-veQ" firstAttribute="leading" secondItem="pRf-PA-6Do" secondAttribute="trailing" constant="12.5" id="sL1-ag-4C0"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="createDateLabel" destination="EVx-2j-plM" id="g43-DX-aGh"/>
+                <outlet property="headImageView" destination="pRf-PA-6Do" id="11m-9u-6fo"/>
+                <outlet property="nameLabel" destination="fi3-su-Wft" id="kpp-jc-Agt"/>
+                <outlet property="stateLabel" destination="Rs5-Y5-3Jz" id="2hC-ft-dEr"/>
+                <outlet property="useLabel" destination="Bwf-lH-6QR" id="Rb1-7b-2b2"/>
+                <outlet property="wupinLabel" destination="DkP-jf-veQ" id="eRK-eh-Dqy"/>
+            </connections>
         </tableViewCell>
     </objects>
     <resources>
-        <image name="man" width="50" height="50"/>
+        <image name="man" width="50.5" height="50"/>
     </resources>
 </document>

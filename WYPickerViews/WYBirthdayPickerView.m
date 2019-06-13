@@ -26,10 +26,10 @@
 
 @implementation WYBirthdayPickerView
 
-- (instancetype)initWithInitialDate:(NSString *)initialDate {
+- (instancetype)initWithInitialDate:(NSString *)initialDate andDateFormatter:(NSString *)dateFormatter {
     
     if ([super init]) {
-        
+        self.dateFormatter=dateFormatter;
         self.initialDate = initialDate;
         self.selectedDate = initialDate;
         
@@ -41,7 +41,7 @@
         self.bottomView.frame = CGRectMake(0, kScreenHeight, kScreenWidth, 216 + 44);
         [UIView animateWithDuration:0.25 animations:^{
             
-            self.bottomView.frame = CGRectMake(0, kScreenHeight - 216 - 44 - 64, kScreenWidth, 216 + 44);
+            self.bottomView.frame = CGRectMake(0, kScreenHeight - 216 - 44 , kScreenWidth, 216 + 44);
             [self.bottomView layoutIfNeeded];
         }];
     }
@@ -96,8 +96,8 @@
     
     // 直接获取的时间, 时区不对, 经过格式转换后得到的一个字符串, 时间就对了
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    dateFormatter.dateFormat = @"yyyy-MM-dd";
-    
+//    dateFormatter.dateFormat = @"yyyy-MM-dd";
+    dateFormatter.dateFormat = self.dateFormatter;
     self.selectedDate = [dateFormatter stringFromDate:datePicker.date];
 }
 
@@ -182,7 +182,8 @@
         
        
         _datePicker.minimumDate = [NSDate dateWithTimeIntervalSince1970:0];
-     
+        NSLocale *locale = [[NSLocale alloc] initWithLocaleIdentifier:@"zh_CN"];//设置为中文
+        _datePicker.locale = locale;
         
         
         // datePicker 当前显示的日期 : 默认显示的是 datePicker 创建时的日期
@@ -191,12 +192,14 @@
             _datePicker.date = [NSDate date];
             
             NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-            dateFormatter.dateFormat = @"yyyy-MM-dd";
+//            dateFormatter.dateFormat = @"yyyy-MM-dd";
+             dateFormatter.dateFormat = self.dateFormatter;
             self.selectedDate = [dateFormatter stringFromDate:[NSDate date]];
         }else {
             
             NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-            dateFormatter.dateFormat = @"yyyy-MM-dd";
+//            dateFormatter.dateFormat = @"yyyy-MM-dd";
+             dateFormatter.dateFormat = self.dateFormatter;
             _datePicker.date = [dateFormatter dateFromString:self.initialDate];
         }
 

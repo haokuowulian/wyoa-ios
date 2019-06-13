@@ -31,7 +31,7 @@
 
 @property (weak, nonatomic) IBOutlet UIImageView *chaoSongImageView;
 @property (weak, nonatomic) IBOutlet UILabel *chaoSongLabel;
-- (IBAction)addChaoSongRen:(id)sender;
+//- (IBAction)addChaoSongRen:(id)sender;
 
 
 @property (weak, nonatomic) IBOutlet UIButton *submitButton;

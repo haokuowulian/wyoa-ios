@@ -14,6 +14,6 @@ target 'wyoa' do
   pod 'JXTAlertManager'
   pod 'AMap2DMap'
   pod 'AMapLocation'
-  # Pods for weijianlianxian
-
+  pod 'SDAutoLayout'
+  pod 'JPush'
 end

@@ -31,10 +31,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    //获取通知中心单例对象
-    NSNotificationCenter * center = [NSNotificationCenter defaultCenter];
-    //添加当前类对象为一个观察者，name和object设置为nil，表示接收一切通知
-    [center addObserver:self selector:@selector(selectUser:) name:@"selectUser" object:nil];
+    self.courtesyCopyId=@"0";
+//    //获取通知中心单例对象
+//    NSNotificationCenter * center = [NSNotificationCenter defaultCenter];
+//    //添加当前类对象为一个观察者，name和object设置为nil，表示接收一切通知
+//    [center addObserver:self selector:@selector(selectUser:) name:@"selectUser" object:nil];
 
 }
 
@@ -50,25 +51,25 @@
 }
 
 
-#pragma  mark 获取抄送人信息
--(void)selectUser:(id)sender{
-    ContactBean *bean=[sender object];
-    if([bean.sex isEqualToString:@"女"]){
-        [self.chaoSongImageView   sd_setImageWithURL:bean.headPhoto placeholderImage:[UIImage   imageNamed:@"woman"]];
-    }else{
-        [self.chaoSongImageView   sd_setImageWithURL:bean.headPhoto placeholderImage:[UIImage   imageNamed:@"man"]];
-    }
-    [self.chaoSongLabel setText:bean.name];
-    self.courtesyCopyId=bean.id;
-}
+//#pragma  mark 获取抄送人信息
+//-(void)selectUser:(id)sender{
+//    ContactBean *bean=[sender object];
+//    if([bean.sex isEqualToString:@"女"]){
+//        [self.chaoSongImageView   sd_setImageWithURL:bean.headPhoto placeholderImage:[UIImage   imageNamed:@"woman"]];
+//    }else{
+//        [self.chaoSongImageView   sd_setImageWithURL:bean.headPhoto placeholderImage:[UIImage   imageNamed:@"man"]];
+//    }
+//    [self.chaoSongLabel setText:bean.name];
+//    self.courtesyCopyId=bean.id;
+//}
 
 
-- (IBAction)addChaoSongRen:(id)sender {
-    UIStoryboard *storyboard=[UIStoryboard storyboardWithName:@"MailList" bundle:nil];
-    MailListViewController *controller=[storyboard instantiateViewControllerWithIdentifier:@"mailList"];
-    controller.isFromSelect=YES;
-    [self.navigationController pushViewController:controller animated:YES];
-}
+//- (IBAction)addChaoSongRen:(id)sender {
+//    UIStoryboard *storyboard=[UIStoryboard storyboardWithName:@"MailList" bundle:nil];
+//    MailListViewController *controller=[storyboard instantiateViewControllerWithIdentifier:@"mailList"];
+//    controller.isFromSelect=YES;
+//    [self.navigationController pushViewController:controller animated:YES];
+//}
 
 - (IBAction)submitClick:(id)sender {
     if([self checkIsEmpty]){
@@ -82,7 +83,7 @@
 -(void)selectDateTime:(UITextField *)textField{
     NSDateFormatter *dateFormatter=[[NSDateFormatter alloc]init];//创建一个日期格式化器
     dateFormatter.dateFormat=@"yyyy-MM-dd";
-    WYBirthdayPickerView *datePickerView = [[WYBirthdayPickerView alloc] initWithInitialDate:[dateFormatter stringFromDate:[NSDate date]]];
+    WYBirthdayPickerView *datePickerView = [[WYBirthdayPickerView alloc] initWithInitialDate:[dateFormatter stringFromDate:[NSDate date]] andDateFormatter:@"yyyy-MM-dd"];
     // 选择日期完成之后的回调 : 按自己的要求做相应的处理就可以了
     datePickerView.confirmBlock = ^(NSString *selectedDate) {
         textField.text=selectedDate;
@@ -104,9 +105,23 @@
         self.twolevelId=qingjiaShenPiBean.twoLevelId;
         self.threelevelId=qingjiaShenPiBean.threeLevelId;
         if(qingjiaShenPiBean.success==1){
+            if(qingjiaShenPiBean.CourtesyCopyId&&qingjiaShenPiBean.CourtesyCopyId.length>0){
+                self.courtesyCopyId=qingjiaShenPiBean.CourtesyCopyId;
+                 if([qingjiaShenPiBean.CourtesyCopySex isEqualToString:@"女"]){
+                [self.chaoSongImageView   sd_setImageWithURL:qingjiaShenPiBean.CourtesyCopylP placeholderImage:[UIImage   imageNamed:@"woman"]];
+                 }else{
+                      [self.chaoSongImageView   sd_setImageWithURL:qingjiaShenPiBean.CourtesyCopylP placeholderImage:[UIImage   imageNamed:@"man"]];
+                 }
+                [self.chaoSongLabel setText:qingjiaShenPiBean.CourtesyCopylN];
+            }
             if(qingjiaShenPiBean.oneLevelId&&qingjiaShenPiBean.oneLevelId.length>0){
                 self.shenpiView1.hidden=NO;
-                [self.shenpiImageView1   sd_setImageWithURL:qingjiaShenPiBean.oneLevelP placeholderImage:[UIImage   imageNamed:@"man"]];
+                if([qingjiaShenPiBean.oneLeveSex isEqualToString:@"女"]){
+                    [self.shenpiImageView1   sd_setImageWithURL:qingjiaShenPiBean.oneLevelP placeholderImage:[UIImage   imageNamed:@"woman"]];
+                }else{
+                    [self.shenpiImageView1   sd_setImageWithURL:qingjiaShenPiBean.oneLevelP placeholderImage:[UIImage   imageNamed:@"man"]];
+                }
+                
                 [self.shenpiNameLabel1 setText:qingjiaShenPiBean.oneLevelN];
             }else{
                 self.shenpiView1.hidden=YES;
@@ -114,7 +129,12 @@
             if(qingjiaShenPiBean.twoLevelId&&qingjiaShenPiBean.twoLevelId.length>0){
                 self.shenpiView2.hidden=NO;
                 self.nextImageView1.hidden=NO;
-                [self.shenpiImageView2   sd_setImageWithURL:qingjiaShenPiBean.twoLevelP placeholderImage:[UIImage   imageNamed:@"man"]];
+                if([qingjiaShenPiBean.twoLeveSex isEqualToString:@"女"]){
+                    [self.shenpiImageView2   sd_setImageWithURL:qingjiaShenPiBean.twoLevelP placeholderImage:[UIImage   imageNamed:@"woman"]];
+                }else{
+                    [self.shenpiImageView2   sd_setImageWithURL:qingjiaShenPiBean.twoLevelP placeholderImage:[UIImage   imageNamed:@"man"]];
+                }
+                
                 [self.shenpiNamelabel2 setText:qingjiaShenPiBean.twoLevelN];
             }else{
                 self.shenpiView2.hidden=YES;
@@ -123,14 +143,18 @@
             if(qingjiaShenPiBean.threeLevelId&&qingjiaShenPiBean.threeLevelId.length>0){
                 self.shenpiView3.hidden=NO;
                 self.nextImageView2.hidden=NO;
-                [self.shenpiImageView3   sd_setImageWithURL:qingjiaShenPiBean.threeLevelP placeholderImage:[UIImage   imageNamed:@"man"]];
+                if([qingjiaShenPiBean.threeLeveSex isEqualToString:@"女"]){
+                    [self.shenpiImageView3   sd_setImageWithURL:qingjiaShenPiBean.threeLevelP placeholderImage:[UIImage   imageNamed:@"woman"]];
+                }else{
+                    [self.shenpiImageView3   sd_setImageWithURL:qingjiaShenPiBean.threeLevelP placeholderImage:[UIImage   imageNamed:@"man"]];
+                }
+                
                 [self.shenpiNamelabel3 setText:qingjiaShenPiBean.threeLevelN];
             }else{
                 self.shenpiView3.hidden=YES;
                 self.nextImageView2.hidden=YES;
             }
         }
-        
     } Error:^(NSError *err) {
         
     }];
@@ -146,8 +170,7 @@
 #pragma mark 验证信息是否填写完整
 -(BOOL)checkIsEmpty{
     if(self.wupinText.text.length>0&&
-       self.beizhuText.text.length>0&&
-       self.courtesyCopyId.length>0){
+       self.beizhuText.text.length>0){
         return YES;
     }else{
         return NO;

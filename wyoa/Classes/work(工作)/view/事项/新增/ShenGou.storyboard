@@ -267,7 +267,7 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vp8-cD-pPc">
                                                         <rect key="frame" x="37" y="54" width="50" height="70"/>
                                                         <subviews>
-                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chaosong" translatesAutoresizingMaskIntoConstraints="NO" id="JCx-tP-FIq">
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="man" translatesAutoresizingMaskIntoConstraints="NO" id="JCx-tP-FIq">
                                                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="50" id="1Bu-W9-ZRL"/>
@@ -296,28 +296,18 @@
                                                             <constraint firstItem="JCx-tP-FIq" firstAttribute="top" secondItem="Vp8-cD-pPc" secondAttribute="top" id="uxR-Y3-fnA"/>
                                                         </constraints>
                                                     </view>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4b1-M5-72G">
-                                                        <rect key="frame" x="37" y="54" width="50" height="70"/>
-                                                        <connections>
-                                                            <action selector="addChaoSongRen:" destination="eU5-IU-dY1" eventType="touchUpInside" id="uNf-oA-TfG"/>
-                                                        </connections>
-                                                    </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
-                                                    <constraint firstItem="4b1-M5-72G" firstAttribute="height" secondItem="Vp8-cD-pPc" secondAttribute="height" id="4tI-j2-Jx0"/>
                                                     <constraint firstItem="Vp8-cD-pPc" firstAttribute="leading" secondItem="bs2-oy-pv5" secondAttribute="leading" constant="37" id="96k-ku-jXy"/>
                                                     <constraint firstItem="rQl-q0-BXH" firstAttribute="top" secondItem="bs2-oy-pv5" secondAttribute="top" constant="20" id="HAJ-2Y-P9t"/>
                                                     <constraint firstItem="8zR-aU-3U4" firstAttribute="top" secondItem="bs2-oy-pv5" secondAttribute="top" constant="15" id="M2v-xg-aa4"/>
-                                                    <constraint firstItem="4b1-M5-72G" firstAttribute="leading" secondItem="bs2-oy-pv5" secondAttribute="leading" constant="37" id="T5S-WP-jT2"/>
                                                     <constraint firstItem="Vp8-cD-pPc" firstAttribute="top" secondItem="8zR-aU-3U4" secondAttribute="bottom" constant="18" id="UfN-5O-jxd"/>
                                                     <constraint firstItem="2qf-Y9-ztY" firstAttribute="leading" secondItem="8zR-aU-3U4" secondAttribute="trailing" constant="20" id="a7r-r0-6hL"/>
                                                     <constraint firstAttribute="bottom" secondItem="Vp8-cD-pPc" secondAttribute="bottom" constant="15" id="iFS-lD-f1p"/>
                                                     <constraint firstItem="8zR-aU-3U4" firstAttribute="leading" secondItem="rQl-q0-BXH" secondAttribute="trailing" constant="11" id="sTk-je-Ubg"/>
                                                     <constraint firstItem="2qf-Y9-ztY" firstAttribute="top" secondItem="bs2-oy-pv5" secondAttribute="top" constant="18" id="tnf-Y7-fyU"/>
                                                     <constraint firstItem="rQl-q0-BXH" firstAttribute="leading" secondItem="bs2-oy-pv5" secondAttribute="leading" constant="15" id="ve8-1y-V6o"/>
-                                                    <constraint firstItem="4b1-M5-72G" firstAttribute="width" secondItem="Vp8-cD-pPc" secondAttribute="width" id="ych-5s-2tv"/>
-                                                    <constraint firstItem="4b1-M5-72G" firstAttribute="top" secondItem="8zR-aU-3U4" secondAttribute="bottom" constant="18" id="zM1-Gs-INU"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V4r-5X-8Fz" userLabel="提交View">
@@ -420,7 +410,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="chaosong" width="50" height="50"/>
+        <image name="man" width="50" height="50"/>
         <image name="xiayiren" width="12" height="10"/>
         <image name="xinghao" width="8" height="9"/>
     </resources>

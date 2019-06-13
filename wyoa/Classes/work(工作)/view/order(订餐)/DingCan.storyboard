@@ -33,26 +33,48 @@
                                     <segment title="晚餐"/>
                                 </segments>
                                 <color key="tintColor" red="0.23921568630000001" green="0.51372549020000002" blue="0.91764705879999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="segmentChange:" destination="7d0-ke-rqk" eventType="valueChanged" id="PTR-W3-1cC"/>
+                                </connections>
                             </segmentedControl>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Qb2-31-I3h">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Qb2-31-I3h" userLabel="早餐Table View">
+                                <rect key="frame" x="0.0" y="62" width="375" height="605"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="63Y-2R-Slx" userLabel="午餐Table View">
+                                <rect key="frame" x="0.0" y="62" width="375" height="605"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fwc-JD-wUG" userLabel="晚餐Table View">
                                 <rect key="frame" x="0.0" y="62" width="375" height="605"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="63Y-2R-Slx" firstAttribute="width" secondItem="e0l-oG-Rpg" secondAttribute="width" id="3rC-VX-wU0"/>
                             <constraint firstItem="Qb2-31-I3h" firstAttribute="width" secondItem="e0l-oG-Rpg" secondAttribute="width" id="41h-Yi-lD9"/>
+                            <constraint firstItem="I7R-JG-xhf" firstAttribute="top" secondItem="63Y-2R-Slx" secondAttribute="bottom" id="Jy5-oO-7h3"/>
+                            <constraint firstItem="63Y-2R-Slx" firstAttribute="top" secondItem="LYw-bR-Plr" secondAttribute="bottom" constant="1" id="LE1-qu-kC4"/>
                             <constraint firstItem="Qb2-31-I3h" firstAttribute="top" secondItem="LYw-bR-Plr" secondAttribute="bottom" constant="1" id="Mt6-jr-kbv"/>
                             <constraint firstItem="LYw-bR-Plr" firstAttribute="top" secondItem="aDz-Mx-Tnf" secondAttribute="bottom" constant="13" id="R0p-tg-S3G"/>
+                            <constraint firstItem="fwc-JD-wUG" firstAttribute="leading" secondItem="e0l-oG-Rpg" secondAttribute="leading" id="RsA-6v-2mp"/>
                             <constraint firstAttribute="trailingMargin" secondItem="LYw-bR-Plr" secondAttribute="trailing" constant="10" id="Xcy-aY-cy0"/>
+                            <constraint firstItem="fwc-JD-wUG" firstAttribute="width" secondItem="e0l-oG-Rpg" secondAttribute="width" id="fPe-UG-bqX"/>
                             <constraint firstItem="I7R-JG-xhf" firstAttribute="top" secondItem="Qb2-31-I3h" secondAttribute="bottom" id="fxb-BW-Pyq"/>
+                            <constraint firstItem="I7R-JG-xhf" firstAttribute="top" secondItem="fwc-JD-wUG" secondAttribute="bottom" id="g0w-iB-pKc"/>
                             <constraint firstItem="LYw-bR-Plr" firstAttribute="leading" secondItem="e0l-oG-Rpg" secondAttribute="leadingMargin" constant="10" id="g3e-lV-juI"/>
+                            <constraint firstItem="fwc-JD-wUG" firstAttribute="top" secondItem="LYw-bR-Plr" secondAttribute="bottom" constant="1" id="n0p-zU-aev"/>
+                            <constraint firstItem="63Y-2R-Slx" firstAttribute="leading" secondItem="e0l-oG-Rpg" secondAttribute="leading" id="skk-IE-rAK"/>
                             <constraint firstItem="Qb2-31-I3h" firstAttribute="leading" secondItem="e0l-oG-Rpg" secondAttribute="leading" id="sla-3X-p4k"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="mhu-Lu-RBo"/>
                     <connections>
-                        <outlet property="tableView" destination="Qb2-31-I3h" id="m0f-hY-LGp"/>
+                        <outlet property="segment" destination="LYw-bR-Plr" id="Qj7-BY-VyM"/>
+                        <outlet property="wancanTableView" destination="fwc-JD-wUG" id="bV3-Q5-KXI"/>
+                        <outlet property="wucanTableView" destination="63Y-2R-Slx" id="2Wt-pk-vU7"/>
+                        <outlet property="zaocanTableView" destination="Qb2-31-I3h" id="CIL-1s-4tK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zCq-Fv-rSN" userLabel="First Responder" sceneMemberID="firstResponder"/>

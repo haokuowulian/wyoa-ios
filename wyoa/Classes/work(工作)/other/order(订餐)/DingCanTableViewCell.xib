@@ -37,55 +37,46 @@
                         <color key="textColor" red="0.27843137254901962" green="0.52941176470588236" blue="0.89411764705882346" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DkZ-2n-4HL">
-                        <rect key="frame" x="350" y="47.5" width="15" height="22"/>
-                        <state key="normal" image="cailan_tianjia"/>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dtf-5n-0Aw">
+                        <rect key="frame" x="290" y="26.5" width="75" height="27"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="75" id="I3a-HY-2fy"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <state key="normal" title="加入菜篮"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                <integer key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColorFromUIColor">
+                                <color key="value" red="0.35686274509803922" green="0.5725490196078431" blue="0.88627450980392153" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                         <connections>
-                            <action selector="increaseClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="gJX-iI-6sJ"/>
-                        </connections>
-                    </button>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Gb-xX-ADw">
-                        <rect key="frame" x="331" y="50.5" width="6" height="16"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                        <color key="textColor" red="0.098039215690000001" green="0.1215686275" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pj5-3A-suy">
-                        <rect key="frame" x="303" y="47.5" width="15" height="22"/>
-                        <state key="normal" image="cailan_jianshao"/>
-                        <connections>
-                            <action selector="decreaseClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="3kB-Gf-sIK"/>
+                            <action selector="addClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="qdM-Qn-2WI"/>
                         </connections>
                     </button>
                 </subviews>
                 <constraints>
                     <constraint firstItem="Vjb-TD-U9q" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="2gm-wF-Kdn"/>
-                    <constraint firstItem="4Gb-xX-ADw" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottom" constant="-13" id="7DB-Ik-ORI"/>
-                    <constraint firstItem="DkZ-2n-4HL" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottom" constant="-10" id="Am3-uq-b6f"/>
-                    <constraint firstItem="DkZ-2n-4HL" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailing" constant="-10" id="Gs5-ey-8xm"/>
-                    <constraint firstItem="DkZ-2n-4HL" firstAttribute="leading" secondItem="4Gb-xX-ADw" secondAttribute="trailing" constant="13" id="Sse-up-Ad1"/>
+                    <constraint firstItem="Dtf-5n-0Aw" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Cc8-CA-I61"/>
+                    <constraint firstAttribute="trailing" secondItem="Dtf-5n-0Aw" secondAttribute="trailing" constant="10" id="Sy0-3v-Bqy"/>
                     <constraint firstItem="tBN-VR-R15" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="cN9-cm-mXU"/>
                     <constraint firstItem="97q-YI-fBO" firstAttribute="leading" secondItem="Vjb-TD-U9q" secondAttribute="trailing" constant="15" id="cbO-pN-OGt"/>
-                    <constraint firstItem="pj5-3A-suy" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottom" constant="-10" id="fI5-Fk-yJg"/>
                     <constraint firstItem="tBN-VR-R15" firstAttribute="leading" secondItem="Vjb-TD-U9q" secondAttribute="trailing" constant="15" id="s90-YU-ib4"/>
-                    <constraint firstItem="4Gb-xX-ADw" firstAttribute="leading" secondItem="pj5-3A-suy" secondAttribute="trailing" constant="13" id="to6-0T-zhI"/>
                     <constraint firstItem="97q-YI-fBO" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottom" constant="-16" id="yN2-N4-Lvb"/>
                     <constraint firstItem="Vjb-TD-U9q" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="z4w-aM-TcW"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="decreaseButton" destination="pj5-3A-suy" id="Y4Y-jy-RtA"/>
-                <outlet property="increaseButton" destination="DkZ-2n-4HL" id="XnK-vc-kYa"/>
                 <outlet property="nameLabel" destination="tBN-VR-R15" id="R1Y-7U-IUI"/>
-                <outlet property="numLabel" destination="4Gb-xX-ADw" id="28v-ju-zTP"/>
                 <outlet property="picImageView" destination="Vjb-TD-U9q" id="zF3-CF-4G2"/>
                 <outlet property="priceLabel" destination="97q-YI-fBO" id="oCb-WO-rSa"/>
             </connections>
             <point key="canvasLocation" x="57" y="102.5"/>
         </tableViewCell>
     </objects>
-    <resources>
-        <image name="cailan_jianshao" width="15" height="15"/>
-        <image name="cailan_tianjia" width="15" height="15"/>
-    </resources>
 </document>

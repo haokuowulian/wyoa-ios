@@ -12,6 +12,8 @@
 #import "MJExtension.h"
 #import "MBProgressHUD+MBProgressHUD.h"
 #import "Extern.h"
+#import "RoleBean.h"
+#import <JPUSHService.h>
 @interface LoginViewController ()
 
 @end
@@ -20,6 +22,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.navigationController.navigationBar.hidden=NO;
     // 设置导航控制器的代理为self
     self.navigationController.delegate = self;
     NSUserDefaults *userDefault=[NSUserDefaults standardUserDefaults];
@@ -48,7 +51,6 @@
     if(![self isEmpty]){
 //        ZJHKTabBarViewController *tabbarController=[[ZJHKTabBarViewController alloc]init];
 //        [self presentViewController:tabbarController animated:YES completion:^{
-//
 //        }];
         [self login];
     }else{
@@ -82,18 +84,44 @@
             [userDefault setObject:self.passwordText.text forKey:@"password"];
             [userDefault setObject:resultBean.apikey forKey:@"apikey"];
             [userDefault synchronize];
+            [self getRowId:resultBean.userId andApikey:resultBean.apikey];
+            NSSet *set= [NSSet setWithObjects:resultBean.userId,nil];
             
-            ZJHKTabBarViewController *tabbarController=[[ZJHKTabBarViewController alloc]init];
-            [self presentViewController:tabbarController animated:YES completion:^{
-                
-            }];
-            
+            [JPUSHService setTags:set completion:^(NSInteger iResCode, NSSet *iTags, NSInteger seq) {
+                if(iResCode==0){
+                    NSLog(@"设置成功");
+                }
+            } seq:0];
+  
         }else{
-                [MBProgressHUD showError:resultBean.message];
+             [MBProgressHUD showError:@"用户名账号或密码错误"];
+            [MBProgressHUD hideHUD];
+            
             }
     } Error:^(NSError *err) {
         [MBProgressHUD hideHUD];
         [MBProgressHUD showError:@"网络连接失败"];
     }];
+}
+
+-(void)getRowId:(NSString *)userId andApikey:(NSString *)apikey{
+    NSDictionary *params=@{@"userId":userId
+                           };
+    NSString *url=[NSString stringWithFormat:@"%@%@?apikey=%@",baseUrl,@"oaCustom/getAppMenuList.do",apikey];
+    [RoleBean BeanByPostWithUrl:url  Params:params Success:^(NSDictionary *dict) {
+        RoleBean *roleBean=[RoleBean mj_objectWithKeyValues:dict];
+        if(roleBean.success==1){
+            NSUserDefaults *userDefault=[NSUserDefaults standardUserDefaults];
+            [userDefault setObject:roleBean.roleId forKey:@"roleId"];
+            [userDefault synchronize];
+            ZJHKTabBarViewController *tabbarController=[[ZJHKTabBarViewController alloc]init];
+            [self presentViewController:tabbarController animated:YES completion:^{
+                
+            }];
+        }
+    } Error:^(NSError *err) {
+        
+    }];
+    
 }
 @end

@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Wwn-Lu-IDu">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ik2-HA-j1M">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Ding Dan View Controller-->
+        <!--View Controller-->
         <scene sceneID="MMr-ld-Bxh">
             <objects>
-                <viewController hidesBottomBarWhenPushed="YES" id="Wwn-Lu-IDu" customClass="DingDanViewController" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="Wwn-Lu-IDu" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gbB-CF-jzp"/>
                         <viewControllerLayoutGuide type="bottom" id="4Ih-Bi-mcp"/>
@@ -28,6 +27,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Xzn-Xa-gNz"/>
                                     <constraint firstAttribute="width" constant="150" id="na3-0n-McH"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="vgO-zc-zPr"/>
                                 </constraints>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
@@ -73,7 +73,7 @@
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qYx-6g-VTw">
                                 <rect key="frame" x="0.0" y="72" width="375" height="595"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -104,11 +104,45 @@
                     <connections>
                         <outlet property="endTimeText" destination="XCu-IB-8UN" id="l17-lf-Nab"/>
                         <outlet property="startTimeText" destination="Aqp-kv-twK" id="WSn-Co-lkc"/>
+                        <outlet property="tableView" destination="qYx-6g-VTw" id="jB8-Zz-dg2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2G9-Nz-AfV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="426" y="-136"/>
+        </scene>
+        <!--Ding Dan View Controller-->
+        <scene sceneID="QzX-PB-Xse">
+            <objects>
+                <viewController hidesBottomBarWhenPushed="YES" id="ik2-HA-j1M" customClass="DingDanViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ieX-Ub-LG7"/>
+                        <viewControllerLayoutGuide type="bottom" id="sQr-ZK-jpi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Mkv-1C-HS8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yPO-2b-U2l">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="sQr-ZK-jpi" firstAttribute="top" secondItem="yPO-2b-U2l" secondAttribute="bottom" id="32P-iO-enu"/>
+                            <constraint firstItem="yPO-2b-U2l" firstAttribute="leading" secondItem="Mkv-1C-HS8" secondAttribute="leading" id="dLu-Qi-gpQ"/>
+                            <constraint firstItem="yPO-2b-U2l" firstAttribute="width" secondItem="Mkv-1C-HS8" secondAttribute="width" id="lzh-SL-EbQ"/>
+                            <constraint firstItem="yPO-2b-U2l" firstAttribute="top" secondItem="ieX-Ub-LG7" secondAttribute="bottom" id="rId-Oe-RwT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="yPO-2b-U2l" id="8aM-Wd-28W"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aOU-u6-yYy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="842" y="-316"/>
         </scene>
     </scenes>
 </document>

@@ -78,7 +78,7 @@
                            @"oldPass":self.oldPasswordText.text,
                            @"newPass":self.nowPasswordText.text
                            };
-    NSString *url=[NSString stringWithFormat:@"%@%@?apikey=%@",@"oaCustom/updatePassword.do",baseUrl,apikey];
+    NSString *url=[NSString stringWithFormat:@"%@%@?apikey=%@",baseUrl,@"oaCustom/updatePassword.do",apikey];
     [BaseBean BeanByPostWithUrl:url Params:params Success:^(NSDictionary *dict) {
         [MBProgressHUD hideHUD];
         BaseBean *resultBean=[BaseBean mj_objectWithKeyValues:dict];

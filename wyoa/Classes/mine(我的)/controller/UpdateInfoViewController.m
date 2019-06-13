@@ -158,8 +158,9 @@
 -(void)selectBirthday{
     NSDateFormatter *dateFormatter=[[NSDateFormatter alloc]init];//创建一个日期格式化器
     dateFormatter.dateFormat=@"yyyy-MM-dd";
-    WYBirthdayPickerView *datePickerView = [[WYBirthdayPickerView alloc] initWithInitialDate:[dateFormatter stringFromDate:[NSDate date]]];
+    WYBirthdayPickerView *datePickerView = [[WYBirthdayPickerView alloc] initWithInitialDate:[dateFormatter stringFromDate:[NSDate date]] andDateFormatter:@"yyyy-MM-dd"];
     // 选择日期完成之后的回调 : 按自己的要求做相应的处理就可以了
+    
     datePickerView.confirmBlock = ^(NSString *selectedDate) {
         self.infoText.text=selectedDate;
         

@@ -73,8 +73,12 @@ static BOOL isIncludeChineseInNSString(NSString *string) {
                 NSMutableString *headOfPinyin = [NSMutableString string];
                 NSArray *pinyinArray = [completeHasSeparatorPinyin componentsSeparatedByString:separatorString];
                 for (NSString *singlePinyin in pinyinArray) {
-                    if (singlePinyin) { // 取每个拼音的首字母
+                    if (singlePinyin&&singlePinyin.length>0) { // 取每个拼音的首字母
+                        @try{
                         [headOfPinyin appendString:[singlePinyin substringToIndex:1]];
+                        }@catch(NSException *e){
+                            NSLog(@"%@------%@",e,singlePinyin);
+                        }
                     }
                 }
                 

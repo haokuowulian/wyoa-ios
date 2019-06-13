@@ -97,7 +97,7 @@
     // 直接获取的时间, 时区不对, 经过格式转换后得到的一个字符串, 时间就对了
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     dateFormatter.dateFormat = @"yyyy-MM-dd HH:mm";
-    
+   
     self.selectedDate = [dateFormatter stringFromDate:datePicker.date];
 }
 
@@ -159,7 +159,8 @@
         
         _datePicker = [[UIDatePicker alloc] initWithFrame:CGRectMake(0, 44, kScreenWidth, 216)];// 默认高度 216
         _datePicker.backgroundColor = [UIColor clearColor];
-        
+        NSLocale *locale = [[NSLocale alloc] initWithLocaleIdentifier:@"zh_CN"];//设置为中文
+        _datePicker.locale = locale;
         
         /**
          datePicker 的显示模式

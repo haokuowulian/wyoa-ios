@@ -12,6 +12,8 @@
 #import "MJExtension.h"
 #import "MBProgressHUD+MBProgressHUD.h"
 #import "Extern.h"
+#import "OrderTabBarController.h"
+#import "UIImage+HK.h"
 @interface MyWalletViewController ()
 
 @end
@@ -28,7 +30,17 @@
     // Dispose of any resources that can be recreated.
 
 }
-- (void)viewWillAppear:(BOOL)animated {
+
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    self.navigationController.navigationBar.translucent = NO;
+    [self.navigationController.navigationBar setBarTintColor:[UIColor colorWithHexString:@"316FC9"]];
+    [self.navigationController.navigationBar setShadowImage:[UIImage new]];
+    [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor],NSFontAttributeName : [UIFont boldSystemFontOfSize:20]}];
+    [self.navigationController.navigationBar setTintColor:[UIColor whiteColor]];
+}
+
+- (void)viewDidAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     self.navigationController.navigationBar.translucent = NO;
     [self.navigationController.navigationBar setBarTintColor:[UIColor colorWithHexString:@"316FC9"]];
@@ -37,7 +49,20 @@
     [self.navigationController.navigationBar setTintColor:[UIColor whiteColor]];
 
 }
-
+-(void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+    [self.navigationController.navigationBar setBarTintColor:[UIColor whiteColor]];
+    [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor colorWithHexString:@"333333"],NSFontAttributeName : [UIFont boldSystemFontOfSize:20]}];
+    [self.navigationController.navigationBar setTintColor:[UIColor colorWithHexString:@"333333"]];
+    [self.navigationController.navigationBar setShadowImage:[UIImage createImageWithColor:[UIColor colorWithHexString:@"f0f0f0"]]];
+}
+-(void)viewDidDisappear:(BOOL)animated{
+    [super viewDidDisappear:animated];
+    [self.navigationController.navigationBar setBarTintColor:[UIColor whiteColor]];
+    [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor colorWithHexString:@"333333"],NSFontAttributeName : [UIFont boldSystemFontOfSize:20]}];
+    [self.navigationController.navigationBar setTintColor:[UIColor colorWithHexString:@"333333"]];
+    [self.navigationController.navigationBar setShadowImage:[UIImage createImageWithColor:[UIColor colorWithHexString:@"f0f0f0"]]];
+}
 #pragma mark 获取我的钱包余额
 -(void)getMyWallet{
     NSUserDefaults *userDefault=[NSUserDefaults standardUserDefaults];
@@ -60,4 +85,8 @@
 
 
 
+- (IBAction)diancanClick:(id)sender {
+    OrderTabBarController *tabbarController=[[OrderTabBarController alloc]init];
+    [self.navigationController pushViewController:tabbarController animated:YES];
+}
 @end

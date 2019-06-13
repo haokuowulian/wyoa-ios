@@ -8,7 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DingCanViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@interface DingCanViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
+@property (weak, nonatomic) IBOutlet UITableView *zaocanTableView;
+@property (weak, nonatomic) IBOutlet UITableView *wucanTableView;
+@property (weak, nonatomic) IBOutlet UITableView *wancanTableView;
+
+- (IBAction)segmentChange:(UISegmentedControl *)sender;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *segment;
+
+
 
 @end

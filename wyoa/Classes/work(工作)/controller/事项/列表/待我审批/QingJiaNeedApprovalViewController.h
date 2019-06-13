@@ -11,4 +11,5 @@
 @interface QingJiaNeedApprovalViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
+@property(nonatomic,copy)NSString *fillformDate;
 @end

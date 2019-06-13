@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Meeting Tong Zhi Detail View Controller-->
+        <scene sceneID="5T2-IS-Y6w">
+            <objects>
+                <viewController storyboardIdentifier="meetingTongZhiDetail" id="fBv-19-nhU" customClass="MeetingTongZhiDetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Rny-cx-Mw8"/>
+                        <viewControllerLayoutGuide type="bottom" id="gdU-Wh-tAv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7IV-eo-Lfg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ar8-yD-Aea">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ar8-yD-Aea" firstAttribute="leading" secondItem="7IV-eo-Lfg" secondAttribute="leading" id="0Ay-9Z-HmT"/>
+                            <constraint firstItem="ar8-yD-Aea" firstAttribute="top" secondItem="Rny-cx-Mw8" secondAttribute="bottom" id="2Oi-Ka-xFV"/>
+                            <constraint firstItem="gdU-Wh-tAv" firstAttribute="top" secondItem="ar8-yD-Aea" secondAttribute="bottom" id="DJW-nY-MIh"/>
+                            <constraint firstAttribute="trailing" secondItem="ar8-yD-Aea" secondAttribute="trailing" id="J9B-NP-AsA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webview" destination="ar8-yD-Aea" id="3FP-jk-vB7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9AK-lu-JNF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="183" y="68"/>
+        </scene>
+    </scenes>
+</document>

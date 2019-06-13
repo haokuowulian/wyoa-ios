@@ -8,11 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DingDanViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UITextField *startTimeText;
-@property (weak, nonatomic) IBOutlet UITextField *endTimeText;
-
-- (IBAction)startTimeClick:(id)sender;
-- (IBAction)endTimeClick:(id)sender;
+@interface DingDanViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
+//@property (weak, nonatomic) IBOutlet UITextField *startTimeText;
+//@property (weak, nonatomic) IBOutlet UITextField *endTimeText;
+//
+//- (IBAction)startTimeClick:(id)sender;
+//- (IBAction)endTimeClick:(id)sender;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end

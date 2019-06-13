@@ -14,7 +14,8 @@ typedef void(^WYBirthdayPickerViewBlock)(NSString *selectedDate);
 
 @property (strong, nonatomic) WYBirthdayPickerViewBlock confirmBlock;
 
-- (instancetype)initWithInitialDate:(NSString *)initialDate;
+- (instancetype)initWithInitialDate:(NSString *)initialDate andDateFormatter:(NSString *)dateFormatter;
 
+@property(nonatomic,copy)NSString *dateFormatter;
 
 @end

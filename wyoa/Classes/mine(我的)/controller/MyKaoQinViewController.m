@@ -29,9 +29,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.startTime=[TimeUtil getNDay:-7];
+    self.startTime=[TimeUtil getNDay:-30];
     self.endTime=[TimeUtil getCurrentTimesNOHour];
-    [self setTitleButton];
+   
     self.tableView.dataSource=self;
     self.tableView.delegate=self;
     UIView *v = [[UIView alloc] initWithFrame:CGRectZero];
@@ -52,8 +52,9 @@
     }];
     
       self.pageIndex=0;
+   
     [MBProgressHUD showMessage:@"正在获取考勤数据..."];
-     [self getKaoQin];
+    [self setTitleButton];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -89,6 +90,7 @@
     [button addTarget:self action:@selector(selectDate) forControlEvents:UIControlEventTouchUpInside];
     
     self.navigationItem.titleView =button;
+    [self getKaoQin];
 }
 #pragma mark 选择日期段
 -(void)selectDate{
@@ -119,7 +121,7 @@
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     //跳转到详情
-   
+      [tableView deselectRowAtIndexPath:indexPath animated:NO];
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return 191.5f;
@@ -149,13 +151,14 @@
             }else{
                 [self.kaoqinArray addObjectsFromArray:tempArray];
             }
-            if(self.pageIndex>=myKaoQinResultBean.count-1){
+            if(self.kaoqinArray.count==myKaoQinResultBean.count){
                 self.tableView.mj_footer.hidden=YES;
             }else{
                 self.tableView.mj_footer.hidden=NO;
             }
             [self.tableView reloadData];
         }else{
+             [MBProgressHUD hideHUD];
              [MBProgressHUD showError:myKaoQinResultBean.message];
         }
     } Error:^(NSError *err) {
@@ -170,6 +173,7 @@
 #pragma mark - TableView 占位图
 
 - (UIImage *)nodata_noDataViewImage {
+    self.tableView.mj_footer.hidden=YES;
     return [UIImage imageNamed:@"neirong"];
 }
 

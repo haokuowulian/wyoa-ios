@@ -25,25 +25,25 @@
                             <constraint firstAttribute="width" constant="72" id="j32-uP-WFr"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="营养健康早餐" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GdL-Cf-OAU">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GdL-Cf-OAU">
                         <rect key="frame" x="95.5" y="15" width="92" height="18"/>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <color key="textColor" red="0.098039215690000001" green="0.1215686275" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="用餐时间：2018-08-04 15:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L2f-MY-zJ7">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L2f-MY-zJ7">
                         <rect key="frame" x="95" y="43" width="204" height="18"/>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <color key="textColor" red="0.098039215690000001" green="0.1215686275" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="数量：2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wJI-hC-TcI">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wJI-hC-TcI">
                         <rect key="frame" x="95" y="71" width="55" height="18"/>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <color key="textColor" red="0.098039215690000001" green="0.1215686275" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="总价：30元" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GA9-TC-5Ka">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GA9-TC-5Ka">
                         <rect key="frame" x="95.5" y="99" width="80" height="18"/>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <color key="textColor" red="0.098039215690000001" green="0.1215686275" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
@@ -55,6 +55,9 @@
                         <state key="normal" title="删除">
                             <color key="titleColor" red="0.95294117647058818" green="0.41960784313725491" blue="0.42745098039215684" alpha="1" colorSpace="calibratedRGB"/>
                         </state>
+                        <connections>
+                            <action selector="deleteClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="P65-7P-kky"/>
+                        </connections>
                     </button>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FGk-ne-Hgy" customClass="BEMCheckBox">
                         <rect key="frame" x="344" y="67" width="21" height="21"/>
@@ -92,6 +95,11 @@
             </tableViewCellContentView>
             <connections>
                 <outlet property="checkBox" destination="FGk-ne-Hgy" id="skD-Se-krm"/>
+                <outlet property="coverImageView" destination="rqn-ha-hgv" id="27f-bq-kNL"/>
+                <outlet property="eatTimeLabel" destination="L2f-MY-zJ7" id="JNY-J0-mrB"/>
+                <outlet property="foodNameLabel" destination="GdL-Cf-OAU" id="fA8-8N-Mrf"/>
+                <outlet property="foodNumLabel" destination="wJI-hC-TcI" id="3vZ-sA-lUN"/>
+                <outlet property="foodPricerLabel" destination="GA9-TC-5Ka" id="Pdq-lx-LPf"/>
             </connections>
         </tableViewCell>
     </objects>

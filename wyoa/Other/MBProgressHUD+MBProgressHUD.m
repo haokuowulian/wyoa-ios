@@ -94,7 +94,7 @@
  *  @return 直接返回一个MBProgressHUD，需要手动关闭
  */
 + (MBProgressHUD *)showMessage:(NSString *)message toView:(UIView *)view {
-    if (view == nil) view = [[UIApplication sharedApplication].windows lastObject];
+    if (view == nil) view = [UIApplication sharedApplication].keyWindow;
     // 快速显示一个提示信息
     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:view animated:YES];
     hud.label.text = message;
@@ -112,7 +112,10 @@
  */
 + (void)hideHUD
 {
-    [self hideHUDForView:nil];
+  
+   [self hideHUDForView:nil];
+  
+
 }
 /**
  *  @param view    显示MBProgressHUD的视图
@@ -120,9 +123,10 @@
 + (void)hideHUDForView:(UIView *)view
 {
     if (view == nil)
-        view = [[UIApplication sharedApplication].windows lastObject];
-    
-    [self hideHUDForView:view animated:YES];
+       view = [UIApplication sharedApplication].keyWindow;
+      dispatch_async(dispatch_get_main_queue(), ^{
+          [self hideHUDForView:view animated:YES];
+      });
 }
 
 

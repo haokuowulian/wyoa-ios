@@ -23,7 +23,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
   
-    [self getUserInfo];
+    [self setUserInfo];
     
     //获取通知中心单例对象
     NSNotificationCenter * center = [NSNotificationCenter defaultCenter];
@@ -44,7 +44,11 @@
 
 #pragma mark set用户信息
 -(void)setUserInfo{
-    [self.headView   sd_setImageWithURL:self.userInfoBean.headPhoto placeholderImage:[UIImage   imageNamed:@"defaulthead"]];
+    if([self.userInfoBean.sex isEqualToString:@"女"]){
+        [self.headView   sd_setImageWithURL:self.userInfoBean.headPhoto placeholderImage:[UIImage   imageNamed:@"woman"]];
+    }else{
+        [self.headView   sd_setImageWithURL:self.userInfoBean.headPhoto placeholderImage:[UIImage   imageNamed:@"man"]];
+    }
     [self.userNameLabel setText:self.userInfoBean.userName];
     [self.realNameLabel setText:self.userInfoBean.realname];
     [self.sexLabel setText:self.userInfoBean.sex];
@@ -71,7 +75,11 @@
         UserInfoResultBean *resultBean=[UserInfoResultBean mj_objectWithKeyValues:dict];
         self.userInfoBean=resultBean;
         if(resultBean.success==1){
-            [self.headView   sd_setImageWithURL:resultBean.headPhoto placeholderImage:[UIImage   imageNamed:@"defaulthead"]];
+            if([self.userInfoBean.sex isEqualToString:@"女"]){
+                [self.headView   sd_setImageWithURL:self.userInfoBean.headPhoto placeholderImage:[UIImage   imageNamed:@"woman"]];
+            }else{
+                [self.headView   sd_setImageWithURL:self.userInfoBean.headPhoto placeholderImage:[UIImage   imageNamed:@"man"]];
+            }
             [self.userNameLabel setText:resultBean.userName];
             [self.realNameLabel setText:resultBean.realname];
             [self.sexLabel setText:resultBean.sex];

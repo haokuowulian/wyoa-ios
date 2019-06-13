@@ -7,42 +7,29 @@
 //
 
 #import "DingCanTableViewCell.h"
-
+#import  "UIImageView+WebCache.h"
 @implementation DingCanTableViewCell
-
+-(void)setDingcanDetailBean:(DingCanDetailBean *)dingcanDetailBean{
+    [self.picImageView   sd_setImageWithURL:dingcanDetailBean.coverImage placeholderImage:[UIImage   imageNamed:@"img_food"]];
+    [self.nameLabel setText: dingcanDetailBean.foodName];
+    [self.priceLabel setText:[NSString stringWithFormat:@"￥%@",dingcanDetailBean.foodPrice]];
+}
 - (void)awakeFromNib {
     [super awakeFromNib];
-    self.num=0;
-    [self showOrHide];
+    
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
-
+    
     // Configure the view for the selected state
 }
 
-- (IBAction)decreaseClick:(id)sender {
-    if(self.num>0){
-        self.num--;
-    }
-    [self showOrHide];
-}
-
-- (IBAction)increaseClick:(id)sender {
-    self.num++;
-    [self showOrHide];
-   
-}
-
--(void)showOrHide{
-    [self.numLabel setText:[NSString stringWithFormat:@"%ld",self.num]];
-    if(self.num==0){
-        self.decreaseButton.hidden=YES;
-        self.numLabel.hidden=YES;
-    }else{
-        self.decreaseButton.hidden=NO;
-        self.numLabel.hidden=NO;
+- (IBAction)addClick:(id)sender {
+    if (self.addAction) {
+        // 调用block传入参数
+        self.addAction(sender);
     }
 }
 @end
+

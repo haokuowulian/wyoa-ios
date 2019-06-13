@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="SUV-LN-RiF">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="SUV-LN-RiF">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -280,7 +279,7 @@
                                         <rect key="frame" x="16" y="11" width="3" height="20"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我的考勤状况" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ffp-Ve-4oW">
-                                        <rect key="frame" x="30" y="10" width="104" height="21"/>
+                                        <rect key="frame" x="30" y="10.5" width="104" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -369,13 +368,23 @@
                                         <color key="textColor" red="0.098039215690000001" green="0.1215686275" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9fo-uZ-uQq">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="53"/>
+                                        <connections>
+                                            <action selector="diancanClick:" destination="yOX-Bq-3EZ" eventType="touchUpInside" id="ADN-Ur-GhJ"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstItem="9fo-uZ-uQq" firstAttribute="height" secondItem="Jqo-tp-FDf" secondAttribute="height" id="38q-S6-pdH"/>
+                                    <constraint firstItem="9fo-uZ-uQq" firstAttribute="leading" secondItem="Jqo-tp-FDf" secondAttribute="leading" id="G26-Kd-2DO"/>
                                     <constraint firstAttribute="bottom" secondItem="I4f-pC-HvT" secondAttribute="bottom" constant="14" id="OOb-xU-vYv"/>
                                     <constraint firstItem="inh-4G-vxD" firstAttribute="centerY" secondItem="Jqo-tp-FDf" secondAttribute="centerY" id="XWh-fR-cfR"/>
                                     <constraint firstItem="inh-4G-vxD" firstAttribute="leading" secondItem="I4f-pC-HvT" secondAttribute="trailing" constant="15" id="Xso-DD-17u"/>
                                     <constraint firstItem="I4f-pC-HvT" firstAttribute="leading" secondItem="Jqo-tp-FDf" secondAttribute="leading" constant="19" id="a8a-t4-bqn"/>
+                                    <constraint firstItem="9fo-uZ-uQq" firstAttribute="top" secondItem="Jqo-tp-FDf" secondAttribute="top" id="buF-Ed-ymz"/>
+                                    <constraint firstItem="9fo-uZ-uQq" firstAttribute="width" secondItem="Jqo-tp-FDf" secondAttribute="width" id="lMH-fk-Nhx"/>
                                     <constraint firstItem="I4f-pC-HvT" firstAttribute="top" secondItem="Jqo-tp-FDf" secondAttribute="top" constant="14" id="ng4-wA-4Mp"/>
                                 </constraints>
                             </view>
@@ -417,7 +426,7 @@
                                 <rect key="frame" x="0.0" y="76.5" width="375" height="44"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="修改密码" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RDb-Ee-av1">
-                                        <rect key="frame" x="13" y="13.5" width="61.5" height="18"/>
+                                        <rect key="frame" x="13" y="13" width="61.5" height="18"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <color key="textColor" red="0.098039215690000001" green="0.1215686275" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -478,6 +487,7 @@
         <!--Update Password View Controller-->
         <scene sceneID="TkB-gv-Hub">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g5s-V6-lJR" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="DaM-NL-KFB" customClass="UpdatePasswordViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jly-yR-54d"/>
@@ -520,26 +530,26 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="密码必须大于8个字符，且存在数字和字母" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Em-Bz-1IS">
-                                <rect key="frame" x="45" y="330" width="209.5" height="13.5"/>
+                                <rect key="frame" x="45" y="330.5" width="209.5" height="13.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                 <color key="textColor" red="0.19607843137254902" green="0.45882352941176469" blue="0.85098039215686272" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="重复密码" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TfC-4s-Phi">
-                                <rect key="frame" x="45" y="359.5" width="69.5" height="21"/>
+                                <rect key="frame" x="45" y="360" width="69.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.098039215690000001" green="0.1215686275" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0wW-Xh-ocz">
-                                <rect key="frame" x="45" y="428.5" width="285" height="1"/>
+                                <rect key="frame" x="45" y="429" width="285" height="1"/>
                                 <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="yi5-wj-dcA"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="密码必须大于8个字符，且存在数字和字母" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mAt-LQ-MfC" userLabel="需6~20位字符2">
-                                <rect key="frame" x="45" y="437.5" width="209.5" height="13.5"/>
+                                <rect key="frame" x="45" y="438" width="209.5" height="13.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                 <color key="textColor" red="0.1960784314" green="0.45882352939999999" blue="0.85098039219999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -557,7 +567,7 @@
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请重新输入新密码" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Uil-qe-py7">
-                                <rect key="frame" x="45" y="396.5" width="281.5" height="19"/>
+                                <rect key="frame" x="45" y="397" width="281.5" height="19"/>
                                 <color key="textColor" red="0.098039215690000001" green="0.1215686275" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
@@ -604,7 +614,6 @@
                         <outlet property="oldPasswordText" destination="bPS-tL-tX9" id="zII-DU-s6x"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="g5s-V6-lJR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1577" y="784"/>
         </scene>
@@ -677,7 +686,7 @@
                                                 <rect key="frame" x="0.0" y="79" width="375" height="44"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="用户名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GDo-2m-Qa4">
-                                                        <rect key="frame" x="13" y="13.5" width="46" height="18"/>
+                                                        <rect key="frame" x="13" y="13" width="46" height="18"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <color key="textColor" red="0.098039215690000001" green="0.1215686275" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -685,8 +694,8 @@
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gerenziliao" translatesAutoresizingMaskIntoConstraints="NO" id="zAv-jj-PF9">
                                                         <rect key="frame" x="357" y="16.5" width="6" height="11"/>
                                                     </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="张三" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VsI-9E-iHN">
-                                                        <rect key="frame" x="314" y="13.5" width="31" height="18"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VsI-9E-iHN">
+                                                        <rect key="frame" x="345" y="22" width="0.0" height="0.0"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <color key="textColor" red="0.53333333333333333" green="0.53333333333333333" blue="0.53333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -717,7 +726,7 @@
                                                 <rect key="frame" x="0.0" y="124" width="375" height="44"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="真实姓名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cya-CY-j2B">
-                                                        <rect key="frame" x="13" y="13.5" width="61.5" height="18"/>
+                                                        <rect key="frame" x="13" y="13" width="61.5" height="18"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <color key="textColor" red="0.098039215690000001" green="0.1215686275" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -725,8 +734,8 @@
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gerenziliao" translatesAutoresizingMaskIntoConstraints="NO" id="kkG-te-Gzu">
                                                         <rect key="frame" x="357" y="16.5" width="6" height="11"/>
                                                     </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="张三" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mCw-UN-xuR">
-                                                        <rect key="frame" x="314" y="13.5" width="31" height="18"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mCw-UN-xuR">
+                                                        <rect key="frame" x="345" y="22" width="0.0" height="0.0"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <color key="textColor" red="0.53333333329999999" green="0.53333333329999999" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -757,7 +766,7 @@
                                                 <rect key="frame" x="0.0" y="169" width="375" height="44"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="性别" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jIP-ph-6y8">
-                                                        <rect key="frame" x="13" y="13.5" width="31" height="18"/>
+                                                        <rect key="frame" x="13" y="13" width="31" height="18"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <color key="textColor" red="0.098039215690000001" green="0.1215686275" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -765,8 +774,8 @@
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gerenziliao" translatesAutoresizingMaskIntoConstraints="NO" id="QEz-ye-w1Q">
                                                         <rect key="frame" x="357" y="16.5" width="6" height="11"/>
                                                     </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="男" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DFi-AE-3CM">
-                                                        <rect key="frame" x="329.5" y="13.5" width="15.5" height="18"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DFi-AE-3CM">
+                                                        <rect key="frame" x="345" y="22" width="0.0" height="0.0"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <color key="textColor" red="0.53333333329999999" green="0.53333333329999999" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -797,7 +806,7 @@
                                                 <rect key="frame" x="0.0" y="214" width="375" height="44"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="出生日期" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g2g-iU-BqN">
-                                                        <rect key="frame" x="13" y="13.5" width="61.5" height="18"/>
+                                                        <rect key="frame" x="13" y="13" width="61.5" height="18"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <color key="textColor" red="0.098039215690000001" green="0.1215686275" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -805,8 +814,8 @@
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gerenziliao" translatesAutoresizingMaskIntoConstraints="NO" id="jeL-mp-kiC">
                                                         <rect key="frame" x="357" y="16.5" width="6" height="11"/>
                                                     </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1991-01-01" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LMl-jZ-Oz3">
-                                                        <rect key="frame" x="267" y="13.5" width="78" height="18"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LMl-jZ-Oz3">
+                                                        <rect key="frame" x="345" y="22" width="0.0" height="0.0"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <color key="textColor" red="0.53333333329999999" green="0.53333333329999999" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -834,10 +843,10 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BH7-Fl-khs" userLabel="手机短号View">
-                                                <rect key="frame" x="0.0" y="270.5" width="375" height="44"/>
+                                                <rect key="frame" x="0.0" y="315.5" width="375" height="44"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="手机短号" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NUo-QS-FT1">
-                                                        <rect key="frame" x="13" y="13.5" width="61.5" height="18"/>
+                                                        <rect key="frame" x="13" y="13" width="61.5" height="18"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <color key="textColor" red="0.098039215690000001" green="0.1215686275" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -845,8 +854,8 @@
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gerenziliao" translatesAutoresizingMaskIntoConstraints="NO" id="QQv-tP-a53">
                                                         <rect key="frame" x="357" y="16.5" width="6" height="11"/>
                                                     </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="123456" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w5O-hb-ZSF">
-                                                        <rect key="frame" x="292" y="13.5" width="53" height="18"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w5O-hb-ZSF">
+                                                        <rect key="frame" x="345" y="22" width="0.0" height="0.0"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <color key="textColor" red="0.53333333329999999" green="0.53333333329999999" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -874,10 +883,10 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jg8-u8-Aca" userLabel="手机长号View">
-                                                <rect key="frame" x="0.0" y="315.5" width="375" height="44"/>
+                                                <rect key="frame" x="0.0" y="270.5" width="375" height="44"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="手机长号" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SuG-n4-erJ">
-                                                        <rect key="frame" x="13" y="13.5" width="61.5" height="18"/>
+                                                        <rect key="frame" x="13" y="13" width="61.5" height="18"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <color key="textColor" red="0.098039215690000001" green="0.1215686275" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -885,8 +894,8 @@
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gerenziliao" translatesAutoresizingMaskIntoConstraints="NO" id="3Wu-Q9-adk">
                                                         <rect key="frame" x="357" y="16.5" width="6" height="11"/>
                                                     </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="13754327188" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nik-oV-Sz7">
-                                                        <rect key="frame" x="250.5" y="13.5" width="94.5" height="18"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nik-oV-Sz7">
+                                                        <rect key="frame" x="345" y="22" width="0.0" height="0.0"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <color key="textColor" red="0.53333333329999999" green="0.53333333329999999" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -917,7 +926,7 @@
                                                 <rect key="frame" x="0.0" y="360.5" width="375" height="44"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QQ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tds-Je-GSb">
-                                                        <rect key="frame" x="13" y="13.5" width="23" height="18"/>
+                                                        <rect key="frame" x="13" y="13" width="23" height="18"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <color key="textColor" red="0.098039215690000001" green="0.1215686275" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -925,8 +934,8 @@
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gerenziliao" translatesAutoresizingMaskIntoConstraints="NO" id="nuq-xV-5RU">
                                                         <rect key="frame" x="357" y="16.5" width="6" height="11"/>
                                                     </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9766876621" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8sT-Rm-SFw">
-                                                        <rect key="frame" x="257.5" y="13.5" width="87.5" height="18"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8sT-Rm-SFw">
+                                                        <rect key="frame" x="345" y="22" width="0.0" height="0.0"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <color key="textColor" red="0.53333333329999999" green="0.53333333329999999" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -957,7 +966,7 @@
                                                 <rect key="frame" x="0.0" y="405.5" width="375" height="44"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="微信" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ryA-2v-9cD">
-                                                        <rect key="frame" x="13" y="13.5" width="31" height="18"/>
+                                                        <rect key="frame" x="13" y="13" width="31" height="18"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <color key="textColor" red="0.098039215690000001" green="0.1215686275" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -965,8 +974,8 @@
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gerenziliao" translatesAutoresizingMaskIntoConstraints="NO" id="ksh-hk-0Uy">
                                                         <rect key="frame" x="357" y="16.5" width="6" height="11"/>
                                                     </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="zhangsan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S9h-b9-Za7">
-                                                        <rect key="frame" x="278.5" y="13.5" width="66.5" height="18"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S9h-b9-Za7">
+                                                        <rect key="frame" x="345" y="22" width="0.0" height="0.0"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <color key="textColor" red="0.53333333329999999" green="0.53333333329999999" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -997,7 +1006,7 @@
                                                 <rect key="frame" x="0.0" y="507" width="375" height="44"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="科室电话" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WGP-Ml-c26">
-                                                        <rect key="frame" x="13" y="13.5" width="61.5" height="18"/>
+                                                        <rect key="frame" x="13" y="13" width="61.5" height="18"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <color key="textColor" red="0.098039215690000001" green="0.1215686275" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -1005,8 +1014,8 @@
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gerenziliao" translatesAutoresizingMaskIntoConstraints="NO" id="bof-ap-Aft">
                                                         <rect key="frame" x="357" y="16.5" width="6" height="11"/>
                                                     </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="82645555" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qtB-oe-N9I">
-                                                        <rect key="frame" x="271.5" y="13.5" width="73.5" height="18"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qtB-oe-N9I">
+                                                        <rect key="frame" x="345" y="22" width="0.0" height="0.0"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <color key="textColor" red="0.53333333329999999" green="0.53333333329999999" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -1037,7 +1046,7 @@
                                                 <rect key="frame" x="0.0" y="462" width="375" height="44"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="所在科室" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Xv-PZ-KVQ">
-                                                        <rect key="frame" x="13" y="13.5" width="61.5" height="18"/>
+                                                        <rect key="frame" x="13" y="13" width="61.5" height="18"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <color key="textColor" red="0.098039215690000001" green="0.1215686275" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -1045,8 +1054,8 @@
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gerenziliao" translatesAutoresizingMaskIntoConstraints="NO" id="iZy-l6-PDc">
                                                         <rect key="frame" x="357" y="16.5" width="6" height="11"/>
                                                     </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="党务、行政后勤" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7JZ-4H-LC8">
-                                                        <rect key="frame" x="237.5" y="13.5" width="107.5" height="18"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7JZ-4H-LC8">
+                                                        <rect key="frame" x="345" y="22" width="0.0" height="0.0"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <color key="textColor" red="0.53333333329999999" green="0.53333333329999999" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -1077,7 +1086,7 @@
                                                 <rect key="frame" x="0.0" y="552" width="375" height="44"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="担任职务" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ikM-Xm-I1z">
-                                                        <rect key="frame" x="13" y="13.5" width="61.5" height="18"/>
+                                                        <rect key="frame" x="13" y="13" width="61.5" height="18"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <color key="textColor" red="0.098039215690000001" green="0.1215686275" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -1085,8 +1094,8 @@
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gerenziliao" translatesAutoresizingMaskIntoConstraints="NO" id="XEA-Q8-yTh">
                                                         <rect key="frame" x="357" y="16.5" width="6" height="11"/>
                                                     </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="中心副书记" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cpj-Zw-G7R">
-                                                        <rect key="frame" x="268.5" y="13.5" width="76.5" height="18"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cpj-Zw-G7R">
+                                                        <rect key="frame" x="345" y="22" width="0.0" height="0.0"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <color key="textColor" red="0.53333333329999999" green="0.53333333329999999" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -1130,10 +1139,10 @@
                                             <constraint firstItem="PDd-9g-Xbz" firstAttribute="leading" secondItem="9DX-ZV-LCD" secondAttribute="leading" id="NYc-Mn-gLv"/>
                                             <constraint firstItem="2aI-9q-80x" firstAttribute="top" secondItem="fOn-bN-2JV" secondAttribute="bottom" constant="1" id="OCE-mX-FbD"/>
                                             <constraint firstAttribute="trailing" secondItem="fby-V7-4Z6" secondAttribute="trailing" id="RD6-c5-zvJ"/>
-                                            <constraint firstItem="jg8-u8-Aca" firstAttribute="top" secondItem="BH7-Fl-khs" secondAttribute="bottom" constant="1" id="Te4-BC-YR4"/>
+                                            <constraint firstItem="jg8-u8-Aca" firstAttribute="top" secondItem="cOZ-Mo-90x" secondAttribute="bottom" constant="12.5" id="Te4-BC-YR4"/>
                                             <constraint firstItem="fby-V7-4Z6" firstAttribute="top" secondItem="2aI-9q-80x" secondAttribute="bottom" constant="1" id="TeI-w8-zRz"/>
                                             <constraint firstItem="REJ-93-4wq" firstAttribute="top" secondItem="tuY-7c-Liu" secondAttribute="bottom" constant="1" id="ThQ-0K-nUl"/>
-                                            <constraint firstItem="BH7-Fl-khs" firstAttribute="top" secondItem="cOZ-Mo-90x" secondAttribute="bottom" constant="12.5" id="VLQ-hs-zfw"/>
+                                            <constraint firstItem="BH7-Fl-khs" firstAttribute="top" secondItem="jg8-u8-Aca" secondAttribute="bottom" constant="1" id="VLQ-hs-zfw"/>
                                             <constraint firstAttribute="trailing" secondItem="Ofo-ap-1JY" secondAttribute="trailing" id="XmZ-Qk-NkP"/>
                                             <constraint firstItem="FXW-k8-KvE" firstAttribute="leading" secondItem="9DX-ZV-LCD" secondAttribute="leading" id="Yfa-Da-sYe"/>
                                             <constraint firstItem="PDd-9g-Xbz" firstAttribute="top" secondItem="FXW-k8-KvE" secondAttribute="bottom" constant="1" id="YzO-Fd-9he"/>
@@ -1146,7 +1155,7 @@
                                             <constraint firstItem="fby-V7-4Z6" firstAttribute="leading" secondItem="9DX-ZV-LCD" secondAttribute="leading" id="fFN-LE-PCP"/>
                                             <constraint firstItem="tuY-7c-Liu" firstAttribute="leading" secondItem="9DX-ZV-LCD" secondAttribute="leading" id="gLg-YV-09F"/>
                                             <constraint firstAttribute="trailing" secondItem="cOZ-Mo-90x" secondAttribute="trailing" id="mFy-zG-vze"/>
-                                            <constraint firstItem="FXW-k8-KvE" firstAttribute="top" secondItem="jg8-u8-Aca" secondAttribute="bottom" constant="1" id="nND-bb-ILn"/>
+                                            <constraint firstItem="FXW-k8-KvE" firstAttribute="top" secondItem="BH7-Fl-khs" secondAttribute="bottom" constant="1" id="nND-bb-ILn"/>
                                             <constraint firstItem="fOn-bN-2JV" firstAttribute="leading" secondItem="9DX-ZV-LCD" secondAttribute="leading" id="pBX-cX-w7s"/>
                                             <constraint firstItem="hwD-Py-H3L" firstAttribute="leading" secondItem="9DX-ZV-LCD" secondAttribute="leading" id="tcC-OV-87B"/>
                                             <constraint firstAttribute="trailing" secondItem="jg8-u8-Aca" secondAttribute="trailing" id="twu-2T-Zba"/>
@@ -1260,8 +1269,8 @@
         <image name="SZ" width="27" height="27"/>
         <image name="gerenziliao" width="6" height="11"/>
         <image name="jvxing" width="3" height="20"/>
-        <image name="qianbao-diancan" width="30" height="25"/>
-        <image name="touxiang" width="85" height="83"/>
+        <image name="qianbao-diancan" width="30.5" height="25"/>
+        <image name="touxiang" width="85.5" height="83.5"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="t1R-ff-syS"/>

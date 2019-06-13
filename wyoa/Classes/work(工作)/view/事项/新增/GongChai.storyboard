@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Tbl-bt-Jvh">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Tbl-bt-Jvh">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -46,7 +46,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shezhi_jiantou" translatesAutoresizingMaskIntoConstraints="NO" id="lQv-6R-Pfy">
-                                                        <rect key="frame" x="354" y="19" width="6" height="12"/>
+                                                        <rect key="frame" x="354" y="19.5" width="6" height="12"/>
                                                     </imageView>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请选择" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7bt-78-FPe">
                                                         <rect key="frame" x="283" y="15" width="56" height="21"/>
@@ -55,7 +55,7 @@
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pPM-Va-yIh">
-                                                        <rect key="frame" x="118.5" y="10" width="241.5" height="30"/>
+                                                        <rect key="frame" x="118.5" y="10.5" width="241.5" height="30"/>
                                                         <connections>
                                                             <action selector="startTimeClick:" destination="Tbl-bt-Jvh" eventType="touchUpInside" id="Nrl-BS-57L"/>
                                                         </connections>
@@ -90,7 +90,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shezhi_jiantou" translatesAutoresizingMaskIntoConstraints="NO" id="pt8-6N-r3L">
-                                                        <rect key="frame" x="354" y="19" width="6" height="12"/>
+                                                        <rect key="frame" x="354" y="19.5" width="6" height="12"/>
                                                     </imageView>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请选择" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qgl-Jo-8oU">
                                                         <rect key="frame" x="283" y="15" width="56" height="21"/>
@@ -99,7 +99,7 @@
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ztV-1h-mZi">
-                                                        <rect key="frame" x="118.5" y="10" width="241.5" height="30"/>
+                                                        <rect key="frame" x="118.5" y="10.5" width="241.5" height="30"/>
                                                         <connections>
                                                             <action selector="endTimeClick:" destination="Tbl-bt-Jvh" eventType="touchUpInside" id="xad-VR-Fny"/>
                                                         </connections>
@@ -236,7 +236,7 @@
                                                                 </constraints>
                                                             </view>
                                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="xiayiren" translatesAutoresizingMaskIntoConstraints="NO" id="EBf-wj-evv">
-                                                                <rect key="frame" x="97" y="29" width="12" height="10"/>
+                                                                <rect key="frame" x="97" y="29.5" width="12" height="10"/>
                                                             </imageView>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cBS-9F-KP4" userLabel="View2">
                                                                 <rect key="frame" x="119" y="0.0" width="50" height="70"/>
@@ -271,7 +271,7 @@
                                                                 </constraints>
                                                             </view>
                                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="xiayiren" translatesAutoresizingMaskIntoConstraints="NO" id="Zc7-mO-k0S" userLabel="xiayiren2">
-                                                                <rect key="frame" x="179" y="29" width="12" height="10"/>
+                                                                <rect key="frame" x="179" y="29.5" width="12" height="10"/>
                                                             </imageView>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oxG-Ea-Xsg" userLabel="View3">
                                                                 <rect key="frame" x="201" y="0.0" width="50" height="70"/>
@@ -361,6 +361,12 @@
                                                                     <constraint firstAttribute="height" constant="50" id="WKD-b1-Rpe"/>
                                                                     <constraint firstAttribute="width" constant="50" id="Zue-N5-Ooi"/>
                                                                 </constraints>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="25"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                                </userDefinedRuntimeAttributes>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oyJ-RL-b4h">
                                                                 <rect key="frame" x="25" y="56" width="0.0" height="0.0"/>
@@ -380,6 +386,12 @@
                                                     </view>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hNi-bL-a1j">
                                                         <rect key="frame" x="37" y="54" width="50" height="70"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="25"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
                                                         <connections>
                                                             <action selector="addChaoSongRen:" destination="Tbl-bt-Jvh" eventType="touchUpInside" id="odM-87-bUh"/>
                                                         </connections>
@@ -510,9 +522,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="chaosong" width="50" height="50"/>
-        <image name="shezhi_jiantou" width="6" height="12"/>
-        <image name="xiayiren" width="12" height="10"/>
+        <image name="chaosong" width="50.5" height="50"/>
+        <image name="shezhi_jiantou" width="6.5" height="12.5"/>
+        <image name="xiayiren" width="12" height="10.5"/>
         <image name="xinghao" width="8" height="9"/>
     </resources>
 </document>

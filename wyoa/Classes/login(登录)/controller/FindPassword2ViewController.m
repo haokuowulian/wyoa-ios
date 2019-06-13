@@ -85,6 +85,7 @@
         }else{
             [MBProgressHUD showError:resultBean.message];
         }
+        
     } Error:^(NSError *err) {
          [MBProgressHUD showError:@"网络连接失败"];
          [MBProgressHUD hideHUD];

@@ -178,7 +178,7 @@
     }
     trackX+=150/self.tabbarCount*0.5;
     trackView_.frame = CGRectMake(trackX, trackView_.frame.origin.y, CGRectGetWidth(trackView_.bounds), CGRectGetHeight(trackView_.bounds));
-    NSLog(@"$$$$$$%f",trackX);
+//    NSLog(@"$$$$$$%f",trackX);
 }
 
 - (void)setSelectedIndex:(NSInteger)selectedIndex{

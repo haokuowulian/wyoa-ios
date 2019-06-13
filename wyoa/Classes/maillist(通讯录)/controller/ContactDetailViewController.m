@@ -10,6 +10,11 @@
 #import  "UIImageView+WebCache.h"
 #import <MessageUI/MessageUI.h>
 #import "MBProgressHUD+MBProgressHUD.h"
+#import "TalkViewController.h"
+#import "ChatBean.h"
+#import "Extern.h"
+#import "MJExtension.h"
+#import "MBProgressHUD.h"
 @interface ContactDetailViewController ()<MFMessageComposeViewControllerDelegate>
 
 @end
@@ -40,28 +45,15 @@
     [super viewWillAppear:animated];
      [self.navigationController.navigationBar setShadowImage:[UIImage new]];
 }
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 - (IBAction)messageClick:(id)sender {
-    if(self.telphoneLabel.text.length>0){
-        MFMessageComposeViewController *vc = [[MFMessageComposeViewController alloc] init];
-        // 设置收件人列表
-        vc.recipients = @[_telphoneLabel.text];  // 号码数组
-        // 设置代理
-        vc.messageComposeDelegate = self;
-        // 显示控制器
-        [self presentViewController:vc animated:YES completion:nil];
-    }else{
-        [MBProgressHUD showError:@"暂无手机长号"];
-    }
+    TalkViewController *controller=[TalkViewController new];
+    NSUserDefaults *userDefault=[NSUserDefaults standardUserDefaults];
+    NSString *userId=[userDefault objectForKey:@"userId"];
+    controller.name=self.userInfoBean.name;
+    controller.chatUrl=[NSString stringWithFormat:@"%@%@?fromId=%@&toId=%@",baseUrl,@"oaChat/gotoAppchat.do",userId,self.userInfoBean.id];
+    [self.navigationController pushViewController:controller animated:YES];
+   
    
 }
 
@@ -109,23 +101,10 @@
         
             [self.view addSubview:webView];
     }
-   
-    
 
   
 }
 
-- (void)messageComposeViewController:(MFMessageComposeViewController*)controller didFinishWithResult:(MessageComposeResult)result
-{
-    // 关闭短信界面
-    [controller dismissViewControllerAnimated:YES completion:nil];
-    if(result == MessageComposeResultCancelled) {
-        NSLog(@"取消发送");
-    } else if(result == MessageComposeResultSent) {
-        NSLog(@"已经发出");
-    } else {
-        NSLog(@"发送失败");
-    }
-}
+
 
 @end

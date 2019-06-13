@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--My Sheng Gou View Controller-->
+        <scene sceneID="d6Z-l7-Mwk">
+            <objects>
+                <viewController storyboardIdentifier="myShengGou" id="WSk-cx-W0g" customClass="MyShengGouViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6SU-Jz-cgh"/>
+                        <viewControllerLayoutGuide type="bottom" id="0oO-ns-fAF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RiE-g1-lJB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="SL7-Rg-Ha9">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="SL7-Rg-Ha9" secondAttribute="trailing" id="W1g-9B-BeC"/>
+                            <constraint firstItem="0oO-ns-fAF" firstAttribute="top" secondItem="SL7-Rg-Ha9" secondAttribute="bottom" id="fjV-ac-Lsm"/>
+                            <constraint firstItem="SL7-Rg-Ha9" firstAttribute="top" secondItem="6SU-Jz-cgh" secondAttribute="bottom" id="r9U-Rb-A11"/>
+                            <constraint firstItem="SL7-Rg-Ha9" firstAttribute="leading" secondItem="RiE-g1-lJB" secondAttribute="leading" id="vGk-um-eWn"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="SL7-Rg-Ha9" id="WyN-gS-pMz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YZc-1z-6c4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="58" y="164"/>
+        </scene>
+    </scenes>
+</document>

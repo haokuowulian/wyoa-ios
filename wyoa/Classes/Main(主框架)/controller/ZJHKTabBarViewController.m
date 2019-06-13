@@ -20,15 +20,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     //获取4个子控制器
-    UIViewController *v1=[self loadSubViewControllerWithSBName:@"Message"];
-    UIViewController *v2=[self loadSubViewControllerWithSBName:@"Work"];
-    UIViewController *v3=[self loadSubViewControllerWithSBName:@"MailList"];
+//    UIViewController *v1=[self loadSubViewControllerWithSBName:@"Message"];
+    
+    UIViewController *v2=[self loadSubViewControllerWithSBName:@"MailList"];
+    UIViewController *v3=[self loadSubViewControllerWithSBName:@"Work"];
     UIViewController *v4=[self loadSubViewControllerWithSBName:@"Mine"];
     //tabbarController设置子控制器
-//    NSArray *array = @[v1,v2,v3,v4];
-    
-    self.viewControllers = @[v1,v2,v3,v4];
-    
+
+//    self.viewControllers = @[v1,v2,v3,v4];
+     self.viewControllers = @[v2,v3,v4];
     //创建自定义的tabbar
     self.tabbar=[[UIView alloc]init];
     //设置tabbar的frame为系统的frame
@@ -36,10 +36,11 @@
     self.tabbar.backgroundColor=[UIColor whiteColor];
     [self.tabBar addSubview:self.tabbar];
     // 下面的方法是调用自定义的生成按钮的方法
-        [self creatButtonWithNormalName:@"news"andSelectName:@"news1"andTitle:@"消息"andIndex:0];
-       [self creatButtonWithNormalName:@"work1"andSelectName:@"work"andTitle:@"工作"andIndex:1];
-       [self creatButtonWithNormalName:@"tongxun"andSelectName:@"tongxun1"andTitle:@"通讯录"andIndex:2];
-        [self creatButtonWithNormalName:@"my"andSelectName:@"my1"andTitle:@"我的"andIndex:3];
+//        [self creatButtonWithNormalName:@"news"andSelectName:@"news1"andTitle:@"消息"andIndex:0];
+     [self creatButtonWithNormalName:@"tongxun"andSelectName:@"tongxun1"andTitle:@"通讯录"andIndex:0];
+    [self creatButtonWithNormalName:@"work1"andSelectName:@"work"andTitle:@"工作"andIndex:1];
+    
+        [self creatButtonWithNormalName:@"my"andSelectName:@"my1"andTitle:@"我的"andIndex:2];
    
         ZJHKTabBarbutton *btn = self.tabbar.subviews[1];
     
@@ -65,13 +66,11 @@
 #pragma mark 创建一个按钮
 - (void)creatButtonWithNormalName:(NSString *)normal andSelectName:(NSString *)selected andTitle:(NSString *)title andIndex:(int)index
  {
-     
-   
         ZJHKTabBarbutton *button = [ZJHKTabBarbutton buttonWithType:UIButtonTypeCustom];
        button.tag = index;
    
    
-        CGFloat W = kScreenWidth/ 4;
+        CGFloat W = kScreenWidth/ 3;
         CGFloat H = 52.5;
         CGFloat X=W*index;
         CGFloat Y=0;
